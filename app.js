@@ -63,7 +63,7 @@ const directAnswers = [
   },
   {
     id: "required-documents",
-    match: ["required document", "required documents", "documents needed", "what documents", "missing documents", "papers needed"],
+    match: ["required document", "required documents", "documents needed", "what documents", "missing documents", "papers needed", "which documents", "docs needed", "document list", "what papers"],
     department: "Documentation / Document Submitted",
     comment: "Please check the submitted documents and proceed.",
     source: "Methaq SOP - Required Documents",
@@ -79,7 +79,7 @@ const directAnswers = [
   },
   {
     id: "claim-status",
-    match: ["claim status", "status of claim", "check claim", "follow up claim", "latest update", "where is claim"],
+    match: ["claim status", "status of claim", "check claim", "follow up claim", "latest update", "where is claim", "any update on claim", "claim update", "what is happening with claim", "follow up on claim"],
     department: "Customer Service",
     comment: "Please check and assist with the request.",
     source: "Methaq SOP - Claim Status Inquiry",
@@ -95,34 +95,61 @@ const directAnswers = [
   },
   {
     id: "comprehensive-fault",
-    match: ["comprehensive", "caused accident", "my fault", "at fault comprehensive", "will my car be repaired"],
+    match: [
+      "comprehensive", "caused accident", "my fault", "at fault comprehensive",
+      "will my car be repaired", "comprehensive insurance", "i caused the accident",
+      "even if i caused", "regardless of fault"
+    ],
     department: "Repair",
     comment: "Please check and proceed with repair.",
-    source: "Methaq SOP - FAQ Comprehensive Insurance",
+    source: "Methaq SOP - FAQ Q1 Comprehensive Insurance",
     answer: [
-      "If the customer has Comprehensive insurance with Methaq, Methaq arranges repair of the customer vehicle regardless of who caused the accident, subject to policy terms and exclusions.",
-      "The customer must submit the claim online and upload the required documents, including the police report, driving license, Mulkiya, and Emirates ID.",
-      "Do not tell the customer the claim is approved unless the system confirms it. Use confirmed claim status only."
+      "If the customer has Comprehensive insurance with Methaq, Methaq covers repair of the customer's own vehicle regardless of who caused the accident, subject to policy terms.",
+      "The customer must still submit the claim online and upload the required documents (Police Report, Driving License, Mulkiya, Emirates ID).",
+      "Important exclusions — do not promise repair if the case involves: driving without a valid license, driving under the influence of alcohol, or intentional damage.",
+      "Never tell the customer the claim is approved or rejected unless the system / documented reason confirms it."
     ],
     sources: [
-      "FAQ Q1: Comprehensive insurance repairs the policyholder vehicle regardless of fault.",
-      "Data Privacy rule: Do not say approved or rejected without documented reason."
+      "FAQ Q1: Comprehensive repairs policyholder vehicle regardless of fault, with stated exclusions.",
+      "Data Privacy: Do not say approved/rejected without documented reason."
     ],
   },
   {
     id: "third-party-not-at-fault",
-    match: ["third party not at fault", "third-party not at fault", "another driver hit me", "other driver hit me", "not my fault third party"],
+    match: [
+      "third party", "third-party", "tp insurance", "another driver hit me",
+      "other driver hit", "not at fault third", "will methaq repair my car third",
+      "third party hit me", "someone hit me"
+    ],
     department: "Customer Service",
     comment: "Please check and assist with the request.",
-    source: "Methaq SOP - FAQ Third-Party Coverage",
+    source: "Methaq SOP - FAQ Q2 Third-Party not at fault",
     answer: [
-      "Third-Party insurance does not cover the Methaq policyholder own vehicle.",
-      "If another driver caused the accident, the customer must submit the claim to the other driver insurer because that insurer pays for the repair.",
-      "Methaq handles liability for the other party when the Methaq Third-Party policyholder caused the accident."
+      "Third-Party insurance never covers the Methaq policyholder's own vehicle.",
+      "If another driver hit the customer (customer not at fault): the customer must claim with the other driver's insurer, because that insurer pays for the customer's repair.",
+      "Do not tell the customer that Methaq will repair their own car under Third-Party cover."
     ],
     sources: [
-      "FAQ Q2: Third-Party insurance never covers the policyholder own vehicle.",
-      "Claims Process guide: Third-Party with Methaq and customer not at fault means customer must claim from the other insurer."
+      "FAQ Q2: Third-Party never covers policyholder own vehicle; claim other driver's insurer when other driver at fault."
+    ],
+  },
+  {
+    id: "third-party-at-fault",
+    match: [
+      "third party i caused", "third-party i caused", "i caused third party",
+      "tp at fault", "third party at fault", "caused the accident third",
+      "i hit someone third", "third party liability"
+    ],
+    department: "Customer Service",
+    comment: "Please check and assist with the request.",
+    source: "Methaq SOP - FAQ Q3 Third-Party at fault",
+    answer: [
+      "If the customer has Third-Party cover and caused the accident: Methaq handles liability for the other party's vehicle/property damage (whether or not that party is a Methaq customer).",
+      "Methaq will NOT repair the at-fault Third-Party policyholder's own vehicle.",
+      "Advise only from confirmed policy type and CRM/status — do not promise repair of the customer's own car under Third-Party."
+    ],
+    sources: [
+      "FAQ Q3: Methaq pays other party damage; does not repair at-fault TP policyholder vehicle."
     ],
   },
   {
@@ -247,6 +274,65 @@ const directAnswers = [
       "Data Privacy rule: Do not provide the LPO to the customer."
     ],
   },
+  {
+    id: "excess-deductible",
+    match: [
+      "excess", "deductible", "excess amount", "what is excess", "do i pay excess",
+      "policy excess", "customer excess"
+    ],
+    department: "Cash Settlement",
+    comment: "Please check excess/deductible on the claim and advise from system information only.",
+    source: "Methaq SOP - Excess/Deductible",
+    answer: [
+      "Excess (deductible) is the amount a Comprehensive policyholder who is at fault agrees to pay per claim.",
+      "It is deducted from the claim settlement, or paid when the vehicle is collected after repair.",
+      "It may be waived in minor cases such as windscreen damage — only confirm waiver if the system/SOP case supports it.",
+      "Never invent an excess amount. Read the value from the claim/policy system before telling the customer any number."
+    ],
+    sources: [
+      "SOP Excess/Deductible: at-fault Comprehensive amount per claim; deducted from settlement or paid on collection; possible waiver for minor windscreen cases."
+    ],
+  },
+  {
+    id: "privacy-rules",
+    match: [
+      "can i tell the amount", "share the quote", "settlement amount", "tell approved",
+      "promise to call back", "share lpo", "internal number", "quote amount",
+      "cash settlement amount", "can i say approved"
+    ],
+    department: "Customer Service",
+    comment: "Please assist without sharing restricted internal figures.",
+    source: "Methaq SOP - Data Privacy and Confidentiality",
+    answer: [
+      "Do not share quote amounts, cash settlement amounts, or other internal figures with the customer over the phone.",
+      "Do not provide the LPO to the customer. Do not share internal workshop-selection process details.",
+      "Do not tell the customer the claim is approved or rejected unless there is a documented system reason.",
+      "Do not promise to call the customer back. If they insist on numbers, advise them to visit a Methaq branch for further assistance."
+    ],
+    sources: [
+      "Data Privacy rules: no quotes/settlement figures/LPO/internal process; no approved/rejected without documentation; no promise to call back."
+    ],
+  },
+  {
+    id: "agent-permissions",
+    match: [
+      "can i open a claim", "can agent open claim", "upload for customer",
+      "agent permissions", "what can agents do", "read only", "can i approve",
+      "can i reject claim", "negotiate settlement"
+    ],
+    department: "Customer Service",
+    comment: "Please guide the customer within agent permissions.",
+    source: "Methaq SOP - Agent Permissions Matrix",
+    answer: [
+      "Agents have read-only access. You can check claim stage, guide the customer, identify via plate/claim number, share workshop name/location when appropriate, and add a comment to route the case.",
+      "Agents cannot: open new claims, upload documents on behalf of the customer, approve or reject claims, negotiate settlement amounts, determine premiums, or commit to timelines not stated in the SOP.",
+      "If the customer needs a new claim or document upload, guide them to the portal or branch."
+    ],
+    sources: [
+      "Agent Permissions Matrix: read-only; cannot open claims/upload docs/approve/reject/negotiate/commit unlisted timelines."
+    ],
+  },
+
 ];
 
 const semanticExpansions = {
