@@ -2,16 +2,7 @@ const STORAGE_KEY = "methaq-agent-assistant-extra-kb";
 const MANAGER_KEY = "METHAQ-MGR-7429";
 const MANAGER_UNLOCK_KEY = "methaq-manager-unlocked";
 const CRM_GATEWAY_KEY = "methaq-crm-gateway-url";
-function resolveDefaultCrmGatewayUrl() {
-  const configured = (typeof window !== "undefined" && window.METHAQ_CRM_GATEWAY) ? String(window.METHAQ_CRM_GATEWAY).trim() : "";
-  if (configured) return configured;
-  if (typeof location === "undefined") return "http://127.0.0.1:5500/claim";
-  const host = String(location.hostname || "");
-  // GitHub Pages / static hosts have no /claim proxy — never POST there (causes HTTP 405).
-  if (/github\.io$/i.test(host) || /chatgpt\.site$/i.test(host)) return "";
-  return location.origin + "/claim";
-}
-const DEFAULT_CRM_GATEWAY_URL = resolveDefaultCrmGatewayUrl();
+const DEFAULT_CRM_GATEWAY_URL = (typeof location !== "undefined" ? location.origin : "http://127.0.0.1:5500") + "/claim";
 
 const routingRules = [
   ["Cash Settlement", "Please issue cash settlement.", ["cash", "settlement", "payment", "amount"]],
@@ -283,6 +274,7 @@ let allKb = [];
 const conversation = {
   activeClaim: "",
   lastCrmData: null,
+  activePolicy: null,
   turns: [],
 };
 
@@ -306,6 +298,19 @@ function isClaimFollowUp(question) {
 
 function extractClaimNumber(value) {
   return String(value || "").match(/\bC-\d{2}-\d{4}-\d{4,8}\b/i)?.[0]?.toUpperCase() || "";
+}
+
+function extractPolicyNumber(value) {
+  const raw = String(value || "");
+  if (extractClaimNumber(raw)) return "";
+  const m = raw.match(/\b(?:POL(?:ICY)?[\s#:-]*)?(\d{10,14})\b/i);
+  return m ? m[1] : "";
+}
+
+function wantsPolicyLookup(question) {
+  const q = normalize(question);
+  if (!extractPolicyNumber(question)) return false;
+  return /(policy|rsa|roadside|road side|towing|cover|coverage|comprehensive|third party|third-party|meth)/i.test(q) || /\bpolicy\b/i.test(q);
 }
 
 function normalize(value) {
@@ -352,25 +357,12 @@ function refreshCrmStatus() {
   if (crmStatus) {
     crmStatus.textContent = gateway
       ? "CRM gateway active. Claim-number questions query live Methaq CRM before using the knowledge base."
-      : "CRM gateway offline. Live claim lookup needs the host PC online with FortiClient VPN + CRM tunnel. SOP answers still work.";
+      : "CRM gateway not connected. Claim-number questions need a secure UAE-networked backend before live status can be retrieved.";
   }
 }
 
 function getCrmGatewayUrl() {
-  const saved = (localStorage.getItem(CRM_GATEWAY_KEY) || "").trim();
-  if (saved) {
-    try {
-      const u = new URL(saved);
-      if (/github\.io$/i.test(u.hostname) || /chatgpt\.site$/i.test(u.hostname)) {
-        localStorage.removeItem(CRM_GATEWAY_KEY);
-      } else {
-        return saved;
-      }
-    } catch {
-      return saved;
-    }
-  }
-  return DEFAULT_CRM_GATEWAY_URL;
+  return localStorage.getItem(CRM_GATEWAY_KEY) || DEFAULT_CRM_GATEWAY_URL;
 }
 
 function renderRoutingList() {
@@ -532,6 +524,12 @@ async function buildAnswer(question) {
     return await renderClaimLookupAnswer(claimNumber, question);
   }
 
+  const policyNumber = extractPolicyNumber(question);
+  if (policyNumber && (wantsPolicyLookup(question) || /(rsa|roadside|road side|towing|cover|coverage)/i.test(question))) {
+    conversation.activePolicy = policyNumber;
+    return await renderPolicyLookupAnswer(policyNumber, question);
+  }
+
   const direct = findDirectAnswer(question);
   if (direct) return renderDirectAnswer(direct);
 
@@ -565,6 +563,54 @@ async function buildAnswer(question) {
       </div>
     </div>
   `;
+}
+
+
+async function renderPolicyLookupAnswer(policyNumber, question = "") {
+  const gateway = getCrmGatewayUrl();
+  if (!gateway) {
+    return renderClaimGatewayError(policyNumber, "CRM gateway URL is not configured.");
+  }
+  try {
+    const policyEndpoint = gateway.replace(/\/claim\/?$/, "/policy");
+    const response = await fetch(policyEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ policyNumber }),
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || !data.found) {
+      const msg = data.error || data.latestNote || `Gateway returned HTTP ${response.status}`;
+      return renderClaimGatewayError(policyNumber, msg);
+    }
+    conversation.activePolicy = policyNumber;
+    conversation.lastCrmData = data;
+    const rsa = findDirectAnswer(question) || findDirectAnswer("roadside assistance towing aaa");
+    const rsaBlock = /(rsa|roadside|road side|towing)/i.test(question) && rsa
+      ? `<div class="crm-card full"><h3>RSA / Towing guidance</h3><p>${escapeHtml(rsa.answer.join(" "))}</p></div>`
+      : "";
+    return `
+      <div class="answer-block crm-expert">
+        <div class="crm-head"><strong>AI Response</strong> Live CRM Policy lookup</div>
+        <p class="crm-focus">Opened Policy section for <strong>${escapeHtml(policyNumber)}</strong>.</p>
+        <div class="crm-grid">
+          <div class="crm-card"><h3>Policy facts</h3><div class="crm-facts">
+            <div class="crm-fact"><span>Policy</span><strong>${escapeHtml(data.policyNumber || policyNumber)}</strong></div>
+            <div class="crm-fact"><span>Status</span><strong>${escapeHtml(data.status || "-")}</strong></div>
+            <div class="crm-fact"><span>Product</span><strong>${escapeHtml(data.product || "-")}</strong></div>
+            <div class="crm-fact"><span>Holder</span><strong>${escapeHtml(data.holder || "-")}</strong></div>
+            <div class="crm-fact"><span>Plate</span><strong>${escapeHtml(data.plate || "-")}</strong></div>
+            <div class="crm-fact"><span>Inception</span><strong>${escapeHtml(data.inceptionDate || "-")}</strong></div>
+            <div class="crm-fact"><span>Expiry</span><strong>${escapeHtml(data.expiryDate || "-")}</strong></div>
+          </div></div>
+          <div class="crm-card"><h3>CRM note</h3><p class="crm-note">${escapeHtml(data.latestNote || data.roadsideHint || "-")}</p></div>
+          ${rsaBlock}
+        </div>
+        <div class="recommendation"><strong>DEPARTMENT TO ASSIGN:</strong> Customer Service<br><strong>SUGGESTED COMMENT:</strong> Please check policy ${escapeHtml(policyNumber)} and assist.</div>
+      </div>`;
+  } catch (error) {
+    return renderClaimGatewayError(policyNumber, error.message);
+  }
 }
 
 async function renderClaimLookupAnswer(claimNumber, question = "") {
