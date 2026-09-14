@@ -35,18 +35,30 @@ const starterPrompts = [
 const directAnswers = [
   {
     id: "file-claim",
-    match: ["file claim", "file a claim", "submit claim", "submit a claim", "open claim", "open a claim", "new claim", "fnol", "accident claim"],
+    match: [
+      "file claim", "file a claim", "filing a claim", "how to file",
+      "submit claim", "submit a claim", "submitting a claim",
+      "open claim", "open a claim", "new claim", "fnol", "accident claim",
+      "raise claim", "raise a claim", "raising claim", "raising a claim",
+      "lodge claim", "lodge a claim", "register claim", "register a claim",
+      "how to claim", "want to claim", "wants to claim", "customer wants to claim",
+      "claim process", "after raising claim", "after submitting claim",
+      "step after claim", "steps after claim", "next step after claim",
+      "what happens after claim", "after claim is raised", "after claim submitted"
+    ],
     department: "Documentation / Document Submitted",
-    comment: "Please check the submitted documents and proceed.",
-    source: "Methaq SOP - Claim Submission and Agent Permissions Matrix",
+    comment: "Please guide the customer to submit online and check documents once the claim is created.",
+    source: "Methaq SOP - Claim Submission and FNOL Process",
     answer: [
-      "The customer can submit a motor claim online through claim.methaq.ae/claim, by going to methaq.ae and choosing Motor Claims, or in person at a branch.",
-      "The claim submission is available 24/7. The customer completes the FNOL form, goes through the qualification wizard, uploads the required documents, reviews the details, and submits the claim.",
-      "Agents cannot open claims on behalf of customers and cannot accept or upload documents on behalf of the customer. The agent should guide the customer to the portal or branch and explain the required documents."
+      "If the customer wants to raise a motor claim, guide them to submit it themselves. Agents cannot open a claim or upload documents on the customer behalf.",
+      "How to raise the claim: the customer goes to claim.methaq.ae/claim (or methaq.ae → Motor Claims), or visits a branch. Online submission is available 24/7.",
+      "On the portal the customer completes the eligibility / qualification wizard, fills the FNOL form, uploads the required documents (Driving License, Mulkiya, Emirates ID of the owner, and the full Police Report PDF), reviews the details, then submits.",
+      "After the claim is raised: the system runs an automatic duplicate-claim check, then the claim enters the Claims Department queue. Document review usually takes 1 to 2 working days. If documents are complete, the claim is accepted and a garage/workshop is assigned for the next stage. If documents are missing, the customer gets a link to re-upload.",
+      "Agent next step: once you have the claim number, open it in CRM, read the latest Claims Team comment and status, then advise the customer only from confirmed system information."
     ],
     sources: [
-      "Claim Submission: Customer visits claim.methaq.ae/claim or Methaq Motor Claims. Available 24/7. Can also submit in person at a branch.",
-      "Agent Permissions Matrix: Agents cannot open claims on behalf of customers. Agents have read-only access."
+      "Claim Submission: claim.methaq.ae/claim, 24/7, branch also available. Agents cannot open/upload for customers.",
+      "FNOL flow: wizard → FNOL → upload docs → submit → duplicate check → Claims queue → doc review 1-2 WD → garage assignment."
     ],
   },
   {
@@ -908,20 +920,38 @@ function findDirectAnswer(question) {
   const q = normalize(question);
   let best = null;
   let bestScore = 0;
+
+  // Intent boost: raise/file/submit/lodge + claim
+  const claimIntent = /(raise|raising|file|filing|submit|submitting|lodge|register|open|new|fnol)/i.test(q) && /\bclaim\b/i.test(q);
+  const afterIntent = /(after|next step|what happens|process)/i.test(q) && /\bclaim\b/i.test(q);
+
   for (const item of directAnswers) {
-    const score = item.match.reduce((sum, phrase) => sum + (q.includes(normalize(phrase)) ? phrase.length : 0), 0);
+    let score = 0;
+    for (const phrase of item.match) {
+      const p = normalize(phrase);
+      if (!p) continue;
+      if (q.includes(p)) {
+        score += p.length + 8;
+        continue;
+      }
+      const words = p.split(" ").filter((w) => w.length > 2);
+      if (words.length >= 2 && words.every((w) => q.includes(w))) {
+        score += Math.floor(p.length / 2) + 4;
+      }
+    }
+    if (item.id === "file-claim" && (claimIntent || afterIntent)) score += 20;
     if (score > bestScore) {
       best = item;
       bestScore = score;
     }
   }
-  return bestScore > 0 ? best : null;
+  return bestScore >= 6 ? best : null;
 }
 
 function renderDirectAnswer(item) {
   return `
     <div class="answer-block">
-      <div><strong>AI Response</strong> ${escapeHtml(item.answer.join("\n\n"))}</div>
+      <div><strong>AI Response</strong><br><br>${item.answer.map((p) => escapeHtml(p)).join("<br><br>")}</div>
       <div class="recommendation">
         <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(item.department)}<br>
         <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(item.comment)}
@@ -955,12 +985,24 @@ function polishText(text) {
 
 function synthesizeAnswer(question, hits) {
   const q = normalize(question);
+
+  // Prefer structured direct answers for common intents even if matcher was weak
+  const boosted = findDirectAnswer(question);
+  if (boosted && boosted.answer && boosted.answer.length) {
+    return escapeHtml(boosted.answer.join(" "));
+  }
+
   const combined = hits.map(({ chunk }) => chunk.text).join("\n");
   const sentences = combined
     .split(/(?<=[.!?])\s+|\n+/)
     .map((s) => s.trim())
-    .filter((s) => s.length > 40)
-    .filter((s) => !/^(table of contents|quick navigation|confidential|created by)/i.test(s));
+    .filter((s) => s.length >= 50)
+    .filter((s) => !/^(table of contents|quick navigation|confidential|created by|party action|step customer|document owner)/i.test(s))
+    .filter((s) => !/search on google|←|→|YTILIBIGILE|ESAHP|TNEMUDOC/i.test(s))
+    .filter((s) => !/\b(Action|System|Customer|Surveyor|Finance|Party)\s*:/i.test(s))
+    .filter((s) => !/\b(and|or|after|to|for|with|the|a|an|on|of|by)\.?$/i.test(s))
+    .filter((s) => /[.!?)]$/.test(s) || /[.!?]$/.test(s) || s.length > 90);
+
   const qTokens = new Set(tokenize(question));
   const ranked = sentences
     .map((sentence) => {
@@ -973,20 +1015,25 @@ function synthesizeAnswer(question, hits) {
   const picked = [];
   const seen = new Set();
   for (const item of ranked) {
-    const key = normalize(item.sentence).slice(0, 80);
+    const cleaned = polishText(item.sentence);
+    if (/\b(and|or|after|to|for|with|the|a|an)\.?$/i.test(cleaned)) continue;
+    const key = normalize(cleaned).slice(0, 80);
     if (seen.has(key)) continue;
     seen.add(key);
-    picked.push(polishText(item.sentence));
+    picked.push(cleaned);
     if (picked.length >= 3) break;
   }
-  if (!picked.length) picked.push(polishText(trimSource(combined)));
 
-  // Build one clean answer block instead of choppy fragments.
-  const body = picked.join(" ");
-  const lead = q.includes("comment") || q.includes("department")
-    ? "Here is the recommended guidance:"
-    : "Here is the answer:";
-  return `${escapeHtml(lead)}<br><br>${escapeHtml(body)}`;
+  if (!picked.length) {
+    return escapeHtml("I could not build a clear answer from the knowledge snippets for this question. Ask it another way, or paste a claim number like C-02-0826-35206 for a live CRM lookup.");
+  }
+
+  const wantsSteps = /(step|process|how|after|what do we do|what happens)/i.test(q);
+  if (wantsSteps && picked.length > 1) {
+    const steps = picked.map((s, i) => `${i + 1}. ${s}`).join("<br>");
+    return `${escapeHtml("Here are the clear steps:")}<br><br>${steps}`;
+  }
+  return escapeHtml(picked.join(" "));
 }
 
 function unavailableAnswer(question, route) {
