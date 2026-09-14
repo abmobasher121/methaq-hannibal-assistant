@@ -2,7 +2,8 @@ const STORAGE_KEY = "methaq-agent-assistant-extra-kb";
 const MANAGER_KEY = "METHAQ-MGR-7429";
 const MANAGER_UNLOCK_KEY = "methaq-manager-unlocked";
 const CRM_GATEWAY_KEY = "methaq-crm-gateway-url";
-const DEFAULT_CRM_GATEWAY_URL = (typeof location !== "undefined" ? location.origin : "http://127.0.0.1:5500") + "/claim";
+/* Gateway URL: Manager Hub localStorage first, then window.METHAQ_CRM_GATEWAY from crm-config.js.
+   Do not fall back to the static-host /claim path (e.g. GitHub Pages). */
 
 const routingRules = [
   ["Cash Settlement", "Please issue cash settlement.", ["cash", "settlement", "payment", "amount"]],
@@ -186,19 +187,19 @@ const directAnswers = [
       "towing number"
     ],
     department: "Towing",
-    comment: "Please check and proceed with the towing request. Share roadside assistance numbers and confirm vehicle is undrivable.",
+    comment: "Please check and proceed with the towing request. Identify the RSA provider first, share only that provider's number, and confirm the vehicle is undrivable.",
     source: "Methaq SOP - Roadside Assistance and Towing",
     answer: [
-      "Yes — roadside assistance / towing is covered for Methaq customers when the vehicle is undrivable.",
-      "Primary Methaq number: call 600 565 695 and select Roadside Assistance.",
-      "AAA (Methaq customers, undrivable vehicle): 600 508 181. Arabic line: 04 402 0738. English line: 04 402 0737.",
-      "Emirates Auction roadside assistance: 600 500 372.",
-      "Agent steps: verify plate number or policy number, confirm coverage, then transfer the customer to roadside assistance. Methaq pays towing only for undrivable vehicles — not for unnecessary or multiple trips. For non-Methaq customers hit by a Methaq customer, towing is usually their own insurer's responsibility; if they insist, ask them to keep the invoice without promising coverage."
+      "Before giving any RSA number, identify which roadside provider the customer has (policy lookup / CRM / portal benefits). Never dump both AAA and Emirates Auction numbers.",
+      "If provider is AAA → call 600508181 only. Arabic 04 402 0738 / English 04 402 0737 only if needed for AAA.",
+      "If provider is Emirates Auction Roadside Assistance → call 600500372 only.",
+      "If provider is unknown: ask for the policy number, look up the policy / RSA benefits, and do not give numbers yet.",
+      "Coverage is for undrivable vehicles only (no unnecessary or multiple trips). Methaq main line 600 565 695 (select RSA) may be mentioned as a general Methaq contact AFTER provider check when appropriate — not as a substitute for AAA vs Emirates Auction. For non-Methaq customers hit by a Methaq customer, towing is usually their own insurer's responsibility; if they insist, ask them to keep the invoice without promising coverage."
     ],
     sources: [
-      "FAQ Q17: Yes for Methaq customers — call 600 565 695 and select roadside assistance.",
-      "SOP contacts: AAA 600508181 / Arabic 044020738 / English 044020737; Emirates Auction roadside 600500372.",
-      "Coverage limit: undrivable vehicles only; no unnecessary/multiple trips."
+      "RSA check-first: identify provider via policy/CRM/portal before sharing any number.",
+      "AAA only: 600508181 (Arabic 04 402 0738 / English 04 402 0737 if needed). Emirates Auction only: 600500372.",
+      "FAQ Q17 / SOP: undrivable vehicles only; Methaq 600 565 695 select RSA is general contact after provider check."
     ],
   },
   
@@ -356,13 +357,26 @@ function refreshCrmStatus() {
   if (crmGatewayUrl) crmGatewayUrl.value = gateway;
   if (crmStatus) {
     crmStatus.textContent = gateway
-      ? "CRM gateway active. Claim-number questions query live Methaq CRM before using the knowledge base."
-      : "CRM gateway not connected. Claim-number questions need a secure UAE-networked backend before live status can be retrieved.";
+      ? "CRM gateway configured. Claim/policy questions query live Methaq CRM via your gateway before falling back to the knowledge base."
+      : "CRM gateway not configured. Set METHAQ_CRM_GATEWAY in crm-config.js or paste a tunnel URL ending in /claim in Manager Hub. Live claim/policy lookup stays off until a gateway is set (local CRM gateway + FortiClient VPN required).";
   }
 }
 
 function getCrmGatewayUrl() {
-  return localStorage.getItem(CRM_GATEWAY_KEY) || DEFAULT_CRM_GATEWAY_URL;
+  const fromStorage = (localStorage.getItem(CRM_GATEWAY_KEY) || "").trim();
+  if (fromStorage) return fromStorage;
+  // Same-origin proxy (local serve-all or live Cloudflare tunnel UI) always has /claim
+  try {
+    const host = (typeof location !== "undefined" ? location.hostname : "") || "";
+    if (/^(localhost|127\.0\.0\.1)$/i.test(host) || /trycloudflare\.com$/i.test(host)) {
+      return location.origin + "/claim";
+    }
+  } catch (_) {}
+  const fromConfig = (typeof window !== "undefined" && window.METHAQ_CRM_GATEWAY
+    ? String(window.METHAQ_CRM_GATEWAY)
+    : "").trim();
+  if (fromConfig) return fromConfig;
+  return "";
 }
 
 function renderRoutingList() {
@@ -566,6 +580,98 @@ async function buildAnswer(question) {
 }
 
 
+
+function pickRsaProviderFromText(text) {
+  const t = String(text || "");
+  const aaa = /\baaa\b/i.test(t);
+  const ea = /emirates\s*auction/i.test(t);
+  if (aaa && !ea) return "AAA";
+  if (ea && !aaa) return "Emirates Auction";
+  if (aaa && ea) return "AMBIGUOUS";
+  return null;
+}
+
+function resolveRsaGuidance(crmData, question) {
+  const q = String(question || "");
+  const rsaQuestion = /(rsa|road\s*side|roadside|towing|tow\b|aaa|emirates\s*auction|breakdown|undrivable|not drivable|assistance number|towing number)/i.test(q);
+
+  let provider = null;
+  if (crmData && typeof crmData === "object") {
+    const keys = ["roadsideHint", "rsaProvider", "rsa", "roadside", "assistanceProvider", "latestNote", "coverages", "benefits", "notes"];
+    for (const key of keys) {
+      if (crmData[key] == null) continue;
+      const raw = typeof crmData[key] === "string" ? crmData[key] : JSON.stringify(crmData[key]);
+      const found = pickRsaProviderFromText(raw);
+      if (found === "AAA" || found === "Emirates Auction") {
+        provider = found;
+        break;
+      }
+      if (found === "AMBIGUOUS" && !provider) provider = "AMBIGUOUS";
+    }
+    if (!provider || provider === "AMBIGUOUS") {
+      try {
+        const found = pickRsaProviderFromText(JSON.stringify(crmData));
+        if (found === "AAA" || found === "Emirates Auction") provider = found;
+        else if (found === "AMBIGUOUS") provider = provider || "AMBIGUOUS";
+      } catch (e) { /* ignore */ }
+    }
+  }
+
+  const fromQuestion = pickRsaProviderFromText(q);
+  if (fromQuestion === "AAA" || fromQuestion === "Emirates Auction") provider = fromQuestion;
+
+  if (!rsaQuestion && !(provider === "AAA" || provider === "Emirates Auction")) return null;
+
+  if (provider === "AAA") {
+    return {
+      provider: "AAA",
+      number: "600508181",
+      title: "Call this number — AAA",
+      lines: [
+        "Roadside provider identified: AAA.",
+        "Call 600508181 only.",
+        "Arabic (AAA only, if needed): 04 402 0738. English (AAA only, if needed): 04 402 0737.",
+        "Do not give the Emirates Auction number.",
+        "Undrivable-vehicle coverage only. Methaq main line 600 565 695 (select RSA) is a general Methaq contact after provider check — not a substitute for AAA."
+      ]
+    };
+  }
+  if (provider === "Emirates Auction") {
+    return {
+      provider: "Emirates Auction",
+      number: "600500372",
+      title: "Call this number — Emirates Auction",
+      lines: [
+        "Roadside provider identified: Emirates Auction Roadside Assistance.",
+        "Call 600500372 only.",
+        "Do not give the AAA number.",
+        "Undrivable-vehicle coverage only. Methaq main line 600 565 695 (select RSA) is a general Methaq contact after provider check — not a substitute for Emirates Auction."
+      ]
+    };
+  }
+  return {
+    provider: null,
+    number: null,
+    title: "RSA — identify provider first",
+    lines: [
+      "Before giving any RSA number, identify which roadside provider the customer has (policy lookup / CRM / portal benefits).",
+      "Do not list AAA and Emirates Auction numbers together.",
+      "Ask for the policy number and check RSA/benefits in the portal if the provider is unknown.",
+      "Once identified: AAA → 600508181 only; Emirates Auction → 600500372 only.",
+      "Coverage applies to undrivable vehicles only."
+    ]
+  };
+}
+
+function renderRsaGuidanceCard(guidance) {
+  if (!guidance) return "";
+  const numberHtml = guidance.number
+    ? `<p class="crm-note"><strong>Call this number:</strong> ${escapeHtml(guidance.number)}</p>`
+    : `<p class="crm-note"><strong>Do not share RSA numbers yet</strong> — provider not identified.</p>`;
+  const lines = guidance.lines.map((line) => `<li>${escapeHtml(line)}</li>`).join("");
+  return `<div class="crm-card full"><h3>${escapeHtml(guidance.title)}</h3>${numberHtml}<ul>${lines}</ul></div>`;
+}
+
 async function renderPolicyLookupAnswer(policyNumber, question = "") {
   const gateway = getCrmGatewayUrl();
   if (!gateway) {
@@ -585,10 +691,8 @@ async function renderPolicyLookupAnswer(policyNumber, question = "") {
     }
     conversation.activePolicy = policyNumber;
     conversation.lastCrmData = data;
-    const rsa = findDirectAnswer(question) || findDirectAnswer("roadside assistance towing aaa");
-    const rsaBlock = /(rsa|roadside|road side|towing)/i.test(question) && rsa
-      ? `<div class="crm-card full"><h3>RSA / Towing guidance</h3><p>${escapeHtml(rsa.answer.join(" "))}</p></div>`
-      : "";
+    const rsaGuidance = resolveRsaGuidance(data, question);
+    const rsaBlock = rsaGuidance ? renderRsaGuidanceCard(rsaGuidance) : "";
     return `
       <div class="answer-block crm-expert">
         <div class="crm-head"><strong>AI Response</strong> Live CRM Policy lookup</div>
@@ -767,6 +871,7 @@ function renderCrmExpertAnswer(claimNumber, data, question) {
         <h3>What you should do next</h3>
         <ul>${nextHtml}</ul>
       </div>
+      ${renderRsaGuidanceCard(resolveRsaGuidance(data, question))}
       <div class="recommendation">
         <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(a.routeDept)}<br>
         <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(a.routeComment)}
@@ -783,11 +888,13 @@ function renderClaimGatewayError(claimNumber, message) {
   return `
     <div class="answer-block">
       <div class="recommendation warning">
-        <strong>AI Response</strong> I recognized claim ${escapeHtml(claimNumber)} and tried live CRM lookup, but the CRM gateway did not return data.
+        <strong>AI Response</strong> I recognized ${escapeHtml(claimNumber)} and tried live CRM lookup, but the CRM gateway did not return data.
         <br><br>
         Status: ${escapeHtml(message)}
         <br><br>
-        Please confirm FortiClient VPN is connected on the host PC, then try again. If it still fails, contact <strong>Nouran</strong> or <strong>Abdelhafiz</strong> to cross-check the claim in CRM.
+        Check that the <strong>local CRM gateway on the PC is running</strong>, connect <strong>FortiClient VPN</strong> if required, then retry.
+        If the tunnel URL changed, update the CRM Gateway URL in <strong>Manager Hub</strong> or set <code>window.METHAQ_CRM_GATEWAY</code> in <code>crm-config.js</code> (must end in <code>/claim</code>).
+        If it still fails, contact <strong>Nouran</strong> or <strong>Abdelhafiz</strong> to cross-check in CRM.
       </div>
       <div class="recommendation">
         <strong>DEPARTMENT TO ASSIGN:</strong> Customer Service<br>
