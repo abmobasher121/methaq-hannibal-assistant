@@ -2,7 +2,16 @@ const STORAGE_KEY = "methaq-agent-assistant-extra-kb";
 const MANAGER_KEY = "METHAQ-MGR-7429";
 const MANAGER_UNLOCK_KEY = "methaq-manager-unlocked";
 const CRM_GATEWAY_KEY = "methaq-crm-gateway-url";
-const DEFAULT_CRM_GATEWAY_URL = (typeof location !== "undefined" ? location.origin : "http://127.0.0.1:5500") + "/claim";
+function resolveDefaultCrmGatewayUrl() {
+  const configured = (typeof window !== "undefined" && window.METHAQ_CRM_GATEWAY) ? String(window.METHAQ_CRM_GATEWAY).trim() : "";
+  if (configured) return configured;
+  if (typeof location === "undefined") return "http://127.0.0.1:5500/claim";
+  const host = String(location.hostname || "");
+  // GitHub Pages / static hosts have no /claim proxy — never POST there (causes HTTP 405).
+  if (/github\.io$/i.test(host) || /chatgpt\.site$/i.test(host)) return "";
+  return location.origin + "/claim";
+}
+const DEFAULT_CRM_GATEWAY_URL = resolveDefaultCrmGatewayUrl();
 
 const routingRules = [
   ["Cash Settlement", "Please issue cash settlement.", ["cash", "settlement", "payment", "amount"]],
@@ -343,12 +352,25 @@ function refreshCrmStatus() {
   if (crmStatus) {
     crmStatus.textContent = gateway
       ? "CRM gateway active. Claim-number questions query live Methaq CRM before using the knowledge base."
-      : "CRM gateway not connected. Claim-number questions need a secure UAE-networked backend before live status can be retrieved.";
+      : "CRM gateway offline. Live claim lookup needs the host PC online with FortiClient VPN + CRM tunnel. SOP answers still work.";
   }
 }
 
 function getCrmGatewayUrl() {
-  return localStorage.getItem(CRM_GATEWAY_KEY) || DEFAULT_CRM_GATEWAY_URL;
+  const saved = (localStorage.getItem(CRM_GATEWAY_KEY) || "").trim();
+  if (saved) {
+    try {
+      const u = new URL(saved);
+      if (/github\.io$/i.test(u.hostname) || /chatgpt\.site$/i.test(u.hostname)) {
+        localStorage.removeItem(CRM_GATEWAY_KEY);
+      } else {
+        return saved;
+      }
+    } catch {
+      return saved;
+    }
+  }
+  return DEFAULT_CRM_GATEWAY_URL;
 }
 
 function renderRoutingList() {
