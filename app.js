@@ -61,36 +61,48 @@ const directAnswers = [
       "FNOL flow: wizard → FNOL → upload docs → submit → duplicate check → Claims queue → doc review 1-2 WD → garage assignment."
     ],
   },
-  {
+    {
     id: "required-documents",
-    match: ["required document", "required documents", "documents needed", "what documents", "missing documents", "papers needed", "which documents", "docs needed", "document list", "what papers"],
+    match: [
+      "required document", "required documents", "documents needed", "what documents",
+      "missing documents", "papers needed", "which documents", "docs needed", "document list",
+      "what papers", "papers to upload", "which papers", "docs required", "documents required",
+      "what docs", "documents to upload", "missing docs", "what to upload", "documents for claim",
+      "claim documents", "supporting documents", "required papers", "police report needed",
+    ],
     department: "Documentation / Document Submitted",
     comment: "Please check the submitted documents and proceed.",
     source: "Methaq SOP - Required Documents",
     answer: [
       "For a standard accident claim, the customer needs clear copies of the driving license for the driver at the time of accident, Mulkiya or vehicle registration card, Emirates ID or National ID for the vehicle owner, and the complete police report in PDF format.",
       "Damage photos are optional but recommended. Copies must be clear and legible from both sides where applicable.",
-      "Documents must be uploaded through the portal. They should not be accepted through WhatsApp or email attachments."
+      "Documents must be uploaded through the portal. They should not be accepted through WhatsApp or email attachments.",
     ],
     sources: [
       "Required Documents: Valid Driving License, Mulkiya, Emirates ID / National ID, Complete Police Report, Damage Photos optional.",
-      "SOP note: Documents must not be accepted via WhatsApp or email attachments."
+      "SOP note: Documents must not be accepted via WhatsApp or email attachments.",
     ],
   },
-  {
+    {
     id: "claim-status",
-    match: ["claim status", "status of claim", "check claim", "follow up claim", "latest update", "where is claim", "any update on claim", "claim update", "what is happening with claim", "follow up on claim"],
+    match: [
+      "claim status", "status of claim", "check claim", "follow up claim", "latest update",
+      "where is claim", "any update on claim", "claim update", "what is happening with claim",
+      "follow up on claim", "any update", "update on the claim", "claim progress",
+      "progress of claim", "status update", "asking for status", "current status",
+      "where is my claim"
+    ],
     department: "Customer Service",
     comment: "Please check and assist with the request.",
     source: "Methaq SOP - Claim Status Inquiry",
     answer: [
       "First verify the customer, then open the claim in the system using the claim reference number. If the claim number is not available, use the plate number, policy number, or police report number.",
       "Read the latest Claims Team comment, check the current status, review pending actions or missing documents, then answer only from the confirmed system information.",
-      "Document the call in the system after giving the customer the confirmed update."
+      "Document the call in the system after giving the customer the confirmed update.",
     ],
     sources: [
       "Claim Status Inquiry: Open the claim, read latest comment, check current status, review pending actions, answer customer, document the call.",
-      "Customer Verification Process: Ask for claim reference first, then plate number, policy number, or police report."
+      "Customer Verification Process: Ask for claim reference first, then plate number, policy number, or police report.",
     ],
   },
   {
@@ -168,112 +180,140 @@ const directAnswers = [
       "Cash Settlement stage: Bank transfer turnaround is 15 working days."
     ],
   },
-  {
+    {
     id: "alternative-car",
-    match: ["alternative car", "rental car", "replacement car", "car compensation", "compensation days"],
+    match: [
+      "alternative car", "rental car", "replacement car", "car compensation", "compensation days",
+      "hire car", "replacement vehicle", "vehicle allowance", "alternative vehicle",
+      "temporary car", "temp car", "alt car", "courtesy car", "daily allowance",
+      "days compensation"
+    ],
     department: "Compensation",
     comment: "Please check and process compensation.",
     source: "Methaq SOP - Alternative Car Compensation",
     answer: [
-      "Alternative car compensation covers the period the customer cannot use their vehicle during repair. It is not an actual rental car service.",
-      "The maximum is 15 working days. It applies only when the LPO is approved and the vehicle is physically at the workshop.",
-      "It does not apply to cash settlement or total loss cases. Required documents include the workshop job card, valid vehicle owner ID, and the owner IBAN certificate."
+      "Alternative car compensation is a daily cash allowance for the period the customer cannot use their vehicle during repair. It is not an actual rental car.",
+      "Eligibility (confirm on the claim before promising): vehicles damaged by a Methaq policyholder, and Comprehensive customers who were not at fault. Maximum 15 working days. Conditions: LPO approved AND vehicle physically at the workshop.",
+      "Not applicable for cash settlement or total loss. Daily amount is set by Methaq based on vehicle model and repair duration — not customer preference.",
+      "Required documents: workshop job card (repair dates), valid vehicle owner ID, and owner IBAN certificate. For requests needing approval, raise a ticket / route to Claims Team.",
     ],
     sources: [
-      "Alternative Car Compensation: Maximum 15 working days, conditions are LPO approved and vehicle at workshop.",
-      "Not applicable for cash settlement or total loss."
+      "Alternative Car Compensation: Applies to vehicles damaged by a Methaq policyholder and Comprehensive customers not at fault; max 15 WD; LPO approved + vehicle at workshop.",
+      "Not applicable for cash settlement or total loss. Daily amount by Methaq (model/duration). Docs: job card, owner ID, IBAN.",
     ],
   },
-  {
+    {
     id: "total-loss",
-    match: ["total loss", "repair cost exceeds", "car value", "vehicle value", "write off"],
+    match: [
+      "total loss", "repair cost exceeds", "car value", "vehicle value", "write off",
+      "written off", "write-off", "written-off", "beyond repair", "totalled", "surrender vehicle",
+      "plates after total loss", "collect plates"
+    ],
     department: "Total Loss",
     comment: "Please check and proceed with total loss.",
     source: "Methaq SOP - Total Loss Compensation",
     answer: [
-      "A claim is treated as total loss when the repair cost exceeds the vehicle value, based on market value assessment.",
-      "The process includes total loss assessment within 3 working days, internal approval within 5 working days, then payment within 15 working days after acceptance and required documents.",
-      "The customer may need to complete vehicle surrender and ownership transfer documents. In total loss cases, plates remain at the original inspection workshop for collection."
+      "A claim is treated as total loss when the repair cost exceeds the vehicle market value, based on assessment. Do not tell the customer it is total loss unless the system / evaluation shows that.",
+      "Timelines: assessment within 3 working days, internal approval within 5 working days, then payment within 15 working days after acceptance and required documents.",
+      "Customer may need vehicle surrender and ownership transfer documents. If the offer is rejected, internal re-review is 7 working days (including legal counsel review).",
+      "Plates remain at the original inspection workshop for collection, even if the vehicle is towed to an auction yard.",
     ],
     sources: [
-      "Total Loss Compensation: Repair cost exceeds vehicle value, assessment 3 working days, internal approval 5 working days, payment 15 working days.",
-      "SOP note: Plates remain at the original inspection workshop."
+      "Total Loss: repair cost exceeds market value; assessment 3 WD, internal approval 5 WD, payment 15 WD; rejection re-review 7 WD.",
+      "SOP: plates remain at original inspection workshop (even if towed to auction).",
     ],
   },
-  {
+    {
     id: "towing",
     match: [
-      "towing",
-      "tow",
-      "recovery",
-      "roadside",
-      "road side",
-      "roadside assistance",
-      "road side assistance",
-      "rsa",
-      "car not drivable",
-      "vehicle not drivable",
-      "undrivable",
-      "aaa",
-      "breakdown",
-      "flat tire",
-      "flat tyre",
-      "stuck on road",
-      "tow truck",
-      "recovery truck",
-      "roadside number",
-      "assistance number",
-      "towing number"
+      "towing", "tow", "recovery", "roadside", "road side", "roadside assistance",
+      "road side assistance", "rsa", "car not drivable", "vehicle not drivable",
+      "undrivable", "aaa", "breakdown", "flat tire", "flat tyre", "stuck on road",
+      "tow truck", "recovery truck", "roadside number", "assistance number", "towing number",
+      "need a tow", "emirates auction", "rsa number", "rsa provider"
     ],
     department: "Towing",
     comment: "Please check and proceed with the towing request. Identify the RSA provider first, share only that provider's number, and confirm the vehicle is undrivable.",
     source: "Methaq SOP - Roadside Assistance and Towing",
     answer: [
-      "Before giving any RSA number, identify which roadside provider the customer has (policy lookup / CRM / portal benefits). Never dump both AAA and Emirates Auction numbers.",
+      "Before giving any RSA number, identify which roadside provider the customer has (policy lookup / CRM / portal benefits). Never give both AAA and Emirates Auction numbers together.",
       "If provider is AAA → call 600508181 only. Arabic 04 402 0738 / English 04 402 0737 only if needed for AAA.",
       "If provider is Emirates Auction Roadside Assistance → call 600500372 only.",
       "If provider is unknown: ask for the policy number, look up the policy / RSA benefits, and do not give numbers yet.",
-      "Coverage is for undrivable vehicles only (no unnecessary or multiple trips). Methaq main line 600 565 695 (select RSA) may be mentioned as a general Methaq contact AFTER provider check when appropriate — not as a substitute for AAA vs Emirates Auction. For non-Methaq customers hit by a Methaq customer, towing is usually their own insurer's responsibility; if they insist, ask them to keep the invoice without promising coverage."
+      "Coverage is for undrivable vehicles only (no unnecessary or multiple trips). Methaq main line 600 565 695 (select RSA) may be mentioned as a general Methaq contact AFTER provider check — not as a substitute for AAA vs Emirates Auction.",
+      "For non-Methaq customers hit by a Methaq customer, towing is usually their own insurer's responsibility; if they insist, ask them to keep the invoice without promising Methaq coverage.",
     ],
     sources: [
       "RSA check-first: identify provider via policy/CRM/portal before sharing any number.",
       "AAA only: 600508181 (Arabic 04 402 0738 / English 04 402 0737 if needed). Emirates Auction only: 600500372.",
-      "FAQ Q17 / SOP: undrivable vehicles only; Methaq 600 565 695 select RSA is general contact after provider check."
+      "FAQ Q17 / SOP: undrivable vehicles only; Methaq 600 565 695 select RSA is general contact after provider check.",
     ],
   },
   
-  {
+    {
     id: "garage-change",
-    match: ["change garage", "garage issue", "workshop issue", "change workshop", "assigned garage", "workshop change"],
+    match: [
+      "change garage", "garage issue", "workshop issue", "change workshop", "assigned garage",
+      "workshop change", "another workshop", "another garage", "different garage",
+      "different workshop", "pick workshop", "choose garage", "select garage",
+      "not happy with garage", "not happy with workshop", "wrong garage", "transfer workshop",
+    ],
     department: "Garage Issue / Change Garage",
     comment: "Please check and proceed with the garage request.",
     source: "Methaq SOP - Workshop Policies",
     answer: [
       "Methaq selects the workshop based on quotations and vehicle models. Customers do not have a workshop selection list.",
       "If the customer requests a workshop change, first try to convince the customer to stay with the assigned workshop, then explain that a change may take 1 to 2 additional days.",
-      "That extra time does not count toward alternative car compensation."
+      "That extra time does not count toward alternative car compensation.",
     ],
     sources: [
       "Workshop Policies: Company selects workshop based on quotations and vehicle models.",
-      "Workshop change: Explain change may take 1-2 additional days and does not count toward alternative car compensation."
+      "Workshop change: Explain change may take 1-2 additional days and does not count toward alternative car compensation.",
     ],
   },
-  {
+    {
     id: "lpo",
-    match: ["lpo", "repair approval", "local purchase order", "why does lpo matter"],
+    match: [
+      "lpo", "repair approval", "local purchase order", "why does lpo matter",
+      "lpo approved", "lpo status", "lpo pending", "waiting for lpo", "workshop approval",
+      "repair order"
+    ],
     department: "Repair",
     comment: "Please check and proceed with repair.",
     source: "Methaq SOP - FAQ LPO",
     answer: [
-      "The LPO is Methaq internal repair approval sent to the workshop.",
+      "The LPO (Local Purchase Order) is Methaq's internal repair approval sent to the workshop. Without it, the workshop cannot legally start repair work.",
       "It matters because workshop repair and alternative car compensation depend on LPO approval. For alternative car compensation, the LPO must be approved and the vehicle must be physically at the workshop.",
-      "Do not provide the LPO itself to the customer."
+      "Do not provide the LPO itself to the customer. Tell them only the status (pending / approved) from the system.",
     ],
     sources: [
       "FAQ Q6: The LPO is the internal repair approval from Methaq sent to the workshop.",
-      "Data Privacy rule: Do not provide the LPO to the customer."
+      "Data Privacy rule: Do not provide the LPO to the customer.",
     ],
   },
+  {
+    id: "cash-settlement",
+    match: [
+      "cash settlement", "cash instead of repair", "want cash", "prefer cash",
+      "settlement instead of repair", "receive cash", "cash rather than repair",
+      "choose cash", "request cash settlement", "digital settlement form"
+    ],
+    department: "Cash Settlement",
+    comment: "Please review cash settlement request with Claims Team. Do not promise cash settlement.",
+    source: "Methaq SOP - Cash Settlement / FAQ Q8",
+    answer: [
+      "Methaq does not proactively offer cash settlement. If the customer requests cash instead of repair, the Claims Team assesses damage after inspection and may send a digital settlement form for signature.",
+      "Signing the settlement form means the customer waives the right to repair and is no longer eligible for alternative car compensation. Settlement amount is based on Methaq's negotiated repair/parts prices — not private garage quotes. Agents must never negotiate the amount.",
+      "Requirements: official IBAN certificate (bank letterhead or stamped; name must match policyholder; handwritten IBAN not accepted) and signed settlement form (signature must match ID). Payment: up to 15 working days after approval.",
+      "If an LPO was already issued: do not promise cash. Refer to Claims Team to review whether settlement is still possible (check if vehicle is at workshop / repair started). Raise a ticket for cash settlement requests that need approval.",
+      "For third-party property damage: only the legal owner of the damaged property, or someone with official power of attorney, can request cash settlement."
+    ],
+    sources: [
+      "FAQ Q8 / Cash Settlement: not proactive; Claims assesses after inspection; signing waives repair + alt car; Methaq negotiated prices; agents never negotiate.",
+      "Payment up to 15 WD after approval. IBAN + signed form required. LPO already issued → refer Claims Team. Q16: owner or POA only for TP property cash."
+    ],
+  },
+
   {
     id: "excess-deductible",
     match: [
@@ -313,12 +353,13 @@ const directAnswers = [
       "Data Privacy rules: no quotes/settlement figures/LPO/internal process; no approved/rejected without documentation; no promise to call back."
     ],
   },
-  {
+    {
     id: "agent-permissions",
     match: [
-      "can i open a claim", "can agent open claim", "upload for customer",
-      "agent permissions", "what can agents do", "read only", "can i approve",
-      "can i reject claim", "negotiate settlement"
+      "can i open a claim", "can agent open claim", "upload for customer", "agent permissions",
+      "what can agents do", "read only", "can i approve", "can i reject claim",
+      "negotiate settlement", "can i open claim", "agents cannot", "can agents",
+      "agent can", "open on behalf", "upload on behalf", "can i upload documents",
     ],
     department: "Customer Service",
     comment: "Please guide the customer within agent permissions.",
@@ -326,10 +367,10 @@ const directAnswers = [
     answer: [
       "Agents have read-only access. You can check claim stage, guide the customer, identify via plate/claim number, share workshop name/location when appropriate, and add a comment to route the case.",
       "Agents cannot: open new claims, upload documents on behalf of the customer, approve or reject claims, negotiate settlement amounts, determine premiums, or commit to timelines not stated in the SOP.",
-      "If the customer needs a new claim or document upload, guide them to the portal or branch."
+      "If the customer needs a new claim or document upload, guide them to the portal or branch.",
     ],
     sources: [
-      "Agent Permissions Matrix: read-only; cannot open claims/upload docs/approve/reject/negotiate/commit unlisted timelines."
+      "Agent Permissions Matrix: read-only; cannot open claims/upload docs/approve/reject/negotiate/commit unlisted timelines.",
     ],
   },
 
@@ -1026,6 +1067,13 @@ function findDirectAnswer(question) {
       }
     }
     if (item.id === "file-claim" && (claimIntent || afterIntent)) score += 20;
+    if (item.id === "agent-permissions" && /(can i|can agent|agents? (can|cannot|can't)|what can agents|on behalf|upload for customer|negotiate settlement)/i.test(q) && !/(say approved|tell approved|settlement amount|quote amount|promise to call|share (the )?lpo)/i.test(q)) score += 28;
+    if (item.id === "cash-settlement" && /(cash settlement|cash instead|prefer cash|want cash|choose cash|digital settlement)/i.test(q)) score += 22;
+    if (item.id === "alternative-car" && /(alternative car|rental car|replacement (car|vehicle)|compensation days|daily allowance|hire car)/i.test(q)) score += 12;
+    if (item.id === "third-party-at-fault" && /(at fault|i caused|caused the accident|i hit)/i.test(q) && /(third party|third-party|\btp\b)/i.test(q)) score += 18;
+    if (item.id === "third-party-not-at-fault" && /(hit me|someone hit|other driver|not at fault|another driver)/i.test(q) && /(third party|third-party|\btp\b|repair my car)/i.test(q)) score += 18;
+    if (item.id === "required-documents" && /(document|documents|docs|papers|mulkiya|police report|emirates id|what to upload)/i.test(q) && !/(raise|file|submit|lodge|register|open)\s+(a\s+)?claim/i.test(q)) score += 18;
+    if (item.id === "privacy-rules" && /(settlement amount|quote amount|say approved|tell approved|can i say|promise to call|share (the )?lpo|share the quote|internal number|cash settlement amount)/i.test(q)) score += 30;
     if (score > bestScore) {
       best = item;
       bestScore = score;
