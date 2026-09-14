@@ -1,0 +1,786 @@
+[
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 1",
+    "chunk": 1,
+    "text": "Unified Standard Operating\nProcedure (SOP)\nMethaq Takaful Insurance\nComprehensive Guide for Customer Service and Motor Claims\nJanuary 2026\nConfidential – Internal Use Only\nCreated By: Mohamed Bassam"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 2",
+    "chunk": 1,
+    "text": "Quick Navigation Guide\nReady-to-use scripts\nCheck claim status\nSLA Deadlines\nFrequently Asked Questions\nComplaint Escalation\nGlossary of Terms\nRequired Documents\nBranch Locations & Contacts"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 3",
+    "chunk": 1,
+    "text": "Table of Contents\n# Section Page\n1 Table of Contents 1\nGeneral Guidelines for\n2 2\nAgents\nProduct & Policy\n3 4\nOverview\n4 Claims Process 6\n& Payments\n5 12\nCompensation\n& Standard Responses\n6 14\nScripts\nComplaint Handling\n7 18\nProcedure\nFrequently Asked\n8 20\nQuestions\n9 Glossary of Terms 24\nBranch Locations\n26\nKey Contacts"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 4",
+    "chunk": 1,
+    "text": "Introduction & Purpose\n1\nWhy Does This SOP Exist?\nThis SOP aims to standardize how Methaq Takaful Insurance call center agents\nhandle customer calls related to motor insurance policies and claims. Its\nobjectives are:\nReduce inaccurate or inconsistent information provided to customers\nReduce unnecessary escalations to the Claims Department\nIncrease first-call resolution rate\nEnsure every agent, regardless of experience, follows the same procedure\nThe Golden Rule: Never guess. Always check the system before speaking. If you don't\nknow the answer, tell the customer you will check — never make up an answer.\n1"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 5",
+    "chunk": 1,
+    "text": "How to Use This Guide\n...If you need ...Go to\nHow to speak with customers Section 6\nUnderstanding claim stages Section 6\nA ready-to-use script Section 6\nWhen and how to escalate Section 7\nAnswer to a common question Section 8\nUnderstanding a term Section 9\nSLA deadlines Section 4.7\nRequired documents Section 4.4\nContact numbers Appendix"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 6",
+    "chunk": 1,
+    "text": "General Guidelines for Agents\n2\nRequired Mindset: Think Like a Claims\nOfficer\nBefore answering any customer, ask yourself these five\nquestions:\nWhere is the claim now?\nWhat is the next step?\nIs anything pending?\nWho is responsible for this stage?\nIs there anything the customer needs to do?\nWarning: If you don't know the answers to these five questions, do NOT\n.answer the customer. Check the system first"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 7",
+    "chunk": 1,
+    "text": "Six Verification Steps Before Every\nAnswer\nStep 1: Open the Claim\nAction: Search for the claim\nreference number in the system\nAction: If not available, use the\nStep 3: Read the Latest\nplate number or policy number\nComment\nAction: Read the most recent\nnote from the Claims Team\nAction: Check the date of the\nlast update\nStep 4: Review Pending Actions\nAction: Check if the customer\nneeds to submit anything\nAction: Check if any deadlines\nare approaching Step 2: Check the Status\nAction: Look at the current\nclaim status in the system\nAction: Check if there are any\npending actions\nStep 5: Answer\nAction: Use the ready-made\nscripts from Section 6\nAction: Provide accurate and\nclear information"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 8",
+    "chunk": 1,
+    "text": "Key Agent Attributes\nAttribute ﺔﻔﺼﻟا\nAccuracy Always verify before speaking\nConfidence Speak clearly and confidently\nHelpfulness Guide the customer to the next step\nCalmness Remain composed under pressure\nHonesty Never promise what isn't confirmed\nCustomer-focused Every interaction centers on customer experience"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 9",
+    "chunk": 1,
+    "text": "Customer Verification Process\nStep 1: Confirm Basic Information\nAction: Confirm the customer's name\nAction: Confirm the customer's phone number\nStep 2: Request Claim Identifier (in preferred order)\nAction: Ask for the claim reference number (most accurate)\nAction: If not available, ask for the plate number\nAction: If not available, ask for the policy number\nAction: If not available, ask for the Police Report\nStep 3: Match Information\nAction: Match what the customer provides with the system record\nAction: Do not disclose any claim information before verification\nStep 4: Decision\n→\nDecision: If matched proceed to the next step\n→\nDecision: If not matched say:\nAgent says:\n\"I cannot proceed without verifying your identity. Please contact us from your\nregistered number.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 10",
+    "chunk": 1,
+    "text": "Data Privacy and Confidentiality Rules\nNever:\nShare quote amounts, cash settlement amounts, or internal numbers with the\ncustomer\nShare internal processes like workshop selection\nProvide the Local Purchase Order (LPO) to the customer\nTell the customer their claim is \"approved\" or \"rejected\" without documented\nreason\nPromise to call back\nIf the customer insists on numbers:\nAgent says:\n\"I cannot share these numbers over the phone. Please visit one of our branches for\nfurther assistance.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 11",
+    "chunk": 1,
+    "text": "Agent Permissions Matrix\nAgent Can Agent Cannot\nOpen new claims (customer must use\nCheck claim stage in system\n(website\nInform customer of missing documents Negotiate settlement amounts\nGuide customer on signing\nApprove or reject any claim\nacknowledgment form\nGuide customer on submitting IBAN\nDetermine insurance premium rates\ncertificate\nInform customer of payment date Make any claim-related decisions\nShare workshop name and location Handle repair quality disputes directly\nAdd a comment and route to appropriate Commit to timelines not specified in this\nteam SOP\nUpload documents on behalf of the\nIdentify customer via plate number or\ncustomer\nclaim number\nAlert: Agents have Read-Only access to the system."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 12",
+    "chunk": 1,
+    "text": "Product & Policy Overview\n3\nComprehensive Insurance\nSimple Definition:\nThe highest level of coverage. Protects the policyholder's vehicle and\nthe other party's vehicle/property, regardless of who caused the\naccident.\nCovers: Does NOT Cover:\nThe customer's own vehicle (regardless of\nTraffic fines or penalties\n(fault\nThird-party damages Pre-existing damage\nTheft (if included in the specific policy) Normal wear and tear\nFire damage Intentional damage\nAccidents where the driver lacked a valid\nNatural disasters (subject to policy terms)\nlicense or river was under the influence of\nalcohol"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 13",
+    "chunk": 1,
+    "text": "What to say to the customer:\nEnglish:\n\"Since your policy with Methaq is Comprehensive, we will arrange to repair your car\nregardless of who caused the accident. All you need to do is submit your claim online\nand upload the police report and other required documents.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 14",
+    "chunk": 1,
+    "text": "Third-Party Insurance\nSimple Definition:\nCovers only the damage the policyholder causes to others — their\nvehicles, property, or persons. Never covers the policyholder's own\nvehicle.\nCovers Does NOT Cover\nDamage caused by the customer to\nThe customer's own vehicle\nothers' vehicles\nDamage caused by the customer to\nThe customer's personal property\nothers' property\nThe customer's legal liability to\nThe customer's own injuries\nothers\nScenario 1: Policyholder Not At Fault\nThe at-fault driver's insurance must pay repair costs\nThe policyholder claims from the other driver's insurer, not Methaq\nWhat to say to the customer:\n\"Since your policy is Third-Party and you were not at fault, the other driver's insurance\nis responsible for repairing your car.\"\nScenario 2: Policyholder At Fault\nMethaq covers the other party's damages\nThe other party claims from Methaq (whether they are a Methaq customer or not)\nWhat to say to the customer:\n\"Since your policy is Third-Party and you were at fault, Methaq will compensate the other\ndriver directly.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 15",
+    "chunk": 1,
+    "text": "Orange Card\nSimple Definition:\nA cross-border vehicle insurance certificate valid in Oman, proving the vehicle\n.is insured for crossing the UAE-Oman border\nCharacteristics\nTypically Third-Party coverage only\nCovers damage the customer may cause to others\nDoes NOT cover their own vehicle\nPurchased at the border\nNot part of the customer's policy with Methaq\nWhat to say to the customer:\n\"The Orange Card is cross-border insurance that you purchase at the Oman border.\nIt is not included in your policy with Methaq.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 16",
+    "chunk": 1,
+    "text": "4\nClaims Process\nQuick Decision Guide\nTo determine who is responsible for claim processing, the agent must ask three\nquestions in this order:\nQuestion 1: Who is your insurer?\nAction: Confirm whether the policy is with Methaq or another company\nAction: Check the policy number in the system\nQuestion 2: What is your coverage type?\nAction: Ask: Is your policy Comprehensive or Third-Party?\nAction: Verify with the system\nQuestion 3: Who was at fault according to the police report?\nAction: Ask the customer about the police report\nWarning: Do NOT rely only on the customer's word regarding fault — verify with\nthe police report.\nDescription Action\nMethaq repairs the customer's\nComprehensive with Methaq\nvehicle regardless of fault\n.The other driver's insurance pays\nThird-Party with Methaq, customer\nCustomer must claim from the other\nnot at fault\ninsurer\nThird-Party with Methaq, customer .Methaq pays the Non-Faulty party\nat fault The other party claims from Methaq\nIn the event that a comprehensive insurance policyholder suffers a loss\ninvolving a non-Mithaq party, they are directed to file their claim with their\n.own insurance company"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 17",
+    "chunk": 1,
+    "text": "Types of Claims\nType Description\nMotor Claims Car accidents, collisions\n,Damage to walls, gates, lamp posts\nProperty Damage Claims\ncommercial properties\nMentioned only for renewal or\nMedical Insurance Certificate of Coverage (COC)\nrequests"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 18",
+    "chunk": 1,
+    "text": "Claim Submission\nStep 1: Customer Submits the Claim\nAction: Customer visits claim.methaq.ae or search on google methaq claims and\nchoose the first link\n→\nAction: Or visits methaq.ae Motor Claims\nAction: Available 24/7\nAction: Can also submit in person at a branch\nAlert: Agents cannot open claims on behalf of customers. Nor can they accept or\nupload documents on behalf of the customer.\nStep 2: Customer Completes the Form\nAction: Complete the First Notice of Loss (FNOL) form\nAction: Through the 5-step qualification wizard\nAction: 14 possible outcomes\nStep 3: Customer Uploads Documents\nAction: Upload all required documents\nAction: Review and submit\nStep 4: System Performs Automatic Check\nSystem: Performs automatic duplicate claim check\nSystem: Automatically generates bilingual confirmation email (no reply needed)\nSystem: Claim enters Claims Management queue for review"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 19",
+    "chunk": 1,
+    "text": "Required Documents\nDocument Notes\nValid Driving License For driver at time of accident\nMulkiya (Vehicle Registration Card) Valid\nEmirates ID / National ID For vehicle owner\nComplete Police Report PDF format\nDamage Photos Optional but recommended\nNote: Clear, legible copies of both sides are required.\nNote: Documents must not be accepted via WhatsApp or email\nattachments under any circumstances"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 20",
+    "chunk": 1,
+    "text": "Documents for Commercial\nVehicles\nDocument Notes\nCommercial License For the company\nStamped No Objection Certificate From the company\nPolice Report —\nVehicle Registration Card —\nDriving License —\nDocuments for Property Damage (Private and public)\nDocument Notes\nProof of Ownership Of damaged property\nIncident Report Describing the damage\nPhotos of Damaged Property —\nClaim Notification Letter From company/owner to insurer"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 21",
+    "chunk": 1,
+    "text": "Claim Reference Number Format\nPart Meaning\nC Claim\nEmirate code (01 = Abu Dhabi, 02 =\n01\nDubai, 03 = Al Ain)\nMonth and year of claim (October\n1026\n2026)\n35272 Claim sequence number\nIf Customer Doesn't Have Claim Number:\nAction: Search by plate number\nAction: Or police report number\nAction: Or policy number"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 22",
+    "chunk": 1,
+    "text": "Claim Stages — Detailed Workflow\nStage 1 — Submission & Eligibility\nParty Action\n→\n-Visits methaq.ae/branch completes FNOL form, 5\n→\nCustomer step qualification wizard (14 possible outcomes)\n→\nuploads documents reviews and submits\n→\nPerforms automatic duplicate check generates\nSystem\nbilingual confirmation email automatically\nSystem Claim enters Claims Management queue\nStage 2 — Document Review\nParty Action\nClaims .Reviews all documents for completeness and validity\nManagement SLA: 1-2 working days\n→\nClaims If complete claim accepted, workshop auto-\nManagement assigned for surveyor\n→\nIf incomplete sends customer direct upload link via\nSystem\nemail\n→\nClicks link, re-uploads missing documents via portal\nCustomer\ntriggers re-review"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 23",
+    "chunk": 1,
+    "text": "Stage 3 — Workshop Assignment & Surveyor Assessment\nParty Action\nAuto-assigns workshop based on vehicle status + emirate;\nSystem sends customer email with workshop contact details and\ninspection location\nDrives vehicle to workshop, or arranges towing (Methaq\nCustomer Recovery via website / AAA service if vehicle not drivable — for\nMethaq customers only)\nPhotographs vehicle, records customer preference, collects\nSurveyor\nquotations within 1-3 days, depending on accident severity\nStage 4A — Cash Settlement\nParty Action\nSends settlement offer to customer via email. Turnaround: 3\nClaims Management\nworking days\nCustomer Reviews offer — accepts or rejects\n(if accepted) Signs acknowledgment form (verify signature against Emirates\nCustomer ID — 2 working days); uploads IBAN certificate\nBoth parties\nNegotiate via phone, email, or branch visit\n(if rejected)\nClaims Management Reviews IBAN + NOC, issues Creditor's Notice\nBank transfer to vehicle owner. Turnaround: 15 working days.\nFinance\nClaim closed."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 24",
+    "chunk": 1,
+    "text": "Stage 4B — Workshop Repair (LPO)\nParty Action\nClaims Reviews quotation and approves LPO issuance. 1-2\nManagement days\nClaims Issues LPO to workshop; sends confirmation to\nManagement customer simultaneously\nCreates job card; repairs vehicle (7-15 days); notifies\nWorkshop\nMethaq upon completion\nContacts customer for vehicle collection. Claim closed\nWorkshop\n(with alternative car eligibility, max 15 days)"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 25",
+    "chunk": 1,
+    "text": "Stage 5 — Total Loss\nParty Action\nClaims Officer Assesses claim SLA\nCustomer / Claims Negotiate total loss settlement; record outcome\nAuto-generates official total loss offer after approval,\nSystem\nsends to customer\nCustomer accepted\nCustomer Submits required financing documents\nCustomer submits Heyaza certificate + IBAN; Claims\nCustomer/Claims\nManagement verifies all documents\nSettles claim — bank transfer to owner. Payment\nFinance\nwithin 15 working days. Claim closed.\nInitiates internal review. Total: 7 working days\nClaims\n(including 3 working days for legal counsel/loss\nManagement\nassessor review)"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 26",
+    "chunk": 1,
+    "text": "Service Level Agreements (SLA) — Summary Table\nStage SLA Responsible Party\nDocument Review working 1-2\nClaims Management\nCompleteness/Validity days\nSurveyor Quotations days 1-3 Surveyor\nCash Settlement Offer working days 3 Claims Management\nSignature Verification\nworking days 2 Claims Management\n(Acknowledgment Form)\nCash Settlement Payment Finance\nworking days 15\nLPO Issuance/Review days 1-2 Claims Management\nWorkshop Repair days 7-15 Workshop\nAlternative Car (Maximum) days 15 Claims Management\nTotal Loss Assessment working days 3 Claims Officer\nTotal Loss Internal Approval working days 5 Claims Management\nTotal Loss Payment working days 15 Finance\nInternal Re-review (Rejection) 7 working days Claims Management"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 27",
+    "chunk": 1,
+    "text": "Payments & Compensation\n5\nCash Settlement\nMethaq does not proactively offer cash settlement\nIf the policyholder chooses cash instead of repair, Claims Team assesses\ndamage after inspection and sends digital settlement form for signature\nSettlement amount calculated based on Methaq's negotiated repair and\nparts prices\nAgents must never negotiate settlement amounts\nRequirements:\nOfficial IBAN certificate (on bank letterhead or stamped)\nSigned settlement form (signature must match ID)\nTimeline:\nUp to 15 working days after approval\nAlert: By signing the settlement form, the policyholder waives the right to\n.repair and is no longer eligible for alternative car compensation"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 28",
+    "chunk": 1,
+    "text": "Alternative Car Compensation\nCompensation for the period the customer cannot use their vehicle during\nrepair\nNot actual rental car\nMaximum 15 working days\nApplies to: Vehicles damaged by a Methaq policyholder, Comprehensive\ncustomers not at fault\nConditions:\n1.LPO approved\n2.Vehicle physically at workshop\nNot Applicable For:\nCash settlement\nTotal loss\nRequired Documents:\nJob card from workshop (showing repair dates)\nValid vehicle owner ID\nOwner's IBAN certificate"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 29",
+    "chunk": 1,
+    "text": "Total Loss Compensation\nApplies when repair cost exceeds vehicle value\nBased on market value assessment\nRequires vehicle surrender and ownership transfer documents\nTimeline:\nTotal Loss Assessment: 3 working days\nInternal Approval: 5 working days\nPayment: 15 working days\nPlates:\nIn total loss cases, plates remain at the original inspection workshop for customer collection\n— even if the vehicle is towed to an auction yard.\nExcess/Deductible\nAmount the Comprehensive policyholder at fault agrees to pay per\nclaim\nDeducted from claim settlement, or paid upon vehicle collection\nafter repair\nMay be waived in minor cases like windscreen damage\nRoadside Assistance & Towing\nAgent Procedure:\n1.Verify plate number or policy number\n2.Confirm coverage\n3.Transfer customer to roadside assistance team\nTowing Options:\nMethaq Recovery (via website)\nAAA (if vehicle undrivable) — for Methaq customers only\nCoverage Limit:\nMethaq pays towing costs only for undrivable vehicles\nCompany does not cover unnecessary or multiple trips\nAAA: 600508181\nArabic 044020738 / English 044020737\nEmirates Auction Road side assistance 600500372"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 30",
+    "chunk": 1,
+    "text": "Workshop Policies\nWorkshop Selection:\nCompany selects workshop based on quotations and vehicle models\nCustomers do not have a selection list\nIf Customer Requests Workshop Change:\n1.Make best effort to convince customer to stay with assigned workshop\n2.Explain change may take 1-2 additional days\n3.This extra time will not count towards alternative car compensation\nRepair Quality Complaints:\nCustomer must contact workshop first\nCompany intervenes only if workshop refuses to repair a legitimate covered issue\nNew Policy Issuance (Sales Referral)\nIf customer wants to purchase insurance:\n← ←\n1.Direct to methaq.ae Personal Insurance Motor Insurance\n2.Compare policy types\n3.Select insurance type\n4.Fill in details (Emirates ID or vehicle registration data)\n5.Sales team will contact within 24 working hours\nPolicy Management & Amendments\nCheck Broker Status:\n1.Check Methaq portal to see if policy issued through Broker or Direct from Methaq\n2.If through Broker: Find broker name and provide contact details\n3.If Direct from Methaq: Advise customer to submit request via website chat\nPolicy Renewal:\nContact the broker/intermediary who issued the policy"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 30",
+    "chunk": 2,
+    "text": "name and provide contact details\n3.If Direct from Methaq: Advise customer to submit request via website chat\nPolicy Renewal:\nContact the broker/intermediary who issued the policy\nProvide: Emirates ID, vehicle registration (Mulkiya)\nCannot Renew/Transfer If:\nVehicle has accident history within 3 years (blocked in system)\nPending unsettled claims\nMore than 8 months elapsed on policy term and customer wants refund\nPolicy Cancellation & Refund:\n→\nEligibility: Active policy less than 8 months eligible for partial refund\n→\nPolicy more than 8 months no refund available\n→\nIf claim submitted and paid coverage terminated, no refund"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 31",
+    "chunk": 1,
+    "text": "Standard Responses & Scripts\n6\nClaim Status Inquiry\nSix Steps to Follow:\nStep 1\nOpen the claim in the system\nStep 2\nRead the latest comment from the Claims Team\nStep 3\nCheck the current claim status\nStep 4\nReview any pending actions\nStep 5\nAnswer the customer\nStep 6\nDocument the call in the system"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 32",
+    "chunk": 1,
+    "text": "System Status & What to Say:\nStatus Meaning What to Say\nInspection not complete We are arranging the inspection and will\nSurvey Pending\nproceed as soon as it's complete\nEstimate under technical Your estimate is under technical review. We\nApproval Pending\nreview will update you upon completion\nYour claim is approved. Finance is currently\nPayment Processing Claim approved\nprocessing the payment\nYour vehicle is currently being evaluated for\nTotal Loss Review Under evaluation\na total loss decision\nSubmitted, not yet Your claim has been received and is\nNEW\nreviewed currently under review\nDocuments reviewed and\nOPEN Your claim is open and being processed\napproved\nPending — Missing Incomplete/unclear We are missing [specific document]. I will\nDocs documents resend the upload link\nWe have received the quotation and it is\nQuotation Received Quotation received\nunder review\nWorkshop authorized to The repair has been approved and the\nLPO Approved\nstart workshop can now start the work\nVehicle currently being Your vehicle is currently being repaired at\nRepairing in Progress\nrepaired [workshop name]\nThe repair work is complete; we will\nWork done, may not be"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 32",
+    "chunk": 2,
+    "text": "work\nVehicle currently being Your vehicle is currently being repaired at\nRepairing in Progress\nrepaired [workshop name]\nThe repair work is complete; we will\nWork done, may not be\nRepair Completed confirm as soon as the vehicle is ready for\ncollected yet\ncollection\nWorkshop submitted final The workshop has submitted the final\nInvoice Submitted\ninvoice invoice for processing."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 33",
+    "chunk": 1,
+    "text": "Requesting Missing Documents\nAgent says:\nI have reviewed your claim and it appears we need [specific document – e.g.,\nIBAN certificate, police report, or driving license]. I will send you a secure upload\nlink now — once you upload it through the portal, our team will review it again\nHandling Angry or Upset Customers — L.E.A.P. Method\nStep Action Phrase\nLet customer explain without Please tell me what\nListen\ninterruption happened\nI understand your concern\nEmpathize Acknowledge customer's feelings and appreciate your\npatience\nLet me review your claim\nAssess Review claim before responding and check the latest\nupdate\nI will explain the current\nExplain current situation and next\nProceed situation and what\nstep\nhappens next"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 34",
+    "chunk": 1,
+    "text": "Do Not Promise What Is Not Confirmed\nNever Say Say Instead\nTomorrow Based on the current claim status, the next step is.....\nThe claim is currently under review; we will update you\nIt's approved\nupon approval\nThe vehicle is currently being evaluated; no final decision\nIt's a total loss\nhas been made\nThe payment is being processed; we will update you\nYou'll receive it today\nupon completion\nDefinitely Based on currently available information.....\nWe will keep you informed as soon as any update is\nGuaranteed\navailable....."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 35",
+    "chunk": 1,
+    "text": "Challenging Customer Statements\nWhat Customer Says What to Do\nStay calm. Don't argue. Acknowledge the customer's\nI will file a complaint\nright to complain and continue helping professionally\nDon't engage personally. Focus on claim facts and follow\nI know the CEO\napproved procedure\n.Explain company procedures and options available\nI will go to Sanadak\nDon't discourage or argue\nFollow company escalation policy and arrange per\nI want to speak to a manager\napproved procedure\nProfessional Responses:\n\"I understand your concern, and I am here to help you.\"\n\"Let me explain the current status of your claim.\"\n\"I will follow the approved procedure to ensure your request is handled correctly.\"\n\"If you wish to escalate this, I will follow the company's approved escalation procedure.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 36",
+    "chunk": 1,
+    "text": "Real Scenario Scripts\nScenario 1: Why haven't I received my payment\nAgent says:\n\"Let me check for you. What is your claim number?\"\n[Search in system]\n\"Your claim was approved on [date], and payment processing has [started/is taking]...\"\n\"If within 15 working days: You are still within the normal processing time. The expected\npayment date is approximately [calculated date].\"\n\"If beyond 15 working days: This has exceeded the normal processing time. I will escalate it\nimmediately for priority action.\"\n\"Do you have an IBAN certificate registered with us? / Have you signed the settlement\nform?\"\n\"If missing: I see the issue — we are missing [document]. This is holding up your payment.\nCan you submit it today?\"\nScenario 2: \"My car has been at the workshop for 12 days/3 weeks with no\nupdate\nAgent says:\n\"Let me look into that. What is your claim number?\"\n[Check key dates]\n\"When did the car go to the workshop? When was the LPO issued? What is the current\nrepair status? What timeline did the surveyor set for the repair when the LPO was issued?\"\n\"If awaiting parts: The workshop is waiting for [parts]. Let me contact them to find out when\nthey'll arrive.\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 36",
+    "chunk": 2,
+    "text": "meline did the surveyor set for the repair when the LPO was issued?\"\n\"If awaiting parts: The workshop is waiting for [parts]. Let me contact them to find out when\nthey'll arrive.\"\n\"If no clear reason: This is taking longer than expected. Let me call the workshop while\nyou're on the line.\" (Three-way call with the workshop)\nScenario 3: \"I want a cash settlement\" (after LPO has already been issued)\nAgent says:\n\"I understand your request. Since the repair authorization (LPO) has already been issued, I\nwill refer your request to the Claims Team to review whether a cash settlement is still\npossible according to our procedures. We will update you as soon as the review is complete.\"\nAlert: Before responding, check:\nHas the vehicle already entered the workshop?\nHas the repair already started?\nCan the LPO be cancelled according to company policy?\nDoes the request require Claims Team approval?\nNever promise a cash settlement just because the customer requested it."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 37",
+    "chunk": 1,
+    "text": "Simple Alternatives for Insurance Terms\nInstead of...... Say.....\nInsurance that covers other people's cars, not\nThird-Party Insurance\nyour own\nComprehensive Insurance Full coverage that includes your own car\nLPO (Local Purchase Order) Workshop approval document\nTotal Loss Your car is considered completely damaged\nCash Settlement You receive a cash amount instead of repair\nExcess/Deductible The amount you pay from your own pocket\nIBAN Certificate Your official bank account number"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 38",
+    "chunk": 1,
+    "text": "Complaint Handling Procedure\n7\nEscalation Matrix — Directing to the Right Team\nIssue Responsible Team\nSurvey timing/delay Survey Team\nRepair approval Claims Officer\nPayment status Finance Department\nCustomer complaint Complaints Department\nTechnical decision Claims Management\nTotal loss negotiation Claims Management\nCash settlement requests Claims Team (raise ticket)\nAlternative car requests Claims Team (raise ticket)\nWhen to Raise a Ticket (Escalate)\nOnly for matters requiring technical expert or manager approval that cannot be resolved\nby the call center:\nCash settlements\nAlternative car requests\nDo NOT raise a ticket when:\nThe answer can be provided immediately\nYou have the knowledge to resolve the query immediately\nThe alternative is directing customer to website chat \"for better service\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 39",
+    "chunk": 1,
+    "text": "Escalation Timelines\nClaim not opened within 2 working days of submitting all documents\nInspection not scheduled within 3 working days after approval\nLPO or workshop delayed more than 7 working days after inspection\nPayments delayed more than 15 Days\nRefunds delayed more than 15 Days\nHow to Escalate\nStep 1: Add Internal Follow-up/Comment\nAction: Add an internal follow-up/comment in the system\nAction: Acknowledge customer's note if added directly on the portal\nSystem: Automatically notifies assigned claims officer and their supervisor\nFOR TEAM LEADERS ONLY\nStep 2: Escalate via Email\nAction: Send to Head of Department (HoD)\nAction: Include claim reference number\nAction: Include issue summary and supporting notes\nTip: Keep communication concise, factual, and professional\nWhen to Raise a Ticket (Escalate)\nOnly for matters requiring technical expert or manager approval that cannot be\nresolved by the call center:\nCash settlements\nAlternative car requests\nDo NOT raise a ticket when:\nThe answer can be provided immediately\nYou have the knowledge to resolve the query immediately\nThe alternative is directing customer to website chat \"for better service\""
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 40",
+    "chunk": 1,
+    "text": "Frequently Asked Questions (FAQ)\n8\nQ1 – I have Comprehensive insurance — will my car be repaired even if I caused the\naccident?\n:Answer\n.Yes. Comprehensive insurance repairs the policyholder's vehicle regardless of fault\nThe customer only needs to notify Methaq of the claim and submit the required\n.documents (police report, driving license, Mulkiya, Emirates ID)\n:Exclusions\nDriving without a valid license\nDriving under the influence of alcohol\nIntentional damage\nQ2 – I have Third-Party insurance and another driver hit me — will Methaq repair my\ncar?\nAnswer:\nNo. Third-Party insurance never covers the policyholder's own vehicle.\nSince the other driver is at fault, their insurance must pay repair costs, and the claim must\nbe submitted to the other driver's insurer.\nQ3 – I have Third-Party insurance and caused the accident — what happens?\nAnswer:\nMethaq will pay for the other party's vehicle/property damage, whether that party is a\nMethaq customer or not.\nMethaq will NOT repair the at-fault policyholder's vehicle under Third-Party coverage."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 41",
+    "chunk": 1,
+    "text": "Q4 – What documents are required to submit an accident claim\nAnswer:\nClear copies from both sides of\nDriving License (for the driver at time of accident)\nMulkiya (Vehicle Registration Card)\nEmirates ID of the vehicle owner\nComplete Police Report (PDF)\nDamage Photos (optional but recommended)\nAdditional Documents for Commercial Vehicle\nCommercial License\nStamped No Objection Certificate\nAdditional Documents for Property Damage Claims\nProof of ownership of damaged property\nPhotos of damaged property\nClaim notification letter\nQ5 – How long does document review take\nAnswer:\nworking days 1-2\nQ6 – What is the LPO and why does it matter\nAnswer:\nThe LPO is the internal repair approval from Methaq sent to the workshop"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 42",
+    "chunk": 1,
+    "text": "Q7 – Why do I need to provide an IBAN certificate?\nAnswer:\nAn IBAN certificate as PDF is mandatory for any payment or refund (cash\n.settlement, daily allowance, or refund of cancelled claim)\n:Requirements\nMust be on bank letterhead or stamped\nAccount holder name must exactly match the policyholder\nHandwritten IBAN number is NOT accepted\nQ8 – Can I choose to receive cash instead of having my car repaired?\nAnswer:\nMethaq does not proactively offer cash settlement, but if the customer\nrequests it, the Claims Team assesses the damage after inspection and sends\n.a digital settlement form\nSigning it means\nWaiving the right to repair\nWaiving alternative car compensation\nSettlement Amount\nCalculated based on Methaq's negotiated prices\nNot what the customer might pay privately\nPayment: Up to 15 working days after the approval of the documents"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 43",
+    "chunk": 1,
+    "text": "?Q9 – How many days of alternative car compensation am I entitled to\nAnswer\n:Maximum 15 working days by law, and only after\nLPO approved\nVehicle physically at workshop\nDaily amount determined by Methaq based on vehicle model and repair\n.duration, not customer preference\n:Not available for\nCash settlement\nTotal loss\nQ10 – My car repair cost exceeds its value — what happens?\nAnswer:\n.The claim is treated as a total loss\nSteps\nClaims officer assesses the claim (3 working days)\nInternal approval obtained (5 working days — 7 working days total)\nSystem generates formal offer\nIf accepted: customer chooses financed or non-financed\nOwnership transfer or applicable loan settlement\nPayment within 15 working days\nIf rejected: Internal re-review (7 working days, including 3 working days for\n(legal counsel review\nQ12 – Why haven't I received my payment\nAnswer\nPayment timelines are calculated from the date the Creditor's Notice (or\n.approval) appears in the portal\n:Agent should\nCheck if customer is still within standard processing period\n:Check for common blockers\nMissing IBAN certificate\nSettlement form not signed"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 44",
+    "chunk": 1,
+    "text": "Q13 – Can I change the assigned workshop?\n:Answer\nMethaq selects the workshop based on quotations and vehicle models —\n.customers do not choose from a list\nAgent should\nTry to convince customer to keep the assigned workshop\nExplain that changing may add 1-2 days\nThis extra time will NOT count toward alternative car compensation\nQ13 – Can I change the assigned workshop?\nAnswer:\nMethaq selects the workshop based on quotations and vehicle models —\ncustomers do not choose from a list.\nAgent should:\nTry to convince customer to keep the assigned workshop\nExplain that changing may add 1-2 days\nThis extra time will NOT count toward alternative car compensation\nQ15 – Where do I collect my plates after total loss\nAnswer\nPlates remain at the original inspection workshop for collection, even if the\n.vehicle itself is towed to an auction yard like Copart\n16 – Can someone else (friend or relative) request a cash settlement for\nthird-party property damage on my behalf?\nAnswer\nNo. Only the legal owner of the damaged property, or someone with official\npower of attorney, can make decisions or request cash settlement — even if\n.the owner is traveling or unavailable"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 45",
+    "chunk": 1,
+    "text": "Q17 – Is towing/roadside assistance covered?\nAnswer\nYes, for Methaq customers — call 600 565 695 and select roadside\n.assistance\nCoverage\nOnly applies to undrivable vehicles\nCompany does not cover unnecessary/multiple trips\nFor non-Methaq customers damaged by a Methaq customer\nTowing is usually their own insurer's responsibility\nIf they insist, ask them to keep the invoice without promising coverage"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 46",
+    "chunk": 1,
+    "text": "9\nGlossary of Terms\nComprehensive Insurance\nHighest level of vehicle insurance. Repairs the policyholder's vehicle\nregardless of fault.\nA Methaq customer's car is hit by an unknown driver while parked. Since they\nhave Comprehensive coverage, Methaq repairs their car even though they\nweren't at fault.\nThird-Party Insurance (TPL)\nInsurance that only pays for damage the policyholder causes to others'\nvehicles/property — never covers their own vehicle.\nA Methaq customer with Third-Party insurance causes an accident; Methaq\npays for the other driver's car, not the Methaq customer's car.\nFirst Notice of Loss (FNOL)\nThe electronic form and process the customer completes to officially report a\nclaim for the first time.\nCustomer completes the 5-step qualification wizard on claim.methaq.ae after\nan accident.\nLocal Purchase Order (LPO)\nThe internal repair approval document from Methaq sent to the workshop.\nWithout it, the workshop cannot legally start work.\nA customer asks if they can bring their car in — the agent checks the portal\nand confirms LPO is issued, so the workshop can proceed."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 47",
+    "chunk": 1,
+    "text": "IBAN Certificate\nOfficial bank document (on bank letterhead or stamped) confirming the\naccount number and holder name, required for any payment.\nA customer wants a cash settlement; before Methaq can pay, the customer\nmust upload an IBAN certificate matching their name exactly.\nJob Card\nOfficial workshop document showing repair start/end dates, work\nperformed, and workshop stamp/signature.\nA customer requesting alternative car compensation must provide the job card\nshowing how long the car was in repair.\nMulkiya\nVehicle registration card issued by the government authority, showing\nowner details, chassis number, and registration expiry.\nSubmitted as part of every accident claim to confirm vehicle owner.\nExcess/Deductible\nThe portion of repair cost the Comprehensive policyholder at fault agrees to\npay themselves, as per their policy.\nA customer with a minor windscreen chip may be waived from the excess.\nClaim Reference Number\nThe unique code (e.g., C-01-1025-35272) assigned to each claim, used to\ntrack, follow up, or escalate it.\nAgent asks for this number first before discussing any claim details."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 48",
+    "chunk": 1,
+    "text": "Total Loss\nWhen the repair cost exceeds the vehicle's market value, instead of\nrepairing, Methaq pays the assessed value and takes ownership.\nA car is severely damaged and repair costs exceed its value; Methaq offers a\ntotal loss settlement instead of repair.\nCash Settlement\nWhen the customer accepts, instead of repairing the car, a cash payment\nbased on Methaq's assessed repair cost.\nA customer prefers money rather than waiting for repair, signs the settlement\nform, and receives payment instead of a repaired car.\nDigital Settlement Form\nThe electronic form the customer signs digitally to confirm acceptance of\ncash payment instead of actual repair.\nOnce signed, Methaq can proceed with processing the cash settlement\npayment.\nAlternative Car Compensation\nDaily payment (not an actual rental car) for the period the customer's car is\nunavailable during repair, maximum 15 working days.\nWhile the car is in the workshop for 10 days, the customer receives daily\ncompensation instead of a rental car.\nOrange Card\nThird-Party vehicle insurance certificate purchased at the UAE-Oman border,\nvalid for driving in Oman.\nA customer traveling to Oman for vacation buys an Orange Card at the border"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 48",
+    "chunk": 2,
+    "text": "Third-Party vehicle insurance certificate purchased at the UAE-Oman border,\nvalid for driving in Oman.\nA customer traveling to Oman for vacation buys an Orange Card at the border\nbecause it's not included in their Methaq policy."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 49",
+    "chunk": 1,
+    "text": "Broker\nA licensed intermediary who sold/issued the customer's policy on behalf of\nMethaq; the broker (not Methaq) handles renewal, changes, and cancellation\nfor policies issued through them.\nA customer wants to cancel their policy; the agent checks the portal and finds\nit's through a broker, so they provide the broker's contact details.\nNo Objection Certificate (NOC)\nA stamped document from a company confirming no objection to the claim,\nrequired for commercial vehicle claims.\nA company car is in an accident; the claim requires a stamped NOC from the\ncompany in addition to standard documents.\nSanadak\nAn external escalation/dispute resolution channel the customer can use if\nstill unsatisfied after Methaq's internal review.\nAfter total loss re-review is rejected again, the customer says they will escalate\nto Sanadak; the agent explains the procedure without discouraging."
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 50",
+    "chunk": 1,
+    "text": "Branch Locations & Key Contacts\nBranch Address Working Hours\nMon-Thu 8:30 AM–\nLiwa Tower, ADNEC\nAbu Dhabi 3:30 PM; Fri 8:00 AM–\nArea, Floor M\n12:00 PM\nMohammed Bin\nRashid Charity\nDubai Same as above\n,Building, Office 312\n3rd Floor, Al Mizhar\n,Tadbeer Building\nAl Ain Khalifa Street, 4th Same as above\nFloor"
+  },
+  {
+    "source": "Copy of Methaq SOP – Complete Guide (3).pdf",
+    "type": "PDF",
+    "locator": "page 51",
+    "chunk": 1,
+    "text": "ﻒﺗﺎﻬﻟا ﻢﻗر ﺔﻣﺪﺨﻟا\n600 565 695 تﺎﺒﻟﺎﻄﻤﻟا ﻢﻳﺪﻘﺗ / ءﻼﻤﻌﻟا ﺔﻣﺪﺧ\n(قﺎﺜﻴﻣ ءﻼﻤﻌﻟ) ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n600 565 695\nAAA\n(قﺎﺜﻴﻣ ءﻼﻤﻌﻟ) ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n04 402 0738\nAAA ARABIC LINE\n(قﺎﺜﻴﻣ ءﻼﻤﻌﻟ) ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n04 402 0737\nAAA ENGLISH LINE\nEmirates – ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n600 500 372\nAuction\n800-2311 سﺎﻧ – ﻲﺒﻄﻟا ﻦﻴﻣﺄﺘﻟا\nﺔﻴﻓﺎﻋ – ﻲﺒﻄﻟا ﻦﻴﻣﺄﺘﻟا\n+971 600 546 669\nﻲﻧوﺮﺘﻜﻟﻹا ﻢﻳﺪﻘﺘﻟا ﻊﻗاﻮﻣ:\nclaim.methaq.ae- تﺎﺒﻛﺮﻣ ﺔﺒﻟﺎﻄﻣ ﻢﻳﺪﻘﺗ\nmethaq.ae- ﻲﺴﻴﺋﺮﻟا ﻊﻗﻮﻤﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 1",
+    "chunk": 1,
+    "text": "ﺔﻴﻠﻴﻐﺸﺘﻟا تاءاﺮﺟﻹا ﻞﻴﻟد\nﺪﺣﻮﻤﻟا (SOP)\nﻲﻠﻓﺎﻜﺘﻟا ﻦﻴﻣﺄﺘﻠﻟ قﺎﺜﻴﻣ ﺔﻛﺮﺷ\nتﺎﺒﻛﺮﻤﻟا تﺎﺒﻟﺎﻄﻣو ءﻼﻤﻌﻟا ﺔﻣﺪﺨﻟ ﻞﻣﺎﺸﻟا ﻞﻴﻟﺪﻟا\n2026 ﺮﻳﺎﻨﻳ\nﻂﻘﻓ ﻲﻠﺧاﺪﻟا ماﺪﺨﺘﺳﻼﻟ\nCreated By: Mohamed Bassam"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 2",
+    "chunk": 1,
+    "text": "ﻊﻳﺮﺴﻟا ﻞﻘﻨﺘﻟا ﻞﻴﻟد\nةﺰﻫﺎﺠﻟا صﻮﺼﻨﻟا\nةﺰﻫﺎﺠﻟا صﻮﺼﻨﻟا\nﺔﺒﻟﺎﻄﻤﻟا ﺔﻟﺎﺣ ﻦﻣ ﻖﻘﺤﺘﻟا\nﺔﻣﺪﺨﻟا ىﻮﺘﺴﻣ تﺎﻴﻗﺎﻔﺗا\nﺔﻌﺋﺎﺸﻟا ﺔﻠﺌﺳﻷا\nىوﺎﻜﺸﻟا ﺪﻴﻌﺼﺗ\nتﺎﺤﻠﻄﺼﻤﻟا سﻮﻣﺎﻗ\nتﺎﺤﻠﻄﺼﻤﻟا سﻮﻣﺎﻗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 3",
+    "chunk": 1,
+    "text": "تﺎﻳﻮﺘﺤﻤﻟا سﺮﻬﻓ\nﻢﻗﺮﻟا ﻢﺴﻘﻟا ﺔﺤﻔﺼﻟا\n1 فﺪﻬﻟاو ﺔﻣﺪﻘﻤﻟا 1\nﺔﻣﺎﻌﻟا تادﺎﺷرﻹا\n2 2\nﻦﻴﻔﻇﻮﻤﻠﻟ\nﻰﻠﻋ ﺔﻣﺎﻋ ةﺮﻈﻧ\n3 4\nتﺎﺼﻴﻟﻮﺒﻟاو تﺎﺠﺘﻨﻤﻟا\n4 تﺎﺒﻟﺎﻄﻤﻟا تاءاﺮﺟإ 6\nتﺎﻋﻮﻓﺪﻤﻟا\n5 12\nتﺎﻀﻳﻮﻌﺘﻟاو\nصﻮﺼﻨﻟاو دودﺮﻟا\n6 14\nﺔﻳرﺎﻴﻌﻤﻟا\n7 ىوﺎﻜﺸﻟا تاءاﺮﺟإ 18\n8 ﺔﻌﺋﺎﺸﻟا ﺔﻠﺌﺳﻷا 20\nتﺎﺤﻠﻄﺼﻤﻟا سﻮﻣﺎﻗ\n9 24\nمﺎﻗرأو عوﺮﻔﻟا ﻊﻗاﻮﻣ\nﻖﺤﻠﻤﻟا 26\nﻞﺻاﻮﺘﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 4",
+    "chunk": 1,
+    "text": "فﺪﻬﻟاو ﺔﻣﺪﻘﻤﻟا\n١\nﻞﻴﻟﺪﻟا اﺬﻫ ﺪﺟﻮﻳ اذﺎﻤﻟ\nتﺎﻤﻟﺎﻜﻣ ﻊﻣ ﻲﻠﻓﺎﻜﺘﻟا ﻦﻴﻣﺄﺘﻠﻟ قﺎﺜﻴﻣ ﺔﻛﺮﺷ ﻲﻓ لﺎﺼﺗﻻا ﺰﻛﺮﻣ ﻲﻔﻇﻮﻣ ﻞﻣﺎﻌﺗ ﺔﻘﻳﺮﻃ ﺪﻴﺣﻮﺗ ﻰﻟإ ﻞﻴﻟﺪﻟا اﺬﻫ فﺪﻬﻳ\nﻲﻫ ﻪﻓاﺪﻫأ .ﺎﻬﺗﺎﺒﻟﺎﻄﻣو تﺎﺒﻛﺮﻤﻟا ﻰﻠﻋ ﻦﻴﻣﺄﺘﻟا تﺎﺼﻴﻟﻮﺒﺑ ﺔﻘﻠﻌﺘﻤﻟا ءﻼﻤﻌﻟا:\nءﻼﻤﻌﻠﻟ ﺔﻘﺴﺘﻣ ﺮﻴﻏ وأ ﺔﺌﻃﺎﺧ تﺎﻣﻮﻠﻌﻣ ﻢﻳﺪﻘﺗ ﻞﻴﻠﻘﺗ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻰﻟإ ﺔﻳروﺮﻀﻟا ﺮﻴﻏ تاﺪﻴﻌﺼﺘﻟا ﻞﻴﻠﻘﺗ\nلﺎﺼﺗا لوأ ﻦﻣ ﺔﻠﻜﺸﻤﻟا ﻞﺣ لﺪﻌﻣ ةدﺎﻳز\nﺔﺑﺎﺟﻹا ﺲﻔﻧ مﺪّ ﻘﻳو ءاﺮﺟﻹا ﺲﻔﻧ ﻒﻇﻮﻣ ﻞﻛ ﻊﺒﺘﻳ نأ نﺎﻤﺿt of body text\n:ﺔﻴﺒﻫﺬﻟا ةﺪﻋﺎﻘﻟا\nﻞﻴﻤﻌﻟا ﺮﺒﺧأ ،ﺔﺑﺎﺟﻹا فﺮﻌﺗ ﻦﻜﺗ ﻢﻟ اذإ .ثﺪﺤﺘﻟا ﻞﺒﻗ مﺎﻈﻨﻟا ﻦﻣ ﺎﻤً ﺋاد ﻖﻘﺤﺗ .اﺪً ﺑأ ﻦﻤّ ﺨﺗ ﻻ\n.ﺔﺑﺎﺟإ ﻖﻠﺘﺨﺗ ﻻ — ﻖﻘﺤﺘﺘﺳ ﻚﻧأ\n1"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 5",
+    "chunk": 1,
+    "text": "ﻞﻴﻟﺪﻟا اﺬﻫ ماﺪﺨﺘﺳا ﺔﻴﻔﻴﻛ\nﻰﻟإ ﺐﻫذا ﺪﻳﺮﺗ ﺖﻨﻛ اذإ\n6 ﻢﺴﻘﻟا ءﻼﻤﻌﻟا ﻊﻣ ثﺪﺤﺘﻟا ﺔﻴﻔﻴﻛ ﺔﻓﺮﻌﻣ\n4.6 ﻢﺴﻘﻟا ﺔﺒﻟﺎﻄﻤﻟا ﻞﺣاﺮﻣ ﻢﻬﻓ\n6 ﻢﺴﻘﻟا ﺰﻫﺎﺟ ﺺﻧ ﻰﻠﻋ لﻮﺼﺤﻟا\n7 ﻢﺴﻘﻟا ىﻮﻜﺷ ﻊﻓﺮﺗ ﻒﻴﻛو ﻰﺘﻣ ﺔﻓﺮﻌﻣ\n8 ﻢﺴﻘﻟا ﻊﺋﺎﺷ لاﺆﺳ ﻰﻠﻋ ﺔﺑﺎﺟﻹا\n9 ﻢﺴﻘﻟا ﻲﻨﻴﻣﺄﺗ ﺢﻠﻄﺼﻣ ﻢﻬﻓ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 6",
+    "chunk": 1,
+    "text": "٢\nﻦﻴﻔﻇﻮﻤﻠﻟ ﺔﻣﺎﻌﻟا تادﺎﺷرﻹا\nتﺎﺒﻟﺎﻄﻣ ﻒﻇﻮﻤﻛ ﺮﻜّ ﻓ :ﺔﺑﻮﻠﻄﻤﻟا ﺔﻴﻠﻘﻌﻟا\nﺔﺴﻤﺨﻟا ﺔﻠﺌﺳﻷا هﺬﻫ ﻚﺴﻔﻧ ﻰﻠﻋ حﺮﻃا ،ﻞﻴﻤﻋ يأ ﻰﻠﻋ ﺔﺑﺎﺟﻹا ﻞﺒﻗ ﻞﺒﻗ:\n؟نﻵا ﺔﺒﻟﺎﻄﻤﻟا ﻒﻘﺗ ﻦﻳأ :1 لاﺆﺴﻟا\n؟ﺔﻴﻟﺎﺘﻟا ةﻮﻄﺨﻟا ﻲﻫ ﺎﻣ :2 لاﺆﺴﻟا\n؟ﻖﻠّﻌﻣ ﺮﻣأ كﺎﻨﻫ ﻞﻫ :3 لاﺆﺴﻟا\n؟ﺔﻠﺣﺮﻤﻟا هﺬﻫ ﻦﻋ ﺔﻟوﺆﺴﻤﻟا ﺔﻬﺠﻟا ﻲﻫ ﻦﻣ :4 لاﺆﺴﻟا\n؟ﻪﺑ مﺎﻴﻘﻟا ﻞﻴﻤﻌﻟا ﻰﻠﻋ ﺐﺠﻳ ﺎﻣ كﺎﻨﻫ ﻞﻫ :5 لاﺆﺴﻟا\n.ﻻً وأ مﺎﻈﻨﻟا ﻦﻣ ﻖﻘﺤﺗ .ﻞﻴﻤﻌﻟا ﺐﺠﺗ ﻻ ،ﺔﺴﻤﺨﻟا ﺔﻠﺌﺳﻷا هﺬﻫ ﺔﺑﺎﺟإ فﺮﻌﺗ ﻢﻟ اذإ :ﺮﻳﺬﺤﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 7",
+    "chunk": 1,
+    "text": "ﺔﺑﺎﺟإ ﻞﻛ ﻞﺒﻗ ﺖﺴﻟا ﻖﻘﺤﺘﻟا تاﻮﻄﺧ\nﺔﺒﻟﺎﻄﻤﻟا ﺢﺘﻓ :1 ةﻮﻄﺨﻟا\nﺔﺒﻟﺎﻄﻤﻟا ﻢﻗر ﻦﻋ ﺚﺤﺑا :ءاﺮﺟﻹا\nمﺎﻈﻨﻟا ﻲﻓ ﻲﻌﺟﺮﻤﻟا\n،اًﺮﻓﻮﺘﻣ ﻦﻜﻳ ﻢﻟ اذإ :ءاﺮﺟﻹا\nﻢﻗر وأ ﺔﺣﻮﻠﻟا ﻢﻗر مﺪﺨﺘﺳا\nﺔﺼﻴﻟﻮﺒﻟا\nﺔﻟﺎﺤﻟا ﻦﻣ ﻖﻘﺤﺘﻟا\nﻖﻘﺤﺗ + ﺔﻴﻟﺎﺤﻟا ﺔﻟﺎﺤﻟا ﻰﻟإ ﺮﻈﻧا\nﺔﻘﻠﻌﻤﻟا تاءاﺮﺟﻹا ﻦﻣ\nﻖﻴﻠﻌﺗ ﺮﺧآ ةءاﺮﻗ\nﻦﻣ ﻖﻘﺤﺗ + ﺔﻈﺣﻼﻣ ثﺪﺣأ أﺮﻗا\nﺦﻳرﺎﺘﻟا\nﺔﻘﻠّﻌﻤﻟا تاءاﺮﺟﻹا ﺔﻌﺟاﺮﻣ\n+ ﻞﻴﻤﻌﻟا تﺎﺟﺎﻴﺘﺣا ﻦﻣ ﻖﻘﺤﺗ\nﺪﻴﻋاﻮﻤﻟا ﻦﻣ ﻖﻘﺤﺗ\nﺔﺑﺎﺟﻹا\nﺪﻗ + ةﺰﻫﺎﺠﻟا صﻮﺼﻨﻟا مﺪﺨﺘﺳا\nﺔﻘﻴﻗد تﺎﻣﻮﻠﻌﻣ مّ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 8",
+    "chunk": 1,
+    "text": "ﺰﻴﻤﺘﻤﻟا ﻒﻇﻮﻤﻟا تﺎﻔﺻ\nﻰﻨﻌﻤﻟا ﺔﻔﺼﻟا\nثﺪﺤﺘﻟا ﻞﺒﻗ ﺎﻤً ﺋاد ﻖﻘﺤﺘﻟا ﺔﻗﺪﻟا\nﺔﻘﺛو حﻮﺿﻮﺑ ثﺪﺤﺘﻟا ﺔﻘﺜﻟا\nﺔﻴﻟﺎﺘﻟا ةﻮﻄﺨﻟا ﻰﻟإ ﻞﻴﻤﻌﻟا ﻪﻴﺟﻮﺗ ةﺪﻋﺎﺴﻤﻟا\nﻂﻐﻀﻟا ﺖﺤﺗ ﺎﻜً ﺳﺎﻤﺘﻣ ءﺎﻘﺒﻟا ءوﺪﻬﻟا\nﺪﻛ\u0000 ﺆﻳُ ﻢﻟ ﺎﻤﺑ ﺪﻋﻮﻟا مﺪﻋ قﺪﺼﻟا\nﻰﻠﻋ ﺰﻴﻛﺮﺘﻟا\nﻞﻴﻤﻌﻟا ﺔﺑﺮﺠﺗ لﻮﺣ رﻮﺤﻤﺘﻳ ﻞﻋﺎﻔﺗ ﻞﻛ\nﻞﻴﻤﻌﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 9",
+    "chunk": 1,
+    "text": "ﻞﻴﻤﻌﻟا ﺔﻳﻮﻫ ﻦﻣ ﻖﻘﺤﺘﻟا\nﺔﻴﺳﺎﺳﻷا تﺎﻧﺎﻴﺒﻟا ﺪﻴﻛﺄﺗ :1 ةﻮﻄﺨﻟا\nﻞﻴﻤﻌﻟا ﻢﺳا ﺪﻴﻛﺄﺗ :ءاﺮﺟﻹا\nﻞﻴﻤﻌﻟا ﻒﺗﺎﻫ ﻢﻗر ﺪﻴﻛﺄﺗ :ءاﺮﺟﻹا\n(ﻞﻀﻔﻤﻟا ﺐﻴﺗﺮﺘﻟﺎﺑ) ﺔﺒﻟﺎﻄﻤﻟا فﺮﻌﻣ ﺐﻠﻃ :2 ةﻮﻄﺨﻟا\nﻲﻌﺟﺮﻤﻟا ﺔﺒﻟﺎﻄﻤﻟا ﻢﻗر ﻦﻋ لﺄﺳا :ءاﺮﺟﻹا\nﺔﺒﻛﺮﻤﻟا ﺔﺣﻮﻟ ﻢﻗر ﻦﻋ لﺄﺳا ،اًﺮﻓﻮﺘﻣ ﻦﻜﻳ ﻢﻟ اذإ :ءاﺮﺟﻹا\nﺔﺼﻴﻟﻮﺒﻟا ﻢﻗر ﻦﻋ لﺄﺳا ،اًﺮﻓﻮﺘﻣ ﻦﻜﻳ ﻢﻟ اذإ :ءاﺮﺟﻹا\nﺔﻃﺮﺸﻟا ﺮﯾﺮﻘﺗ ﻢﻗر ﻦﻋ لﺄﺳا ،اًﺮﻓﻮﺘﻣ ﻦﻜﻳ ﻢﻟ اذإ :ءاﺮﺟﻹا\nتﺎﻧﺎﻴﺒﻟا ﺔﻘﺑﺎﻄﻣ :3 ةﻮﻄﺨﻟا\nمﺎﻈﻨﻟا ﻞﺠﺳ ﻊﻣ ﻞﻴﻤﻌﻟا ﻪﻣﺪّ ﻘﻳ ﺎﻣ ﻖﺑﺎﻃ :ءاﺮﺟﻹا\nﻖﺑﺎﻄﺘﻟا ﻦﻣ ﺪﻛﺄﺘﻟا ﻞﺒﻗ ﺔﻣﻮﻠﻌﻣ يأ ﻦﻋ ﺢﺼﻔﺗ ﻻ :ءاﺮﺟﻹا\nراﺮﻘﻟا :4 ةﻮﻄﺨﻟا\n→\nﺔﻴﻟﺎﺘﻟا ةﻮﻄﺨﻟا ﻰﻟإ ﻊﺑﺎﺗ تﺎﻧﺎﻴﺒﻟا ﺖﻘﺑﺎﻄﺗ اذإ :راﺮﻘﻟا\n→\nﻚﺘﻳﻮﻫ ﻦﻣ ﻖﻘﺤﺘﻟا نود ﺔﻌﺑﺎﺘﻤﻟا ﻲﻨﻨﻜﻤﻳ ﻻ\" :ﻞﻗ ﻖﺑﺎﻄﺘﺗ ﻢﻟ اذإ :راﺮﻘﻟا\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 10",
+    "chunk": 1,
+    "text": "ﺔﻳﺮﺴﻟاو تﺎﻧﺎﻴﺒﻟا ﺔﻴﺻﻮﺼﺧ ﺪﻋاﻮﻗ\n:ﺎًﻣﺎﻤﺗ عﻮﻨﻤﻣ\nﻞﻴﻤﻌﻟا ﻊﻣ رﺎﻌﺳﻷا ضوﺮﻋ ﻎﻟﺎﺒﻣ ﺔﻛرﺎﺸﻣ -\nﺔﻴﻠﺧاﺪﻟا تﺎﻴﻠﻤﻌﻟا ﺔﻛرﺎﺸﻣ -\nﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣﺄﺑ ﻞﻴﻤﻌﻟا ﺪﻳوﺰﺗ -\nﺐﺒﺳ نود \"ﺎﻬﻴﻠﻋ ﻖﻓاﻮﻣ\" وأ \"ﺔﺿﻮﻓﺮﻣ\" ﻪﺘﺒﻟﺎﻄﻣ نﺄﺑ ﻞﻴﻤﻌﻟا رﺎﺒﺧإ -\nلﺎﺼﺗﻻا ةدوﺎﻌﻤﺑ ﺪﻋﻮﻟا -\n:ﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\"ﻦﻣ ﺪﻳﺰﻤﻠﻟ ﺎﻨﻋوﺮﻓ ﺪﺣأ ةرﺎﻳز ﻰﺟﺮﻳُ — ﻒﺗﺎﻬﻟا ﺮﺒﻋ مﺎﻗرﻷا هﺬﻫ ﺔﻛرﺎﺸﻣ ﻲﻨﻨﻜﻤﻳ ﻻ\nةﺪﻋﺎﺴﻤﻟا.\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 11",
+    "chunk": 1,
+    "text": "ﻪﻠﻌﻓ ﻪﻨﻜﻤﻳ ﻻ ﺎﻣو ﻪﻠﻌﻓ ﻒﻇﻮﻤﻠﻟ ﻦﻜﻤﻳ ﺎﻣ\nﻒﻇﻮﻤﻠﻟ ﻦﻜﻤﻳ ﻻ ﻒﻇﻮﻤﻠﻟ ﻦﻜﻤﻳ\nةﺪﻳﺪﺟ تﺎﺒﻟﺎﻄﻣ ﺢﺘﻓ مﺎﻈﻨﻟا ﻲﻓ ﺔﺒﻟﺎﻄﻤﻟا ﺔﻠﺣﺮﻣ ﻦﻣ ﻖﻘﺤﺘﻟا\nﺔﻳﻮﺴﺘﻟا ﻎﻟﺎﺒﻣ ﻰﻠﻋ ضوﺎﻔﺘﻟا ﺔﺼﻗﺎﻨﻟا تاﺪﻨﺘﺴﻤﻟﺎﺑ ﻞﻴﻤﻌﻟا رﺎﺒﺧإ\nﺎﻬﻀﻓر وأ ﺔﺒﻟﺎﻄﻣ يأ ﻰﻠﻋ ﺔﻘﻓاﻮﻤﻟا راﺮﻗﻹا جذﻮﻤﻧ ﻊﻴﻗﻮﺗ نﺄﺸﺑ ﻞﻴﻤﻌﻟا ﻪﻴﺟﻮﺗ\nﻦﻴﻣﺄﺘﻟا طﺎﺴﻗأ رﺎﻌﺳأ ﺪﻳﺪﺤﺗ نﺎﺒﻳﻵا ةدﺎﻬﺷ ﻊﻓر نﺄﺸﺑ ﻞﻴﻤﻌﻟا ﻪﻴﺟﻮﺗ\nﺔﺒﻟﺎﻄﻤﻟا ﺺﺨﻳ راﺮﻗ يأ ذﺎﺨﺗا ﻊﻓﺪﻟا ﺪﻋﻮﻤﺑ ﻞﻴﻤﻌﻟا غﻼﺑإ مﺪﻋ\nحﻼﺻﻹا ةدﻮﺟ تﺎﻋاﺰﻧ ﻊﻣ ﺮﺷﺎﺒﻤﻟا ﻞﻣﺎﻌﺘﻟا ﺔﻨﻴّﻌﻤﻟا ﺔﺷرﻮﻟا ﻊﻗﻮﻣو ﻢﺳا ﺔﻛرﺎﺸﻣ\nﻞﻴﻟﺪﻟا اﺬﻫ ﻲﻓ ةدراو ﺮﻴﻏ ﺪﻴﻋاﻮﻤﺑ ماﺰﺘﻟﻻا ﺐﺳﺎﻨﻤﻟا ﻢﺴﻘﻟا ﻰﻟإ ﻪﻬﻴﺟﻮﺗو ﻖﻴﻠﻌﺗ ﺔﻓﺎﺿإ\nﻞﻴﻤﻌﻟا ﻦﻋ ﺔﺑﺎﻴﻧ تاﺪﻨﺘﺴﻤﻟا ﻊﻓر ﺔﺒﻛﺮﻤﻟا ﻢﻗر ﺮﺒﻋ ﻞﻴﻤﻌﻟا ﻰﻠﻋ فﺮﻌﺘﻟا\n:ﻪﻴﺒﻨﺗ\nمﺎﻈﻨﻟا ﻰﻠﻋ ﻂﻘﻓ عﻼﻃّ ا ﺔﻴﺣﻼﺻ نﻮﻜﻠﻤﻳ نﻮﻔﻇﻮﻤﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 12",
+    "chunk": 1,
+    "text": "تﺎﺠﺘﻨﻤﻟا ﻰﻠﻋ ﺔﻣﺎﻋ ةﺮﻈﻧ\n٣\nتﺎﺼﻴﻟﻮﺒﻟاو\nﻞﻣﺎﺸﻟا ﻦﻴﻣﺄﺘﻟا\n:\nﺔﻄﺴﺒﻣ ﺔﻐﻠﺑ ﻒﻳﺮﻌﺘﻟا\n/ .\nفﺮﻄﻟا تﺎﻜﻠﺘﻤﻣ ﺔﺒﻛﺮﻣ و ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺔﺒﻛﺮﻣ ﻲﻤﺤﻳ ﺔﻴﻄﻐﺘﻟا ﻦﻣ ىﻮﺘﺴﻣ ﲆﻋأ\n.\nثدﺎﺤﻟا ﻲﻓ ﺐﺒﺴﺗ ﻦﻤّ ﻋ ﺮﻈﻨﻟا ﺾﻐﺑ ،ﺮﺧﻵا\nﻲﻄﻐﻳ ﻻ ﻲﻄﻐﻳ\nتﺎﺑﻮﻘﻌﻟا وأ ﺔﻳروﺮﻤﻟا تﺎﻣاﺮﻐﻟا (ﺄﻄﺨﻟا ﻦﻋ ﺮﻈﻨﻟا ﺾﻐﺑ) ﻪﺴﻔﻧ ﻞﻴﻤﻌﻟا ﺔﺒﻛﺮﻣ\nﺔﻘﺑﺎﺴﻟا راﺮﺿﻷا ﺚﻟﺎﺜﻟا فﺮﻄﻟا راﺮﺿأ\nﻲﻌﻴﺒﻄﻟا ﻰﻠﺒِﻟاو كﻼﻬﺘﺳﻻا (ﺔﻟﻮﻤﺸﻣ ﺖﻧﺎﻛ اذإ) ﺔﻗﺮﺴﻟا\nةﺪﻤّ ﻌﺘﻤﻟا راﺮﺿﻷا ﻖﻳﺮﺤﻟا راﺮﺿأ\nﺔﻳرﺎﺳ ﺔﺼﺧر نود ةدﺎﻴﻘﻟا (ﺔﻟﻮﻤﺸﻣ ﺖﻧﺎﻛ اذإ) ﺔﻴﻌﻴﺒﻄﻟا ثراﻮﻜﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 13",
+    "chunk": 1,
+    "text": "ﻞﻴﻤﻌﻠﻟ لﺎﻘﻳُ ﺎﻣ:\n\"ﻦﻋ ﺮﻈﻨﻟا ﺾﻐﺑ ﻚﺗرﺎﻴﺳ حﻼﺻإ ﺐﻴﺗﺮﺘﺑ مﻮﻘﻨﺴﻓ ،ﺔﻠﻣﺎﺷ قﺎﺜﻴﻣ ﻊﻣ ﻚﺘﺼﻴﻟﻮﺑ نأ ﺎﻤﺑ\nﺮﻳﺮﻘﺗ ﻊﻓرو ﺖﻧﺮﺘﻧﻹا ﺮﺒﻋ ﻚﺘﺒﻟﺎﻄﻣ ﻢﻳﺪﻘﺗ ﻮﻫ ﻪﻠﻌﻓ ﻚﻴﻠﻋ ﺎﻣ ﻞﻛ .ثدﺎﺤﻟا ﻲﻓ ﺐﺒﺴﺘﻤﻟا\nىﺮﺧﻷا ﺔﺑﻮﻠﻄﻤﻟا تاﺪﻨﺘﺴﻤﻟاو ﺔﻃﺮﺸﻟا.\"\nEnglish:\n\"Since your policy with Methaq is Comprehensive, we will arrange to repair your car\nregardless of who caused the accident. All you need to do is submit your claim online\nand upload the police report and other required documents.\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 14",
+    "chunk": 1,
+    "text": "ﺮﻴﻐﻟا ﺪﺿ ﻦﻴﻣﺄﺘﻟا\n:\nﺔﻄﺴﺒﻣ ﺔﻐﻠﺑ ﻒﻳﺮﻌﺘﻟا\n—\nوأ ﻢﻬﺗﺎﺒﻛﺮﻣ ﻦﻳﺮﺧﻶﻟ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺎﻬﺑ ﺐﺒﺴﺘﻳ ﻲﺘﻟا راﺮﺿﻷا ﻂﻘﻓ ﻲﻄﻐﻳ\n. .\nﻪﺴﻔﻧ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺔﺒﻛﺮﻣ اﺪً ﺑأ ﻲﻄﻐﻳ ﻻ ﻢﻫدﺎﺴﺟأ وأ ﻢﻬﺗﺎﻜﻠﺘﻤﻣ\nﻲﻄﻐﻳ ﻻ ﻲﻄﻐﻳ\nﻪﺴﻔﻧ ﻞﻴﻤﻌﻟا ﺔﺒﻛﺮﻣ ﻦﻳﺮﺧﻶﻟ ﻞﻴﻤﻌﻟا ﺎﻬﺑ ﺐﺒﺴﺘﻳ ﻲﺘﻟا راﺮﺿﻷا\nﻞﻴﻤﻌﻟا ﺎﻬﺑ ﺐﺒﺴﺘﻳ ﻲﺘﻟا راﺮﺿﻷا\nﻞﻴﻤﻌﻠﻟ ﺔﻴﺼﺨﺸﻟا تﺎﻜﻠﺘﻤﻤﻟا\nتﺎﻜﻠﺘﻤﻤﻠﻟ\nﻪﺴﻔﻧ ﻞﻴﻤﻌﻟا تﺎﺑﺎﺻإ ﻞﻴﻤﻌﻠﻟ ﺔﻴﻧﻮﻧﺎﻘﻟا ﺔﻴﻟوﺆﺴﻤﻟا\nﺊﻄﺨﻣ ﺮﻴﻏ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ :1 ﻮﻳرﺎﻨﻴﺴﻟا\n- حﻼﺻﻹا ﻒﻴﻟﺎﻜﺗ ﻊﻓﺪﻳ نأ ﺐﺒﺴﺘﻤﻟا ﻖﺋﺎﺴﻟا ﻦﻴﻣﺄﺗ ﻰﻠﻋ ﺐﺠﻳ\n- ﺮﺧﻵا ﻖﺋﺎﺴﻟا ﻦﻣّ ﺆﻣ ىﺪﻟ ﻪﺘﺒﻟﺎﻄﻣ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ مﺪّ ﻘﻳ\nﻞﻴﻤﻌﻠﻟ لﺎﻘﻳُ ﺎﻣ:\n\"حﻼﺻإ ﻦﻋ لوﺆﺴﻣ ﺮﺧﻵا ﻖﺋﺎﺴﻟا ﻦﻴﻣﺄﺗ نﺈﻓ ،ﺎﺌًﻄﺨﻣ ﻦﻜﺗ ﻢﻟو ﺮﻴﻐﻟا ﺪﺿ ﻚﺘﺼﻴﻟﻮﺑ نأ ﺎﻤﺑ\nﻚﺗرﺎﻴﺳ.\"\nﺊﻄﺨﻣ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ :2 ﻮﻳرﺎﻨﻴﺴﻟا\n- ﺮﺧﻵا فﺮﻄﻟا راﺮﺿأ قﺎﺜﻴﻣ ﻲﻄﻐﺗ\n- قﺎﺜﻴﻣ ىﺪﻟ ﻪﺘﺒﻟﺎﻄﻣ ﺮﺧﻵا فﺮﻄﻟا مﺪّ ﻘﻳ\nﻞﻴﻤﻌﻠﻟ لﺎﻘﻳُ ﺎﻣ:\n\"ﺮﺧﻵا ﻖﺋﺎﺴﻟا ﺾﻳﻮﻌﺘﺑ قﺎﺜﻴﻣ مﻮﻘﺘﺳ ،ثدﺎﺤﻟا ﻲﻓ ﺐﺒﺴﺘﻤﻟا ﺖﻨﻛو ﺮﻴﻐﻟا ﺪﺿ ﻚﺘﺼﻴﻟﻮﺑ نأ ﺎﻤﺑ\nةﺮﺷﺎﺒﻣ.\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 15",
+    "chunk": 1,
+    "text": "ﺔﻴﻟﺎﻘﺗﺮﺒﻟا ﺔﻗﺎﻄﺒﻟا\n:ﺔﻄﺴﺒﻣ ﺔﻐﻠﺑ ﻒﻳﺮﻌﺘﻟا\n–تارﺎﻣﻹا دوﺪﺣ رﻮﺒﻌﻟ ﺔﻨﻣ\u0000 ﺆﻣ ﺔﺒﻛﺮﻤﻟا نأ ﺖﺒﺜﺗ ،نﺎﻤﻋُ ﺔﻨﻄﻠﺳ ﻲﻓ ﺔﻳرﺎﺳ تﺎﺒﻛﺮﻣ ﻦﻴﻣﺄﺗ ةدﺎﻬﺷ\n.نﺎﻤﻋُ\n:ﺺﺋﺎﺼﺨﻟا\nﻂﻘﻓ ﺮﻴﻐﻟا ﺪﺿ ﺔﻴﻄﻐﺗ نﻮﻜﺗ ﺎﻣ ةدﺎﻋ -\nﻦﻳﺮﺧﻶﻟ ﻞﻴﻤﻌﻟا ﺎﻬﺑ ﺐﺒﺴﺘﻳ ﺪﻗ ﻲﺘﻟا راﺮﺿﻷا ﻲﻄﻐﺗ -\nﺔﺻﺎﺨﻟا ﻪﺗرﺎﻴﺳ ﻲﻄﻐﺗ ﻻ -\nدوﺪﺤﻟا ﺪﻨﻋ ىﺮﺘﺸﺗُ -\nقﺎﺜﻴﻣ ﻊﻣ ﻞﻴﻤﻌﻟا ﺔﺼﻴﻟﻮﺑ ﻦﻣ اءًﺰﺟ ﺖﺴﻴﻟ -\nﻞﻴﻤﻌﻠﻟ لﺎﻘﻳُ ﺎﻣ:\n\"ﻲﻫو .نﺎﻤﻋُ ﺔﻨﻄﻠﺳ ﻊﻣ دوﺪﺤﻟا ﺪﻨﻋ ﻪﻳﺮﺘﺸﺗ دوﺪﺤﻠﻟ ﺮﺑﺎﻋ ﻦﻴﻣﺄﺗ ﻲﻫ ﺔﻴﻟﺎﻘﺗﺮﺒﻟا ﺔﻗﺎﻄﺒﻟا\nقﺎﺜﻴﻣ ﻊﻣ ﻚﺘﺼﻴﻟﻮﺑ ﻲﻓ ﺔﻟﻮﻤﺸﻣ ﺮﻴﻏ.\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 16",
+    "chunk": 1,
+    "text": "٤\nتﺎﺒﻟﺎﻄﻤﻟا تاءاﺮﺟإ\nﺔﺒﻟﺎﻄﻤﻟا ﺔﺠﻟﺎﻌﻤﻟ ﻊﻳﺮﺴﻟا راﺮﻘﻟا ﻞﻴﻟد\n؟ﻚﻨﻣّ ﺆﻣ ﻮﻫ ﻦﻣ :1 لاﺆﺴﻟا\nىﺮﺧأ ﺔﻛﺮﺷ وأ قﺎﺜﻴﻣ ﻊﻣ ﺔﺼﻴﻟﻮﺒﻟا ﺖﻧﺎﻛ اذإ ﺎﻣ ﺪﻴﻛﺄﺗ :ءاﺮﺟﻹا\nمﺎﻈﻨﻟا ﻲﻓ ﺔﺼﻴﻟﻮﺒﻟا ﻢﻗر ﻦﻣ ﻖﻘﺤﺗ :ءاﺮﺟﻹا\n؟ﻚﺘﻴﻄﻐﺗ عﻮﻧ ﺎﻣ :2 لاﺆﺴﻟا\n؟ﺮﻴﻐﻟا ﺪﺿ مأ ﻞﻣﺎﺷ ﻚﺘﺼﻴﻟﻮﺑ ﻞﻫ :لﺄﺳا :ءاﺮﺟﻹا\nمﺎﻈﻨﻟا ﻦﻣ ﺪﻛﺄﺗ :ءاﺮﺟﻹا\n؟ﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ ﺐﺴﺤﺑ ،ثدﺎﺤﻟا ﻲﻓ ﺐﺒﺴﺘﻤﻟا ﻦﻣ :3 لاﺆﺴﻟا\nﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ ﻦﻋ ﻞﻴﻤﻌﻟا لﺄﺳا :ءاﺮﺟﻹا\nﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ ﻦﻣ ﻖﻘﺤﺗ — ﻞﻴﻤﻌﻟا لﻮﻗ ﻰﻠﻋ ﻂﻘﻓ ﺪﻤﺘﻌﺗ ﻻ :ﺮﻳﺬﺤﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 17",
+    "chunk": 1,
+    "text": "ءاﺮﺟﻹا ﻒﺻﻮﻟا\nﺮﻈﻨﻟا ﺾﻐﺑ ﻞﻴﻤﻌﻟا ﺔﺒﻛﺮﻣ ﺢﻠﺼﺗُ قﺎﺜﻴﻣ\nقﺎﺜﻴﻣ ﻊﻣ ﻞﻣﺎﺷ\nﺄﻄﺨﻟا ﻦﻋ\nﻰﻠﻋ ﺐﺠﻳ .ﺮﺧﻵا ﻖﺋﺎﺴﻟا ﻦﻴﻣﺄﺗ ﻊﻓﺪﻳ\nﺮﻴﻏ ﻞﻴﻤﻌﻟا ،قﺎﺜﻴﻣ ﻊﻣ ﺮﻴﻐﻟا ﺪﺿ\nﻦﻣّ ﺆﻣ ىﺪﻟ ﺔﺒﻟﺎﻄﻤﻟا ﻢﻳﺪﻘﺗ ﻞﻴﻤﻌﻟا\nﺊﻄﺨﻣ\nﺮﺧﻵا ﻖﺋﺎﺴﻟا\nمﺪّ ﻘﻳ .رﺮﻀﺘﻤﻟا فﺮﻄﻠﻟ قﺎﺜﻴﻣ ﻊﻓﺪﺗ\nﺊﻄﺨﻣ ﻞﻴﻤﻌﻟا ،قﺎﺜﻴﻣ ﻊﻣ ﺮﻴﻐﻟا ﺪﺿ\nقﺎﺜﻴﻣ ىﺪﻟ ﻪﺘﺒﻟﺎﻄﻣ ﺮﺧﻵا فﺮﻄﻟا\nﮫﺘﻛﺮﺷ ىﺪﻟ ﺔﺒﻟﺎﻄﻤﻠﻟ ﮫﯿﺟﻮﺗ ﻢﺘﯾ قﺎﺜﯿﻣ ﺮﯿﻏ ﻊﻣ ﻞﻣﺎﺷ ﻞﯿﻤﻋ رﺮﻀﺘﻣ ﺔﻟﺎﺣ ﻲﻓ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 18",
+    "chunk": 1,
+    "text": "تﺎﺒﻟﺎﻄﻤﻟا عاﻮﻧأ\nﻒﺻﻮﻟا عﻮﻨﻟا\nتﺎﻣاﺪﻄﺻﻻا ،تارﺎﻴﺴﻟا ثداﻮﺣ تﺎﺒﻛﺮﻤﻟا تﺎﺒﻟﺎﻄﻣ\nﻞﺤﻣ ،ةرﺎﻧإ دﻮﻤﻋ ،ﺔﺑاﻮﺑ ،راﺪﺟ رﺮﻀﺗ\nتﺎﻜﻠﺘﻤﻤﻟا راﺮﺿأ تﺎﺒﻟﺎﻄﻣ\nيرﺎﺠﺗ\nوأ ﺪﻳﺪﺠﺘﻟا تﺎﺒﻠﻃ ﻲﻓ ﻂﻘﻓ ﻪﻴﻟإ رﺎﺸﻳُ\nﻲﺒﻄﻟا ﻦﻴﻣﺄﺘﻟا\nﺔﻴﻄﻐﺘﻟا ةدﺎﻬﺷ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 19",
+    "chunk": 1,
+    "text": "ﺔﺒﻟﺎﻄﻤﻟا ﻢﻳﺪﻘﺗ\nﺔﺒﻟﺎﻄﻤﻟا ﻢﻳﺪﻘﺘﺑ ﻞﻴﻤﻌﻟا مﻮﻘﻳ :1 ةﻮﻄﺨﻟا\nروﺰﻳ ﻞﻴﻤﻌﻟا :ءاﺮﺟﻹا / ﻂﺑار لوا رﺎﺘﺨﯾو قﺎﺜﯿﻣ تﺎﺒﻟﺎﻄﻣ ﻦﻋ ﻞﺟﻮﺟ ﻲﻓ ﺚﺤﺒﯾ\nclaim.methaq.ae\n←\nروﺰﻳ وأ :ءاﺮﺟﻹا methaq.ae Motor Claims\nﺔﻋﺎﺴﻟا راﺪﻣ ﻰﻠﻋ ﻢﻳﺪﻘﺘﻟا ﺮﻓﻮﺘﻳ :ءاﺮﺟﻹا\nءﻼﻤﻌﻟا ﻦﻋ ﺔﺑﺎﻴﻧ تﺎﺒﻟﺎﻄﻣ ﺢﺘﻓ ﻦﻴﻔﻇﻮﻤﻠﻟ ﻦﻜﻤﻳ ﻻ :ﻪﻴﺒﻨﺗ\nجذﻮﻤﻨﻟا ﺔﺌﺒﻌﺘﺑ ﻞﻴﻤﻌﻟا مﻮﻘﻳ :2 ةﻮﻄﺨﻟا\nجذﻮﻤﻧ ﺔﺌﺒﻌﺗ :ءاﺮﺟﻹا\nتاﻮﻄﺧ 5 ﻦﻣ نﻮّ ﻜﻤﻟا ﻞﻴﻫﺄﺘﻟا ﺞﻟﺎﻌﻣ ﺮﺒﻋ :ءاﺮﺟﻹا\nتاﺪﻨﺘﺴﻤﻟا ﻊﻓﺮﺑ ﻞﻴﻤﻌﻟا مﻮﻘﻳ :3 ةﻮﻄﺨﻟا\nﺔﺑﻮﻠﻄﻤﻟا تاﺪﻨﺘﺴﻤﻟا ﻊﻴﻤﺟ ﻊﻓر :ءاﺮﺟﻹا\nﻢﻳﺪﻘﺘﻟاو ﺔﻌﺟاﺮﻤﻟا :ءاﺮﺟﻹا\nﻲﺋﺎﻘﻠﺘﻟا ﺺﺤﻔﻟﺎﺑ مﺎﻈﻨﻟا مﻮﻘﻳ :4 ةﻮﻄﺨﻟا\nﺔﺒﻟﺎﻄﻤﻟا راﺮﻜﺗ مﺪﻌﻟ يرﻮﻓ ﺺﺤﻓ :مﺎﻈﻨﻟا\nﺔﻴﺋﺎﻘﻠﺗ ﺪﻴﻛﺄﺗ ﺔﻟﺎﺳر ءﺎﺸﻧإ :مﺎﻈﻨﻟا\nرﺎﻈﺘﻧﻻا ﺔﻤﺋﺎﻗ ﻰﻟإ ﺔﺒﻟﺎﻄﻤﻟا لﻮﺧد :مﺎﻈﻨﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 20",
+    "chunk": 1,
+    "text": "ﺔﺑﻮﻠﻄﻤﻟا تاﺪﻨﺘﺴﻤﻟا\nتﺎﻈﺣﻼﻣ ﺪﻨﺘﺴﻤﻟا\nثدﺎﺤﻟا ﺖﻗو ﻖﺋﺎﺴﻠﻟ ﺔﻳرﺎﺳ ةدﺎﻴﻗ ﺔﺼﺧر\nلﻮﻌﻔﻤﻟا ﺔﻳرﺎﺳ (ﺔﺒﻛﺮﻤﻟا ﻞﻴﺠﺴﺗ ﺔﻗﺎﻄﺑ) ﺔﻴﻜﻠﻤﻟا\nﺔﺒﻛﺮﻤﻟا ﻚﻟﺎﻤﻟ ﺔﻴﺗارﺎﻣﻹا ﺔﻳﻮﻬﻟا\nPDF ﺔﻐﻴﺼﺑ ﻞﻣﺎﻜﻟا ﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ\nﺎﻬﺑ ﺢﺼﻨﻳُ ﻦﻜﻟ ﺔﻳرﺎﻴﺘﺧا راﺮﺿﻷا رﻮﺻ\n:\nﻦﻴﻬﺟﻮﻟا ﻦﻣ ةءاﺮﻘﻠﻟ ﺔﻠﺑﺎﻗو ﺔﺤﺿاو ﺦﺴﻧ ﻪﻴﺒﻨﺗ\n:\nﻲﻧوﺮﺘﻜﻟﻹا ﺪﻳﺮﺒﻟا تﺎﻘﻓﺮﻣ وأ بﺎﺴﺗاو ﺮﺒﻋ تاﺪﻨﺘﺴﻤﻟا لﻮﺒﻗ اﺪً ﺑأ زﻮﺠﻳ ﻻ ﻪﻴﺒﻨﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 21",
+    "chunk": 1,
+    "text": "ﺔﻳرﺎﺠﺘﻟا تﺎﺒﻛﺮﻤﻟا\nتﺎﻈﺣﻼﻣ ﺪﻨﺘﺴﻤﻟا\n— ﺔﻛﺮﺸﻠﻟ ﺔﻳرﺎﺠﺘﻟا ﺔﺼﺧﺮﻟا\nﺔﻛﺮﺸﻟا ﻦﻣ ﺔﻣﻮﺘﺨﻣ ﺔﻌﻧﺎﻤﻣ مﺪﻋ ةدﺎﻬﺷ\n— ﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ\n— ﺔﺒﻛﺮﻤﻟا ﻞﻴﺠﺴﺗ ﺔﻗﺎﻄﺑ\n— ةدﺎﻴﻘﻟا ﺔﺼﺧر\nﺔﯿﻣﻮﻜﺣو ﺔﺻﺎﺧ تﺎﻜﻠﺘﻤﻤﻟا راﺮﺿا\nتﺎﻈﺣﻼﻣ ﺪﻨﺘﺴﻤﻟا\nﺔﺻﺎﺧ ﺖﻧﺎﻛ اذإ ةرﺮﻀﺘﻤﻟا تﺎﻜﻠﺘﻤﻤﻟا ﺔﻴﻜﻠﻣ تﺎﺒﺛإ\nرﺮﻀﻟا ﻒﺻو ﺎﺤً ﺿ\u0000 ﻮﻣ ﺔﺛدﺎﺤﻟا ﺮﻳﺮﻘﺗ\n— ةرﺮﻀﺘﻤﻟا تﺎﻜﻠﺘﻤﻤﻠﻟ رﻮﺻ\nﻚﻟﺎﻤﻟا وأ ﺔﻛﺮﺸﻟا ﻦﻣ ﺔﺒﻟﺎﻄﻣ رﺎﻄﺧإ بﺎﻄﺧ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 22",
+    "chunk": 1,
+    "text": "ﻲﻌﺟﺮﻤﻟا ﺔﺒﻟﺎﻄﻤﻟا ﻢﻗر ﺔﻐﻴﺻ\nﻰﻨﻌﻤﻟا ءﺰﺠﻟا\n(ﺔﺒﻟﺎﻄﻣ) Claim C\n،ﻲﺑد = 02 ،ﻲﺒﻇﻮﺑأ = 01) ةرﺎﻣﻹا ﺰﻣر\n01\n(ﻦﻴﻌﻟا = 03\n(2025 ﺮﺑﻮﺘﻛأ) ﺔﺒﻟﺎﻄﻤﻟا ﺔﻨﺳو ﺮﻬﺷ 1025\nﻲﻠﺴﻠﺴﺘﻟا ﻢﻗﺮﻟا 35272"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 23",
+    "chunk": 1,
+    "text": "ﻲﻠﻴﺼﻔﺘﻟا ﻞﻤﻌﻟا ﺮﻴﺳ ﻂﻄﺨﻣ — ﺔﺒﻟﺎﻄﻤﻟا ﻞﺣاﺮﻣ\nﻰﻟوﻻا ﺔﻠﺣﺮﻤﻟا\nءاﺮﺟﻹا ﺔﻬﺠﻟا\n← ←\nروﺰﻳ methaq.ae جذﻮﻤﻧ ﺊﺒّﻌﻳ FNOL ﻊﻓﺮﻳ\nﻞﻴﻤﻌﻟا\nتاﺪﻨﺘﺴﻤﻟا\n← ←\nﺔﻤﺋﺎﻗ لﻮﺧد ﺪﻴﻛﺄﺗ ﺔﻟﺎﺳر ﻲﺋﺎﻘﻠﺗ ﺺﺤﻓ\nمﺎﻈﻨﻟا\nرﺎﻈﺘﻧﻻا\nﺔﻴﻧﺎﺜﻟا ﺔﻠﺣﺮﻤﻟا\nءاﺮﺟﻹا ﺔﻬﺠﻟا\nﻞﻤﻋ مﻮﻳ 2-1 :ﺔﻣﺪﺨﻟا ىﻮﺘﺴﻣ .تاﺪﻨﺘﺴﻤﻟا ﻊﺟاﺮﺗ تﺎﺒﻟﺎﻄﻤﻟا ةرادإ\n←\nﻞﻴﻤﻌﻠﻟ ﻊﻓر ﻂﺑار ﻞﺳﺮﻳ ﺔﻠﻤﺘﻜﻣ ﺮﻴﻏ اذإ مﺎﻈﻨﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 24",
+    "chunk": 1,
+    "text": "ﺔﺜﻟﺎﺜﻟا ﺔﻠﺣﺮﻤﻟا\nءاﺮﺟﻹا ﺔﻬﺠﻟا\nﺎًﻴﺋﺎﻘﻠﺗ ﺔﺷرﻮﻟا ﻦﻴّﻌﻳ مﺎﻈﻨﻟا\nﺔﺷرﻮﻟا ﻰﻟإ ﺔﺒﻛﺮﻤﻟا دﻮﻘﻳ ﻞﻴﻤﻌﻟا\n←\n3-1 لﻼﺧ رﺎﻌﺳﻷا ضوﺮﻋ ﻊﻤﺠﻳ ﺔﺒﻛﺮﻤﻟا رﻮّ ﺼﻳ\nﺺﺤﻓ\nمﺎﻳأ\nﺔﻌﺑاﺮﻟا ﺔﻠﺣﺮﻤﻟا\nءاﺮﺟﻹا ﺔﻬﺠﻟا\nﻞﻤﻋ مﺎﻳأ 3 لﻼﺧ ﺔﻳﻮﺴﺘﻟا ضﺮﻋ ﻞﺳﺮﺗ تﺎﺒﻟﺎﻄﻤﻟا ةرادإ\nﺾﻓﺮﻳ وأ ﻞﺒﻘﻳ ﻞﻴﻤﻌﻟا\nنﺎﺒﻳﻵا ﻊﻓﺮﻳ + راﺮﻗﻹا جذﻮﻤﻧ ﻊﻗّ ﻮﻳ ﻞﻴﻤﻌﻟا\nﻞﻤﻋ مﻮﻳ 15 لﻼﺧ ﻲﻜﻨﺑ ﻞﻳﻮﺤﺗ ﺔﻴﻟﺎﻤﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 25",
+    "chunk": 1,
+    "text": "١ ﺔﻌﺑاﺮﻟا ﺔﻠﺣﺮﻤﻟا\nءاﺮﺟﻹا ﺔﻬﺠﻟا\n(مﻮﻳ 2-1) ﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ رﺪﺼﺗ تﺎﺒﻟﺎﻄﻤﻟا ةرادإ\n(مﻮﻳ 15-7) ﺔﺒﻛﺮﻤﻟا ﺢﻠﺼﺗُ ﺔﺷرﻮﻟا\nمﻼﺘﺳﻼﻟ ﻞﻴﻤﻌﻟا ﻊﻣ ﻞﺻاﻮﺘﺗ ﺔﺷرﻮﻟا\n٢ ﺔﻌﺑاﺮﻟا ﺔﻠﺣﺮﻤﻟا\nءاﺮﺟﻹا ﺔﻬﺠﻟا\n(ﻞﻤﻋ مﺎﻳأ 3) ﺔﺒﻟﺎﻄﻤﻟا ﻢﻴّﻘﻳ تﺎﺒﻟﺎﻄﻤﻟا لوﺆﺴﻣ\n(ﻞﻤﻋ مﺎﻳأ 5) ﺔﻘﻓاﻮﻤﻟا ﻰﻠﻋ ﻞﺼﺤﺗ تﺎﺒﻟﺎﻄﻤﻟا ةرادإ\nﻞﻤﻋ مﻮﻳ 15 لﻼﺧ ﻲﻜﻨﺑ ﻞﻳﻮﺤﺗ ﺔﻴﻟﺎﻤﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 26",
+    "chunk": 1,
+    "text": "ﺔﻟوﺆﺴﻤﻟا ﺔﻬﺠﻟا ﺔﻣﺪﺨﻟا ىﻮﺘﺴﻣ ﺔﻠﺣﺮﻤﻟا\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻞﻤﻋ مﻮﻳ 1-2 تاﺪﻨﺘﺴﻤﻟا ﺔﻌﺟاﺮﻣ\nحﺎﺴﻤﻟا مﺎﻳأ 1-3 حﺎﺴﻤﻟا رﺎﻌﺳأ ضوﺮﻋ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻞﻤﻋ مﺎﻳأ 3 ﺔﻳﻮﺴﺘﻟا ضﺮﻋ لﺎﺳرإ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻞﻤﻋ ﻲﻣﻮﻳ ﻊﻴﻗﻮﺘﻟا ﻦﻣ ﻖﻘﺤﺘﻟا\nﺔﻴﻟﺎﻤﻟا ﻞﻤﻋ مﻮﻳ 15 ﺔﻳﺪﻘﻨﻟا ﺔﻳﻮﺴﺘﻟا ﻊﻓد\nءاﺮﺸﻟا ﺮﻣأ راﺪﺻإ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ مﻮﻳ 1-2\nﻲﻠﺤﻤﻟا\nﺔﺷرﻮﻟا ﺎﻣً ﻮﻳ 7-15 ﺔﺷرﻮﻟا حﻼﺻإ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﺎﻣً ﻮﻳ 15 ﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا\nتﺎﺒﻟﺎﻄﻤﻟا لوﺆﺴﻣ ﻞﻤﻋ مﺎﻳأ 3 ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا ﻢﻴﻴﻘﺗ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻞﻤﻋ مﺎﻳأ 5 ﺔﻴﻠﺧاﺪﻟا ﺔﻘﻓاﻮﻤﻟا\nﺔﻴﻟﺎﻤﻟا ﻞﻤﻋ مﻮﻳ 15 ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا ﻊﻓد"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 27",
+    "chunk": 1,
+    "text": "٥\nتﺎﻀﻳﻮﻌﺘﻟاو تﺎﻋﻮﻓﺪﻤﻟا\nﺔﻳﺪﻘﻨﻟا ﺔﻳﻮﺴﺘﻟا\nﻲﻗﺎﺒﺘﺳا ﻞﻜﺸﺑ ﺔﻳﺪﻘﻨﻟا ﺔﻳﻮﺴﺘﻟا قﺎﺜﻴﻣ ضﺮﻌﺗ ﺎﻟ\nﺎﻬﻴﻠﻋ ضوﺎﻔﺘﻤﻟا قﺎﺜﻴﻣ رﺎﻌﺳأ ﻰﻠﻋ ءً ﺎﻨﺑ ﻎﻠﺒﻤﻟا ﺐﺴﺤﻳُ\nضوﺎﻔﺘﻟا مﺪﻋ ﻦﻴﻔﻇﻮﻤﻟا ﻰﻠﻋ ﺐﺠﻳ\nحﻼﺻإ ﻲﻓ ﻪﻘﺣ ﻦﻋ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ لزﺎﻨﺘﻳ ،ﺔﻳﻮﺴﺘﻟا جذﻮﻤﻧ ﻊﻴﻗﻮﺘﺑ :ﻪﻴﺒﻨﺗ\nﺔﺒﻛﺮﻤﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 28",
+    "chunk": 1,
+    "text": "ﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا ﺾﻳﻮﻌﺗ\n- ﻪﺗرﺎﻴﺳ ماﺪﺨﺘﺳا ﻞﻴﻤﻌﻟا ﺎﻬﻴﻓ ﻊﻴﻄﺘﺴﻳ ﻻ ﻲﺘﻟا ةﺮﺘﻔﻟا ﻦﻋ ﺾﻳﻮﻌﺗ\nﻞﻤﻋ مﻮﻳ 15 ﻰﺼﻗأ ﺪﺤﺑ\nقﺎﺜﻴﻣ ﺔﺼﻴﻟﻮﺑ ﻞﻣﺎﺣ ﻞﺒﻗِ ﻦﻣ ةرﺮﻀﺘﻤﻟا تﺎﺒﻛﺮﻤﻟا :ﻰﻠﻋ ﻖﺒﻄﻨﻳ\nءﺪﺒﻟا طوﺮﺷ:\nﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ ﻰﻠﻋ ﺔﻘﻓاﻮﻤﻟا\nﺔﺷرﻮﻟا ﻲﻓ ﺎﻴًﻠﻌﻓ ﺔﺒﻛﺮﻤﻟا دﻮﺟو\nتﻻﺎﺣ ﻲﻓ ﺔﻠﻳﺪﺑ ةرﺎﻴﺳ مﺪ\u0000 ﻘﺗُ ﻻ:\nﺔﻳﺪﻘﻨﻟا ﺔﻳﻮﺴﺘﻟا\nﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 29",
+    "chunk": 1,
+    "text": "ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا ﺾﻳﻮﻌﺗ\nﻞﻤﻋ مﺎﻳأ 3 :ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا ﻢﻴﻴﻘﺗ\nﻞﻤﻋ مﺎﻳأ 5 :ﺔﻴﻠﺧاﺪﻟا ﺔﻘﻓاﻮﻤﻟا\nﻞﻤﻋ مﻮﻳ 15 :ﻊﻓﺪﻟا\nﺔﺒﻛﺮﻤﻟا تﺎﺣﻮﻟ:\nﻞﻴﻤﻌﻟا ﺎﻬﻤﻠﺘﺴﻴﻟ ﺔﻴﻠﺻﻷا ﺺﺤﻔﻟا ﺔﺷرو ﻲﻓ تﺎﺣﻮﻠﻟا ﻰﻘﺒﺗ ،ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا تﻻﺎﺣ ﻲﻓ\nﻞﻤّ ﺤﺘﻟا / ﺾﺋﺎﻔﻟا\nﻞﻤّ ﺤﺘﻟا / ﺾﺋﺎﻔﻟا (Excess/Deductible):\nثدﺎﺤﻟا ﻲﻓ ﺐﺒﺴﺘﻤﻟا ﻞﻣﺎﺸﻟا ﺔﺼﻴﻟﻮﺑ ﻞﻣﺎﺣ ﻖﻓاﻮﻳ يﺬﻟا ﻎﻠﺒﻤﻟا\nﺔﺒﻟﺎﻄﻣ ﻞﻜﻟ ﻪﻌﻓد ﻰﻠﻋ\nﺔﺒﻟﺎﻄﻤﻟا ﺔﻳﻮﺴﺗ ﻦﻣ ﻢﺼﺨﻳُ\nﺔﻄﻴﺴﺒﻟا تﻻﺎﺤﻟا ﻲﻓ ﻪﻨﻋ لزﺎﻨﺘﻳُ ﺪﻗ\nﺐﺤﺴﻟاو ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\nAAA: 600508181 : Arabic\n044020738 / English\n044020737 Emirates Auction\nRoad side assistance\n600500372\nﻒﻇﻮﻤﻟا تاءاﺮﺟإ:\nﺔﺼﻴﻟﻮﺒﻟا ﻢﻗر وأ ﺔﺣﻮﻠﻟا ﻢﻗر ﻦﻣ ﻖﻘﺤﺘﻟا\nﺔﻴﻄﻐﺘﻟا ﺪﻴﻛﺄﺗ\nﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا ﻖﻳﺮﻓ ﻰﻟإ ﻞﻴﻤﻌﻟا ﻞﻳﻮﺤﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 30",
+    "chunk": 1,
+    "text": "شرﻮﻟا تﺎﺳﺎﻴﺳ\nﺔﺷرﻮﻟا رﺎﻴﺘﺧا:\nتﺎﺒﻛﺮﻤﻟا تازاﺮﻃو رﺎﻌﺳﻷا ضوﺮﻋ ﻰﻠﻋ ءً ﺎﻨﺑ ﺔﺷرﻮﻟا ﺔﻛﺮﺸﻟا رﺎﺘﺨﺗ\n- ﺎﻬﻨﻣ رﺎﻴﺘﺧﻼﻟ ﺔﻤﺋﺎﻗ ءﻼﻤﻌﻟا ﻚﻠﻤﻳ ﻻ\nﺔﺷرﻮﻟا ﺮﻴﻴﻐﺗ ﻞﻴﻤﻌﻟا ﺐﻠﻃ اذإ:\n. ءﺎﻘﺒﻟﺎﺑ ﻞﻴﻤﻌﻟا عﺎﻨﻗﻹ ﺪﻬﺠﻟا ىرﺎﺼﻗ لﺬﺑ\nﻦﻴﻴﻓﺎﺿإ ﻦﻴﻣﻮﻳ ﻰﻟإ ﺎﻣً ﻮﻳ قﺮﻐﺘﺴﻳ ﺪﻗ ﺮﻴﻴﻐﺘﻟا نأ حﺮﺷ\nﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا ﺾﻳﻮﻌﺗ ﻦﻤﺿ ﺐﺴﺘﺤﻳُ ﻦﻟ ﻲﻓﺎﺿﻹا ﺖﻗﻮﻟا اﺬﻫ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 31",
+    "chunk": 1,
+    "text": "٦\nﺔﻳرﺎﻴﻌﻤﻟا صﻮﺼﻨﻟاو دودﺮﻟا\nﺔﺒﻟﺎﻄﻤﻟا ﺔﻟﺎﺣ ﻦﻋ رﺎﺴﻔﺘﺳﻻا\nتاﻮﻄﺨﻟا:\nﺔﺒﻟﺎﻄﻤﻟا ﺢﺘﻓ\nﻖﻴﻠﻌﺗ ﺮﺧآ ةءاﺮﻗ\nﺔﻟﺎﺤﻟا ﻦﻣ ﻖﻘﺤﺘﻟا\nﺔﻘﻠّﻌﻤﻟا تاءاﺮﺟﻹا ﺔﻌﺟاﺮﻣ\nﺔﺑﺎﺟﻹا\nﺔﻤﻟﺎﻜﻤﻟا ﻖﻴﺛﻮﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 32",
+    "chunk": 1,
+    "text": "ﻞﻴﻤﻌﻠﻟ لﺎﻘﻳ ﺎﻣ ﻰﻨﻌﻤﻟا مﺎﻈﻨﻟا ﺔﻟﺎﺣ\nُ\nﻲﻀﻤﻨﺳو ﺺﺤﻔﻟا ﺐﻴﺗﺮﺘﺑ مﻮﻘﻧ\"\nﺺﺤﻔﻟا ﻞﻤﺘﻜﻳ ﻢﻟ ﺢﺴﻤﻟا رﺎﻈﺘﻧﺎﺑ\n\".ﻪﻟﺎﻤﺘﻛا رﻮﻓ تاءاﺮﺟﻹا ﻲﻓ\nﺔﻌﺟاﺮﻤﻟا ﺪﻴﻗ ﻚﺑ صﺎﺨﻟا ﺮﻳﺪﻘﺘﻟا\" ﺪﻴﻗ ﺮﻳﺪﻘﺘﻟا\nﺔﻘﻓاﻮﻤﻟا رﺎﻈﺘﻧﺎﺑ\n\".ﺔﻴﻨﻔﻟا ﺔﻌﺟاﺮﻤﻟا\nﺔﻴﻟﺎﻤﻟا مﻮﻘﺗ .ةﺪﻤﺘﻌﻣُ ﻚﺘﺒﻟﺎﻄﻣ\"\nةﺪﻤﺘﻌﻣُ ﺔﺒﻟﺎﻄﻤﻟا ﻊﻓﺪﻟا ﺔﺠﻟﺎﻌﻣ ﺪﻴﻗ\n\".ﺔﻌﻓﺪﻟا ﺔﺠﻟﺎﻌﻤﺑ ﺎﻴًﻟﺎﺣ\nراﺮﻗ ذﺎﺨﺗﻻ ﻚﺘﺒﻛﺮﻣ ﻢﻴﻴﻘﺗ ﺎﻴًﻟﺎﺣ ﻢﺘﻳ\" ةرﺎﺴﺨﻟا ﺔﻌﺟاﺮﻣ\nﻢﻴﻴﻘﺘﻟا ﺪﻴﻗ\n\".ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا ﺔﻴﻠﻜﻟا\nﺪﻴﻗ ﻲﻫو ﻚﺘﺒﻟﺎﻄﻣ مﻼﺘﺳا ﻢﺗ\"\nﻢﻳﺪﻘﺘﻟا ﻢﺗ ةﺪﻳﺪﺟ\n\".ﺎﻴًﻟﺎﺣ ﺔﻌﺟاﺮﻤﻟا\n— ﺔﻘﻠّﻌﻣ\nﺪﻴﻋﺄﺳ .[دﺪﺤﻣ ﺪﻨﺘﺴﻣ] ﺎﻨﺼﻘﻨﻳ\" ﺮﻴﻏ تاﺪﻨﺘﺴﻤﻟا\nﺔﺼﻗﺎﻧ تاﺪﻨﺘﺴﻣ\n\".ﻊﻓﺮﻟا ﻂﺑار لﺎﺳرإ ﺔﻠﻤﺘﻜﻣ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 33",
+    "chunk": 1,
+    "text": "ﺔﺼﻗﺎﻨﻟا تاﺪﻨﺘﺴﻤﻟا ﺐﻠﻃ\n:\nﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\" .[ ]\nﻊﻓر ﻂﺑار نﻵا ﻚﻟ ﻞﺳرﺄﺳ دﺪﺤﻣ ﺪﻨﺘﺴﻣ ﱃإ ﺔﺟﺎﺤﺑ ﺎﻨﻧأ ﻲﻟ ﺮﻬﻈﻳو ،ﻚﺘﺒﻟﺎﻄﻣ ﺖﻌﺟار\n— .\"\nىﺮﺧأ ةﺮﻣ ﻪﺘﻌﺟاﺮﻤﺑ ﺎﻨﻘﻳﺮﻓ مﻮﻘﻴﺳ ،ﺔﺑاﻮﺒﻟا ﺮﺒﻋ ﻪﻌﻓر دﺮﺠﻤﺑو ﻦﻣآ\nﺐﺿﺎﻏ ﻞﻴﻤﻋ ﻊﻣ ﻞﻣﺎﻌﺘﻟا\nةرﺎﺒﻌﻟا ءاﺮﺟﻹا ةﻮﻄﺨﻟا\nﻲﻧﺮﺒﺧأ ﻚﻠﻀﻓ ﻦﻣ\" نود حﺮﺸﻳ ﻞﻴﻤﻌﻟا عد\nءﺎﻐﺻﻹا\n\".ثﺪﺣ ﺎﻤﺑ ﺔﻌﻃﺎﻘﻣ\nرﺪّ ﻗأو ،ﻚﻘﻠﻗ ﻢﻬّ ﻔﺗأ\"\nﻞﻴﻤﻌﻟا ﺮﻋﺎﺸﻣ ﺮﻳﺪﻘﺗ ﻒﻃﺎﻌﺘﻟا\n\".كﺮﺒﺻ\nﻊﺟارأ ﻲﻨﻋد\"\nﺔﺒﻟﺎﻄﻤﻟا ﺔﻌﺟاﺮﻣ\nﻦﻣ ﻖﻘﺤﺗأو ﻚﺘﺒﻟﺎﻄﻣ ﻢﻴﻴﻘﺘﻟا\nدﺮﻟا ﻞﺒﻗ\n\".ﺚﻳﺪﺤﺗ ﺮﺧآ\nﻊﺿﻮﻟا ﻚﻟ حﺮﺷﺄﺳ\"\nثﺪﺤﻴﺳ ﺎﻣو ﻲﻟﺎﺤﻟا ﺔﻨﻫاﺮﻟا ﺔﻟﺎﺤﻟا حﺮﺷ ﺎﻣً ﺪﻗ ﻲﻀﻤﻟا\n\".ﻚﻟذ ﺪﻌﺑ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 34",
+    "chunk": 1,
+    "text": "ﺪﻛ\u0000 ﺆﻳ ﻢﻟ ﺎﻤﺑ ﺪﻌِ ﺗ ﻻ\nُ\nﻚﻟذ ﻦﻣ ﻻً ﺪﺑ ﻞﻗ اﺪً ﺑأ ﻞﻘﺗ ﻻ\n،ﺔﺒﻟﺎﻄﻤﻠﻟ ﺔﻨﻫاﺮﻟا ﺔﻟﺎﺤﻟا ﺐﺴﺤﺑ\"\n\".اﺪً ﻏ\"\n\"...ﻲﻫ ﺔﻴﻟﺎﺘﻟا ةﻮﻄﺨﻟا\n\"...ﺎﻴًﻟﺎﺣ ﺔﻌﺟاﺮﻤﻟا ﺪﻴﻗ ﺔﺒﻟﺎﻄﻤﻟا\" \".ﺎﻬﻴﻠﻋ ﺔﻘﻓاﻮﻤﻟا ﺖﻤﺗ\"\n\"...ﺔﺒﻛﺮﻤﻟا ﻢﻴﻴﻘﺗ ﺎﻴًﻟﺎﺣ ﻢﺘﻳ\" \".ﺔﻴﻠﻛ ةرﺎﺴﺧ ﺎﻬﻧإ\"\n\"...ﺔﺠﻟﺎﻌﻤﻟا ﺪﻴﻗ ﺔﻌﻓﺪﻟا\" \".مﻮﻴﻟا ﺎﻬﻤﻠﺘﺴﺘﺳ\"\n\"...ﺎﻴًﻟﺎﺣ ةﺮﻓﻮﺘﻤﻟا تﺎﻣﻮﻠﻌﻤﻟا ﻰﻠﻋ ءً ﺎﻨﺑ\" \".ﺪﻴﻛﺄﺘﻟﺎﺑ\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 35",
+    "chunk": 1,
+    "text": "ءﻼﻤﻌﻟا ﻦﻣ ﺔﺒﻌﺻ تارﺎﺒﻋ\nﻪﻠﻌﻓ ﺐﺠﻳ ﺎﻣ ﻞﻴﻤﻌﻟا ﻪﻟﻮﻘﻳ ﺎﻣ\n.ﻞﻴﻤﻌﻟا ﻖﺤﺑ ﺮّﻗأ .لدﺎﺠﺗ ﻻ .ﺎﺋًدﺎﻫ ﻖَ ﺑا \".ىﻮﻜﺸﺑ مﺪّ ﻘﺗﺄﺳ\"\nﻰﻠﻋ ﺰﻛّ ر .ﻲﺼﺨﺷ شﺎﻘﻧ ﻲﻓ ﻞﺧﺪﺗ ﻻ \".يﺬﻴﻔﻨﺘﻟا ﺲﻴﺋﺮﻟا فﺮﻋأ ﺎﻧأ\"\n.ﺔﺒﻟﺎﻄﻤﻟا ﻖﺋﺎﻘﺣ\nتارﺎﻴﺨﻟاو ﺔﻛﺮﺸﻟا تاءاﺮﺟإ حﺮﺷا\n\".كﺪﻨﺳ ﻰﻟإ ﺐﻫذﺄﺳ\"\n.ﺔﺣﺎﺘﻤﻟا\n.ةﺪﻤﺘﻌﻤﻟا ﺪﻴﻌﺼﺘﻟا ﺔﺳﺎﻴﺳ ﻊﺒﺗا \".ﺮﻳﺪﻤﻟا ﻊﻣ ثﺪﺤﺘﻟا ﺪﻳرأ\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 36",
+    "chunk": 1,
+    "text": "ﺔﻴﻌﻗاو تﻻﺎﺣ صﻮﺼﻧ\n:\nﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\" . \"\n؟ﻚﺘﺒﻟﺎﻄﻣ ﻢﻗر ﻮﻫ ﺎﻣ ﻚﻟ ﻖﻘﺤﺗأ ﻲﻨﻋد\n[ ]\nمﺎﻈﻨﻟا ﻲﻓ ﺚﺤﺒﻟا\n\"[ ] ...\"\nﺦﻳرﺎﺘﻟا ﺦﻳرﺎﺘﺑ ﻚﺘﺒﻟﺎﻄﻣ ﲆﻋ ﺔﻘﻓاﻮﻤﻟا ﺖﻤﺗ\n\" : 15 .\"\nﺔﺠﻟﺎﻌﻤﻠﻟ ﺔﻴﻌﻴﺒﻄﻟا ﺔﻴﻨﻣﺰﻟا ةﺮﺘﻔﻟا ﻦﻤﺿ ﺖﻟز ﺎﻣ ﻞﻤﻋ مﻮﻳ ﻦﻤﺿ ﺖﻧﺎﻛ اذإ\n. \" : 15 .\"\nارً ﻮﻓ ﺪﻴﻌﺼﺘﻟﺎﺑ مﻮﻗأ ﺔﺠﻟﺎﻌﻤﻠﻟ ﻲﻌﻴﺒﻄﻟا ﺖﻗﻮﻟا زوﺎﺠﺗ اﺬﻫ ﻞﻤﻋ مﻮﻳ تزوﺎﺠﺗ اذإ\n:\nﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\" . \"\n؟ﻚﺘﺒﻟﺎﻄﻣ ﻢﻗر ﻮﻫ ﺎﻣ ﻚﻟذ ﻦﻋ ﺚﺤﺑأ ﻲﻨﻋد\n[ ]\nﺦﻳراﻮﺘﻟا ﻦﻣ ﻖﻘﺤﺘﻟا\n\" \"\n؟ﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ رﺪﺻ ﻰﺘﻣ ؟ﺔﺷرﻮﻟا ﱃإ ﺔﺒﻛﺮﻤﻟا ﺖﺒﻫذ ﻰﺘﻣ\n.[ ] \" : .\"\nﻢﻬﻌﻣ ﻞﺻاﻮﺗأ ﻲﻨﻋد رﺎﻴﻐﻟا ﻊﻄﻗ رﺎﻈﺘﻧﺎﺑ ﺔﺷرﻮﻟا رﺎﻴﻐﻟا ﻊﻄﻗ رﺎﻈﺘﻧﺎﺑ ﺖﻧﺎﻛ اذإ\n. \" :\nﺖﻧأ ﺎﻤﻨﻴﺑ ﺔﺷرﻮﻟﺎﺑ ﻞﺼﺗأ ﻲﻨﻋد ًﻼﻳﻮﻃ ﺎﺘً ﻗو قﺮﻐﺘﺴﻳ اﺬﻫ ﺢﺿاو ﺐﺒﺳ ﺪﺟﻮﻳ ﻻ نﺎﻛ اذإ\n.\"\nﻂﺨﻟا ﲆﻋ\n:\nﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\"999 . .\"\nﻢﻗﺮﺑ ارً ﻮﻓ ﻞﺼﺗا ،تﺎﺑﺎﺻإ دﻮﺟو لﺎﺣ ﻲﻓ ًﻻوأ ﺔﻣﻼﺴﻟا\n\" .\"\nﺔﺒﻟﺎﻄﻣ يﻷ بﻮﻠﻄﻣ اﺬﻫ ؟ﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ ﲆﻋ ﺖﻠﺼﺣ ﻞﻫ\n\" \"\n؟ﻚﺘﺒﻛﺮﻣ ﻲﻄﻐﺗ ﻲﺘﻟا ﻦﻴﻣﺄﺘﻟا ﺔﻛﺮﺷ ﻲﻫ ﺎﻣ\n\" — \"\n؟ﺮﻴﻐﻟا ﺪﺿ مأ ﻞﻣﺎﺷ ﺔﻴﻄﻐﺘﻟا عﻮﻧ ﺎﻣ\n\" \"\n؟ﺐﺒﺴﺘﻤﻟا نﺎﻛ ﻦﻣ\n\" :\nﲆﻋ ﺖﻧﺮﺘﻧﻹا ﺮﺒﻋ ﺔﺒﻟﺎﻄﻤﻟا ﻢﻳﺪﻘﺗ ﻚﻴﻠﻋ ﺔﻟوﺆﺴﻤﻟا ﻲﻫ قﺎﺜﻴﻣ ﺖﻧﺎﻛ اذإ\nwww.methaq.ae\"\nﻰﻠﻋ ءً ﺎﻨﺑو ،ةدﺎﻌﺘﺳﻻا ﺔﻣﺪﺧ ﻲﻄﻐﺗ ﻪﺑ ﺔﺻﺎﺨﻟا ﻦﻴﻣﺄﺘﻟا ﺔﺼﻴﻟﻮﺑ ﺖﻧﺎﻛ اذإ ﺎﻤﻣ ﻖﻘّ ﺤﺗ\n.ﻪﺘﺼﻴﻟﻮﺒﺑ ﺔﻄﺒﺗﺮﻤﻟا ﺔﻣﺪﺨﻟا ﻪﻟ مﺪّ ﻗ ،ﻚﻟذ\n:\nﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\" . \"\n؟ﻚﺘﺒﻟﺎﻄﻣ ﻢﻗر ﻮﻫ ﺎﻣ ﻚﻟ ﻖﻘﺤﺗأ ﻲﻨﻋد\n[ ]\nمﺎﻈﻨﻟا ﻲﻓ ﺚﺤﺒﻟا\n\"[ ] ...\"\nﺦﻳرﺎﺘﻟا ﺦﻳرﺎﺘﺑ ﻚﺘﺒﻟﺎﻄﻣ ﲆﻋ ﺔﻘﻓاﻮﻤﻟا ﺖﻤﺗ\n\" : 15 .\""
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 36",
+    "chunk": 2,
+    "text": "ﻖﻘّ ﺤﺗ\n.ﻪﺘﺼﻴﻟﻮﺒﺑ ﺔﻄﺒﺗﺮﻤﻟا ﺔﻣﺪﺨﻟا ﻪﻟ مﺪّ ﻗ ،ﻚﻟذ\n:\nﻒﻇﻮﻤﻟا لﻮﻘﻳ\n\" . \"\n؟ﻚﺘﺒﻟﺎﻄﻣ ﻢﻗر ﻮﻫ ﺎﻣ ﻚﻟ ﻖﻘﺤﺗأ ﻲﻨﻋد\n[ ]\nمﺎﻈﻨﻟا ﻲﻓ ﺚﺤﺒﻟا\n\"[ ] ...\"\nﺦﻳرﺎﺘﻟا ﺦﻳرﺎﺘﺑ ﻚﺘﺒﻟﺎﻄﻣ ﲆﻋ ﺔﻘﻓاﻮﻤﻟا ﺖﻤﺗ\n\" : 15 .\"\nﺔﺠﻟﺎﻌﻤﻠﻟ ﺔﻴﻌﻴﺒﻄﻟا ﺔﻴﻨﻣﺰﻟا ةﺮﺘﻔﻟا ﻦﻤﺿ ﺖﻟز ﺎﻣ ﻞﻤﻋ مﻮﻳ ﻦﻤﺿ ﺖﻧﺎﻛ اذإ\n. \" : 15 .\"\nارً ﻮﻓ ﺪﻴﻌﺼﺘﻟﺎﺑ مﻮﻗأ ﺔﺠﻟﺎﻌﻤﻠﻟ ﻲﻌﻴﺒﻄﻟا ﺖﻗﻮﻟا زوﺎﺠﺗ اﺬﻫ ﻞﻤﻋ مﻮﻳ تزوﺎﺠﺗ اذإ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 37",
+    "chunk": 1,
+    "text": "٧\nىوﺎﻜﺸﻟا تاءاﺮﺟإ\nﺪﻴﻌﺼﺘﻟا ﺔﻓﻮﻔﺼﻣ\nلوﺆﺴﻤﻟا ﻖﻳﺮﻔﻟا ﺔﻟﺎﺣ\nﺺﺤﻔﻟا ﻖﻳﺮﻓ ﺺﺤﻔﻟا ﺮﺧﺄﺗ/ﺪﻋﻮﻣ\nتﺎﺒﻟﺎﻄﻤﻟا لوﺆﺴﻣ حﻼﺻﻹا ﻰﻠﻋ ﺔﻘﻓاﻮﻤﻟا\nﺔﻴﻟﺎﻤﻟا ةرادإ ﻊﻓﺪﻟا ﺔﻟﺎﺣ\nىوﺎﻜﺸﻟا ةرادإ ﻞﻴﻤﻌﻟا ىﻮﻜﺷ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻲﻨﻓ راﺮﻗ\nتﺎﺒﻟﺎﻄﻤﻟا ةرادإ / عﺮﻔﻟا ﺔﺷرﻮﻟا ىﻮﻜﺷ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 38",
+    "chunk": 1,
+    "text": "ﻖﻴﻠﻌﺗ ﻊﻓر ﺐﺠﻳ ﻰﺘﻣ\nﺎﻴً ﻨﻓ اﺮً ﻴﺒﺧ ﺐﻠﻄﺘﺗ ﻲﺘﻟا ﻞﺋﺎﺴﻤﻠﻟ ﻂﻘﻓ ﺪﻴﻌﺼﺘﻟا:\nﺔﻳﺪﻘﻨﻟا تﺎﻳﻮﺴﺘﻟا\nﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا تﺎﺒﻠﻃ\nﺎﻣﺪﻨﻋ ﺎﻘً ﻴﻠﻌﺗ ﻊﻓﺮﺗ ﻻ:\nارًﻮﻓ ﺔﺑﺎﺟﻹا ﻢﻳﺪﻘﺗ ﻦﻜﻤﻳ\nرﺎﺴﻔﺘﺳﻻا ﻞﺤﻟ ﺔﻓﺮﻌﻤﻟا ﻚﻠﻤﺗ\nﺔﻴﻧوﺮﺘﻜﻟﻹا ﺔﺷدرﺪﻟا ﻰﻟإ ﻞﻴﻤﻌﻟا ﻪﻴﺟﻮﺗ ﻮﻫ ﻞﻳﺪﺒﻟا\nﺪﻴﻌﺼﺘﻠﻟ ﺔﻴﻨﻣز لواﺪﺟ\nﺪﻴﻌﺼﺘﻠﻟ ﺔﻴﻨﻣز لواﺪﺟ:\nﻞﻤﻋ ﻲﻣﻮﻳ لﻼﺧ ﺔﺒﻟﺎﻄﻤﻟا ﺢﺘﻓ مﺪﻋ\nﻞﻤﻋ مﺎﻳأ 3 لﻼﺧ ﺺﺤﻔﻟا ﺔﻟوﺪﺟ مﺪﻋ\nﻞﻤﻋ مﺎﻳأ 7 ﻦﻣ ﺮﺜﻛأ ﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ ﺮﺧﺄﺗ\nﺎﻣً ﻮﻳ ١٥ ﻦﻣ ﺮﺜﻛأ تﺎﻌﻓﺪﻟا ﺮﺧﺄﺗ\nﺎﻣً ﻮﻳ ١٥ ﻦﻣ ﺮﺜﻛأ ةدﺮﺘﺴﻤﻟا ﻎﻟﺎﺒﻤﻟا ﺮﺧﺄﺗ\nﺪﻴﻌﺼﺘﻟا ﺔﻴﻔﻴﻛ\nﻲﻠﺧاد ﻖﻴﻠﻌﺗ/ﺔﻌﺑﺎﺘﻣ ﺔﻓﺎﺿإ : ةﻮﻄﺨﻟا\nمﺎﻈﻨﻟا ﻲﻓ ﺔﻌﺑﺎﺘﻣ ﻒﺿِ أ :ءاﺮﺟﻹا\nﻞﻴﻤﻌﻟا ﺔﻈﺣﻼﻤﺑ ﺮّﻗأ :ءاﺮﺟﻹا\nﻪﻓﺮﺸﻣو ﺔﺒﻟﺎﻄﻤﻟا لوﺆﺴﻣ رﺎﻄﺧإ :مﺎﻈﻨﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 39",
+    "chunk": 1,
+    "text": "تﺎﺒﻟﺎﻄﻤﻟا ةرادإ ﻰﻟإ ﺪﻴﻌﺼﺘﻟا\n.ةﻮﻄﺨﻟا ﻚﻠﺗ ذﺎﺨﺗﺎﺑ ﻂﻘﻓ ﻦﻳﺮﻳﺪﻤﻠﻟ ﺢﻤﺴﻳُ\nﻲﻧوﺮﺘﻜﻟﻹا ﺪﻳﺮﺒﻟا ﻢﺳﻻا عﺮﻔﻟا\nm.sarhan@methaq.ae نﺎﺣﺮﺳ ﺪﻤﺤﻣ ﻲﺒﻇﻮﺑأ\nazmi.a@methaq.ae ةﺰﻨﻋ ﻮﺑأ ﻲﻣﺰﻋ ﻲﺒﻇﻮﺑأ\ni.bannan@methaq.ae نﺎﻨﺑ ﻢﻴﻫاﺮﺑإ ﻲﺑد\nwassim.h@methaq.ae ﻲﻨﻴﺴﺣ ﻢﻴﺳو ﻲﺑد\nn.laaroussi@methaq.ae ﻲﺳوﺮﻌﻟا ىﻮﺠﻧ ﻦﻴﻌﻟا\nmottaz.a@methaq.ae ةﺎﻀﻘﻟا ﺰﺘﻌﻣ ﻦﻴﻌﻟا\nﺪﻴﻌﺼﺘﻟا ﺪﻴﻌﺼﺗ:\nﻦﻤﻳأ ﺪﻴﺴﻟا ،تﺎﺒﻟﺎﻄﻤﻟا ﺮﻳﺪﻣ ﻰﻟإ ﺔﺨﺴﻧ ﻊﻣ يﺮﻴﻛﺬﺗ ﺪﻳﺮﺑ ﻞﺳَ ﺮﻳُ ،در دورو مﺪﻋ لﺎﺣ ﻲﻓ\nيواﺪﻴﻟ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 40",
+    "chunk": 1,
+    "text": "ىوﺎﻜﺷ ﺞﺘﻨﺗُ ﻲﺘﻟا ﺔﻌﺋﺎﺸﻟا ءﺎﻄﺧﻷا\nﺔﻴﻠﻌﻔﻟا ﺔﻟﺎﺤﻟا ﻰﻠﻋ دﺎﻤﺘﻋﻻا ﻦﻣ ﻻً ﺪﺑ ﺔﻴﺼﺨﺷ ءارآ ﻢﻳﺪﻘﺗ\nﻖﻘﺤﺘﻟا ﻦﻣ ﻻً ﺪﺑ ﻦﻴﻤﺨﺘﻟا\nﺎﻴًﻤﺳر ﺪﻛ\u0000 ﺆﺗُ ﻢﻟ ﺪﻴﻋاﻮﻤﺑ ﺪﻋﻮﻟا\nﺔﺑاﻮﺒﻟا تﺎﻘﻴﻠﻌﺗ ﺮﺧآ ﻞﻫﺎﺠﺗ\nﻻً وأ ﺔﺒﻟﺎﻄﻤﻟا ﻒﻠﻣ ﻦﻣ ﻖﻘﺤﺘﻟا نود ﺪﻴﻌﺼﺘﻟا\nﺔﻴﻨﻬﻤﻟا ﻰﻠﻋ ظﺎﻔﺤﻟا ﻦﻣ ﻻً ﺪﺑ ﻞﻴﻤﻌﻟا ﻊﻣ لاﺪﺠﻟا\nﺔﻘﺴﺘﻣ ﺮﻴﻏ تﺎﻣﻮﻠﻌﻣ ﻢﻳﺪﻘﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 41",
+    "chunk": 1,
+    "text": "٨\nﺔﻌﺋﺎﺸﻟا ﺔﻠﺌﺳﻷا\nلاﺆﺴﻟا\nَ — :\n؟ثدﺎﺤﻟا ﻲﻓ ﺖﺒﺒﺴﺗ ﻮﻟ ﻰﺘﺣ ﻲﺗرﺎﻴﺳ ﺢﻠﺼﺘُ ﺳ ﻞﻫ ﻞﻣﺎﺷ ﻦﻴﻣﺄﺗ يﺪﻟ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n. .\nﺐﺒﺴﺘﻤﻟا ﻦﻋ ﺮﻈﻨﻟا ﺾﻐﺑ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺔﺒﻛﺮﻣ ﻞﻣﺎﺸﻟا ﻦﻴﻣﺄﺘﻟا ﺢﻠﺼُﻳ ﻢﻌﻧ\n.\nﺔﺑﻮﻠﻄﻤﻟا تاﺪﻨﺘﺴﻤﻟا ﻢﻳﺪﻘﺗو ﺔﺒﻟﺎﻄﻤﻟﺎﺑ قﺎﺜﻴﻣ غﻼﺑإ ﱃإ ﻂﻘﻓ ﻞﻴﻤﻌﻟا جﺎﺘﺤﻳ\n:\nﻰﻄﻐُﺗ ﻻ ﻲﺘﻟا تاءﺎﻨﺜﺘﺳﻻا\n-\nﺔﻳرﺎﺳ ﺔﺼﺧر نود ةدﺎﻴﻘﻟا\n-\nلﻮﺤﻜﻟا ﺮﻴﺛﺄﺗ ﺖﺤﺗ ةدﺎﻴﻘﻟا\n-\nةﺪﻤّ ﻌﺘﻤﻟا راﺮﺿﻷا\n— :\n؟ﻲﺗرﺎﻴﺳ قﺎﺜﻴﻣ ﺢﻠﺼﺘُ ﺳ ﻞﻫ ﺮﺧآ ﻖﺋﺎﺳ ﻲﺑ مﺪﻄﺻاو ﺮﻴﻐﻟا ﺪﺿ ﻦﻴﻣﺄﺗ يﺪﻟ لاﺆﺴﻟا\n📝\n:\nﺔﺑﺎﺟﻹا\n. .\nﻪﺴﻔﻧ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺔﺒﻛﺮﻣ اﺪً ﺑأ ﺮﻴﻐﻟا ﺪﺿ ﻦﻴﻣﺄﺘﻟا ﻲﻄﻐﻳ ﻻ ﻻ\n.\nحﻼﺻﻹا ﻒﻴﻟﺎﻜﺗ ﻊﻓد ﻪﻨﻴﻣﺄﺗ ﲆﻋ ﺐﺠﻴﻓ ،ﺐﺒﺴﺘﻤﻟا ﻮﻫ ﺮﺧﻵا ﻖﺋﺎﺴﻟا نأ ﺎﻤﺑ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 42",
+    "chunk": 1,
+    "text": "— :\n؟ثﺪﺤﻳ اذﺎﻣ ثدﺎﺤﻟا ﻲﻓ ﺖﺒﺒﺴﺗو ﺮﻴﻐﻟا ﺪﺿ ﻦﻴﻣﺄﺗ يﺪﻟ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n/\nىﺪﻟ ًﻼﻴﻤﻋ فﺮﻄﻟا ﻚﻟذ نﺎﻛ ءاﻮﺳ ،ﺮﺧﻵا فﺮﻄﻟا تﺎﻜﻠﺘﻤﻣ ﺔﺒﻛﺮﻣ راﺮﺿأ قﺎﺜﻴﻣ ﻊﻓﺪﺘﺳ\n.\nﻻ مأ قﺎﺜﻴﻣ\n.\nﺮﻴﻐﻟا ﺪﺿ ﺔﻴﻄﻐﺘﻟا ﻦﻤﺿ ﺐﺒﺴﺘﻤﻟا ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺔﺒﻛﺮﻣ قﺎﺜﻴﻣ ﺢﻠﺼُﺗ ﻻ\n:\n؟ثدﺎﺣ ﺔﺒﻟﺎﻄﻣ ﻢﻳﺪﻘﺘﻟ ﺔﺑﻮﻠﻄﻤﻟا تاﺪﻨﺘﺴﻤﻟا ﺎﻣ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n:\nﻦﻣ ﻞﻜﻟ ﻦﻴﻬﺟﻮﻟا ﻦﻣ ﺔﺤﺿاو ﺦﺴﻧ\n( ) -\nثدﺎﺤﻟا ﺖﻗو ﻖﺋﺎﺴﻠﻟ ةدﺎﻴﻘﻟا ﺔﺼﺧر\n( ) -\nﺔﺒﻛﺮﻤﻟا ﻞﻴﺠﺴﺗ ﺔﻗﺎﻄﺑ ﺔﻴﻜﻠﻤﻟا\n-\nﺔﺒﻛﺮﻤﻟا ﻚﻟﺎﻤﻟ ﺔﻴﺗارﺎﻣﻹا ﺔﻳﻮﻬﻟا\n(PDF) -\nﻞﻣﺎﻜﻟا ﺔﻃﺮﺸﻟا ﺮﻳﺮﻘﺗ\n( ) -\nﺔﻳرﺎﻴﺘﺧا راﺮﺿﻷا رﻮﺻ\n:\nﺔﻳرﺎﺠﺘﻟا تﺎﺒﻛﺮﻤﻠﻟ ﺔﻴﻓﺎﺿإ تاﺪﻨﺘﺴﻣ\n-\nﺔﻛﺮﺸﻠﻟ ﺔﻳرﺎﺠﺘﻟا ﺔﺼﺧﺮﻟا\n-\nﺔﻣﻮﺘﺨﻣ ﺔﻌﻧﺎﻤﻣ مﺪﻋ ةدﺎﻬﺷ\n:\n؟تاﺪﻨﺘﺴﻤﻟا ﺔﻌﺟاﺮﻣ قﺮﻐﺘﺴﺗ ﻢﻛ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n. 1-2\nتﺎﺒﻟﺎﻄﻤﻟا تﺎﻴﻠﻤﻋ ﻞﻴﻟدو ﻞﻤﻌﻟا ﺮﻴﺳ ﻂﻄﺨﻣ ﺐﺴﺤﺑ ﻞﻤﻋ مﻮﻳ\n. Executive SOP :\nﻞﻤﻋ ﻲﻣﻮﻳ لﻼﺧ ﺢﺘﻔُﺗ نأ ﺐﺠﻳ ﺔﺒﻟﺎﻄﻤﻟا نأ ﺪﻨﺘﺴﻣ ﺮﻛﺬﻳ ﺔﻈﺣﻼﻣ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 43",
+    "chunk": 1,
+    "text": "(LPO) :\n؟ﻢﻬﻳ اذﺎﻤﻟو ﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ ﻮﻫ ﺎﻣ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n.\nﺔﺷرﻮﻟا ﱃإ ﻞﺳَ ﺮُﺗ ﻲﺘﻟا قﺎﺜﻴﻣ ﻦﻣ ﺔﻴﻠﺧاﺪﻟا حﻼﺻﻹا ﺔﻘﻓاﻮﻣ ﻮﻫ ﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ\n.\nﺎﻴً ﻧﻮﻧﺎﻗ ﻞﻤﻋ يأ أﺪﺒﺗ نأ ﺔﺷرﻮﻠﻟ ﻦﻜﻤﻳ ﻻ ،ﻪﻧوﺪﺑ\n:\n؟نﺎﺒﻳآ ةدﺎﻬﺷ ﻢﻳﺪﻘﺗ ﻲﻠﻋ ﺐﺠﻳ اذﺎﻤﻟ لاﺆﺴﻟا\nّ\n:\nﺔﺑﺎﺟﻹا\n.(PDF )\nﺔﻐﻴﺼﺑ نﻮﻜﺗ نأ ﺐﺠﻳ دادﺮﺘﺳا وأ ﺔﻌﻓد يﻷ ﺔﻴﻣاﺰﻟإ نﺎﺒﻳﻵا ةدﺎﻬﺷ\n:\nتﺎﺒﻠﻄﺘﻤﻟا\n-\nﺔﻣﻮﺘﺨﻣ وأ ﻚﻨﺒﻠﻟ ﻲﻤﺳر قرو ﲆﻋ نﻮﻜﺗ نأ ﺐﺠﻳ\n-\nﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﻢﺳا بﺎﺴﺤﻟا ﺐﺣﺎﺻ ﻢﺳا ﻖﺑﺎﻄﻳ نأ ﺐﺠﻳ\n-\nﺎًﻳوﺪﻳ بﻮﺘﻜﻣ نﺎﺒﻳآ ﻢﻗر ﻞﺒﻘُﻳ ﻻ\n:\n؟ﻲﺗرﺎﻴﺳ حﻼﺻإ ﻦﻣًﻻﺪﺑ يﺪﻘﻧ ﻎﻠﺒﻣ ﲆﻋ لﻮﺼﺤﻟا رﺎﻴﺘﺧا ﻲﻨﻨﻜﻤﻳ ﻞﻫ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\nﻖﻳﺮﻓ ﻢﻴّ ﻘﻳ ،ﻞﻴﻤﻌﻟا ﺎﻬﺒﻠﻃ اذإ ﻦﻜﻟ ،ﻲﻗﺎﺒﺘﺳا ﻞﻜﺸﺑ ﺔﻳﺪﻘﻨﻟا ﺔﻳﻮﺴﺘﻟا قﺎﺜﻴﻣ ضﺮﻌﺗ ﻻ\n.\nرﺮﻀﻟا تﺎﺒﻟﺎﻄﻤﻟا\n.\nﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا ﺾﻳﻮﻌﺗو حﻼﺻﻹا ﻖﺣ ﻦﻋ لزﺎﻨﺘﻟا ﻲﻨﻌﻳ ﻪﻌﻴﻗﻮﺗ\n. 15 :\nتاﺪﻨﺘﺴﻤﻟا ﲆﻋ ﺔﻘﻓاﻮﻤﻟا ﺪﻌﺑ ﻞﻤﻋ مﻮﻳ ﻰﺘﺣ ﻊﻓﺪﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 44",
+    "chunk": 1,
+    "text": ":\n؟ﺎﻬﻴﻠﻋ لﻮﺼﺤﻟا ﻲﻟ ﻖﺤﻳ ﻲﺘﻟا ﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا ﺾﻳﻮﻌﺗ مﺎﻳأ دﺪﻋ ﻢﻛ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n: 15\nﺪﻌﺑ ﻂﻘﻓو ،ﻞﻤﻋ مﻮﻳ ﻰﺼﻗأ ﺪﺤﺑ\n.1\nﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ ﲆﻋ ﺔﻘﻓاﻮﻤﻟا\n.2\nﺔﺷرﻮﻟا ﻲﻓ ﺎﻴً ﻠﻌﻓ ﺔﺒﻛﺮﻤﻟا دﻮﺟو\n.\nﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا وأ ﺔﻳﺪﻘﻨﻟا ﺔﻳﻮﺴﺘﻟا تﻻﺎﺣ ﻲﻓ ﺔﻠﻳﺪﺑ ةرﺎﻴﺳ مﺪﱠ ﻘُﺗ ﻻ\n— :\n؟ثﺪﺤﻳ اذﺎﻣ ﺎﻬﺘﻤﻴﻗ ﻦﻣ ﲆﻋأ ﻲﺗرﺎﻴﺳ حﻼﺻإ ﺔﻔﻠﻜﺗ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n.\nﺔﻴﻠﻛ ةرﺎﺴﺨﻛ ﺔﺒﻟﺎﻄﻤﻟا ﻞﻣَ ﺎﻌُﺗ\n:\nتاﻮﻄﺨﻟا\n( 3) .1\nﻞﻤﻋ مﺎﻳأ ﺔﺒﻟﺎﻄﻤﻠﻟ لوﺆﺴﻤﻟا ﻢﻴﻴﻘﺗ\n( 5) .2\nﻞﻤﻋ مﺎﻳأ ﺔﻴﻠﺧاﺪﻟا ﺔﻘﻓاﻮﻤﻟا ﲆﻋ لﻮﺼﺤﻟا\n.3\nﺎﻴً ﻤﺳر ﺎﺿً ﺮﻋ مﺎﻈﻨﻟا راﺪﺻإ\n15 .4\nﻞﻤﻋ مﻮﻳ لﻼﺧ ﻊﻓﺪﻟا\n— :\n؟ﻞﻌﻓأ نأ ﻲﻨﻨﻜﻤﻳ اذﺎﻣ ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا ضﺮﻋ ﲆﻋ ﻖﻓاﻮﻣ ﺮﻴﻏ ﺖﻟز ﺎﻣ لاﺆﺴﻟا\n:\nﺔﺑﺎﺟﻹا\n:\nﻞﻴﻤﻌﻠﻟ ﻦﻜﻤﻳ\n.1\nﺔﻴﻠﺧاد ىﻮﻜﺷ ﺮﺒﻋ ﺪﻴﻌﺼﺘﻟا\n.2\nكﺪﻨﺳ ﺮﺒﻋ ﺪﻴﻌﺼﺘﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 45",
+    "chunk": 1,
+    "text": "٩\nتﺎﺤﻠﻄﺼﻤﻟا سﻮﻣﺎﻗ\nﻞﻣﺎﺸﻟا ﻦﻴﻣﺄﺘﻟا\nﻦﻋ ﺮﻈﻨﻟا ﺾﻐﺑ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺔﺒﻛﺮﻣ ﺢﻠﺼﻳُ .تﺎﺒﻛﺮﻤﻟا ﻦﻴﻣﺄﺗ ﻦﻣ ىﻮﺘﺴﻣ ﻰﻠﻋأ\nثدﺎﺤﻟا ﻲﻓ ﺐﺒﺴﺘﻤﻟا.\nنأ ﺎﻤﺑ .ﺎﻬﻓﻮﻗو ءﺎﻨﺛأ لﻮﻬﺠﻣ ﻖﺋﺎﺳ ﻦﻣ ﺔﺑﺮﻀﻟ قﺎﺜﻴﻣ ﻞﻴﻤﻋ ةرﺎﻴﺳ ضﺮﻌﺘﺗ :لﺎﺜﻣ\nﺎﺌًﻄﺨﻣ ﻦﻜﻳ ﻢﻟ ﻪﻧأ ﻢﻏر ﻪﺗرﺎﻴﺳ قﺎﺜﻴﻣ ﺢﻠﺼﺗُ ،ﺔﻠﻣﺎﺷ ﺔﻴﻄﻐﺗ ﻪﻳﺪﻟ.\nﺮﻴﻐﻟا ﺪﺿ ﻦﻴﻣﺄﺘﻟا\nﻻ — ﻦﻳﺮﺧﻶﻟ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﺎﻬﺑ ﺐﺒﺴﺘﻳ ﻲﺘﻟا راﺮﺿﻷا ﻒﻴﻟﺎﻜﺗ ﻂﻘﻓ ﻊﻓﺪﻳ ﻦﻴﻣﺄﺗ\nاﺪً ﺑأ ﻪﺗرﺎﻴﺳ ﻞﻤﺸﻳ.\nةرﺎﻴﺳ ﻒﻴﻟﺎﻜﺗ قﺎﺜﻴﻣ ﻊﻓﺪﺗ ؛ثدﺎﺣ ﻲﻓ ﺮﻴﻐﻟا ﺪﺿ ﻦﻴﻣﺄﺘﺑ قﺎﺜﻴﻣ ﻞﻴﻤﻋ ﺐﺒﺴﺘﻳ :لﺎﺜﻣ\nﻪﺴﻔﻧ قﺎﺜﻴﻣ ﻞﻴﻤﻋ ةرﺎﻴﺳ ﺲﻴﻟو ،ﺮﺧﻵا ﻖﺋﺎﺴﻟا.\n(FNOL) ةرﺎﺴﺨﻟﺎﺑ لوﻷا رﺎﻄﺧﻹا\nةﺮﻣ لوﻷ ﺔﺒﻟﺎﻄﻣ ﻦﻋ ﺎﻴًﻤﺳر غﻼﺑﻺﻟ ﻞﻴﻤﻌﻟا ﻪﻠﻤﻜﻳُ يﺬﻟا ﻲﻧوﺮﺘﻜﻟﻹا ءاﺮﺟﻹاو جذﻮﻤﻨﻟا.\nﻰﻠﻋ تاﻮﻄﺧ 5 ﻦﻣ نﻮّ ﻜﻤﻟا ﻞﻴﻫﺄﺘﻟا ﺞﻟﺎﻌﻣ ﻞﻴﻤﻌﻟا ﺊﺒّﻌﻳ :لﺎﺜﻣ claim.methaq.ae ﺪﻌﺑ\nثدﺎﺣ عﻮﻗو."
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 46",
+    "chunk": 1,
+    "text": "(LPO)\nﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ\n.\nﺔﺷرﻮﻠﻟ ﻦﻜﻤﻳ ﻻ ،ﻪﻧوﺪﺑ ﺔﺷرﻮﻟا ﱃإ ﻞﺳَ ﺮُﻳ قﺎﺜﻴﻣ ﻦﻣ ﻲﻠﺧاﺪﻟا حﻼﺻﻹا ﺔﻘﻓاﻮﻣ ﺪﻨﺘﺴﻣ\n.\nحﻼﺻﻹا ءﺪﺑ ﺎﻴً ﻧﻮﻧﺎﻗ\n— :\nﺔﺑاﻮﺒﻟا ﻦﻣ ﻒﻇﻮﻤﻟا ﻖﻘﺤﺘﻳ ﻪﺗرﺎﻴﺳ رﺎﻀﺣإ ﻪﻧﺎﻜﻣﺈﺑ نﺎﻛ اذإ ﺎﻤّ ﻋ ﻞﻴﻤﻋ لﺄﺴﻳ لﺎﺜﻣ\n.\nﻲﻠﺤﻤﻟا ءاﺮﺸﻟا ﺮﻣأ روﺪﺻ ﺪﻛﺆﻳو\nنﺎﺒﻳﻵا ةدﺎﻬﺷ\nﺔﻌﻓد يﻷ بﻮﻠﻄﻣ ،ﻪﺒﺣﺎﺻ ﻢﺳاو بﺎﺴﺤﻟا ﻢﻗر ﺪﻛﺆﻳ ﻲﻤﺳر ﻲﻜﻨﺑ ﺪﻨﺘﺴﻣ.\nﻞﻴﻤﻌﻟا ﻰﻠﻋ ﺐﺠﻳ ،ﻊﻓﺪﻟا ﻦﻣ قﺎﺜﻴﻣ ﻦﻜﻤﺘﺗ نأ ﻞﺒﻗ ؛ﺔﻳﺪﻘﻧ ﺔﻳﻮﺴﺗ ﻞﻴﻤﻋ ﺪﻳﺮﻳ :لﺎﺜﻣ\nﺎﻣً ﺎﻤﺗ ﻪﻤﺳا ﻖﺑﺎﻄﺗ نﺎﺒﻳآ ةدﺎﻬﺷ ﻊﻓر.\n(Job Card) ﻞﻤﻌﻟا ﺔﻗﺎﻄﺑ\nةﺰﺠﻨﻤﻟا لﺎﻤﻋﻷاو حﻼﺻﻹا ءﺎﻬﺘﻧا/ءﺪﺑ ﺦﻳراﻮﺗ ﺮﻛﺬﻳ يﺬﻟا ﻲﻤﺳﺮﻟا ﺔﺷرﻮﻟا ﺪﻨﺘﺴﻣ.\nﺮﻬﻈﺗُ ﻲﺘﻟا ﻞﻤﻌﻟا ﺔﻗﺎﻄﺑ ﻢﻳﺪﻘﺗ ﺔﻠﻳﺪﺒﻟا ةرﺎﻴﺴﻟا ﺾﻳﻮﻌﺗ ﺐﻠﻄﻳ ﻞﻴﻤﻋ ﻰﻠﻋ ﺐﺠﻳ :لﺎﺜﻣ\nﺎﮭﻟ جاﺮﺠﻟا ﻊﻓر مﺪﻋ ﺔﻟﺎﺣ ﻲﻓ حﻼﺻﻹا ﻲﻓ ةرﺎﻴﺴﻟا ءﺎﻘﺑ ةﺪﻣ."
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 47",
+    "chunk": 1,
+    "text": "(Mulkiya) ﺔﻴﻜﻠﻤﻟا\nﻢﻗرو ﻚﻟﺎﻤﻟا تﺎﻧﺎﻴﺑ ﺮﻬﻈﺗُ ،ﺔﻴﻣﻮﻜﺤﻟا ﺔﻬﺠﻟا ﻦﻋ ةردﺎﺼﻟا ﺔﺒﻛﺮﻤﻟا ﻞﻴﺠﺴﺗ ﺔﻗﺎﻄﺑ\nﻞﻴﺠﺴﺘﻟا ءﺎﻬﺘﻧا ﺦﻳرﺎﺗو ﻞﻜﻴﻬﻟا.\nﺔﺒﻛﺮﻤﻟا ﻚﻟﺎﻣ ﺪﻴﻛﺄﺘﻟ ثدﺎﺣ ﺔﺒﻟﺎﻄﻣ ﻞﻛ ﻦﻣ ءﺰﺠﻛ ﻊﻓﺮﺗُ :لﺎﺜﻣ.\n(Excess/Deductible) ﻞﻤّ ﺤﺘﻟا / ﺾﺋﺎﻔﻟا\nﺐﺴﺤﺑ ،ﻪﺴﻔﻨﺑ ﻪﻌﻓد ﻰﻠﻋ ﺔﺼﻴﻟﻮﺒﻟا ﻞﻣﺎﺣ ﻖﻓاﻮﻳ يﺬﻟا حﻼﺻﻹا ﺔﻔﻠﻜﺗ ﻦﻣ ءﺰﺠﻟا\nﻪﺘﺼﻴﻟﻮﺑ.\nﺾﺋﺎﻔﻟا ﻦﻣ ﻲﻣﺎﻣﻷا جﺎﺟﺰﻟا ﻲﻓ ﻂﻴﺴﺑ خﺮﺷ ﻪﻳﺪﻟ ﻞﻴﻤﻋ ﻰﻔﻌﻳُ ﺪﻗ :لﺎﺜﻣ.\nﻲﻌﺟﺮﻤﻟا ﺔﺒﻟﺎﻄﻤﻟا ﻢﻗر\nﺪﻳﺮﻔﻟا ﺰﻣﺮﻟا (ﻞﺜﻣ C-01-1025-35272) ﺎﻬﻌﺒﺘﺘﻟ مﺪﺨﺘﺴﻳُو ،ﺔﺒﻟﺎﻄﻣ ﻞﻜﻟ ﻰﻄﻌﻤُ ﻟا.\nﺔﺒﻟﺎﻄﻤﻟا ﺺﺨﺗ ﻞﻴﺻﺎﻔﺗ يأ ﺔﺸﻗﺎﻨﻣ ﻞﺒﻗ ﻻً وأ ﻢﻗﺮﻟا اﺬﻫ ﻒﻇﻮﻤﻟا ﺐﻠﻄﻳ :لﺎﺜﻣ."
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 48",
+    "chunk": 1,
+    "text": "(Total Loss) ﺔﻴﻠﻜﻟا ةرﺎﺴﺨﻟا\nﻊﻓﺪﺗ ،ﺎﻬﺣﻼﺻإ ﻦﻣ ﻻً ﺪﺒﻓ ،ﺔﻴﻗﻮﺴﻟا ﺎﻬﺘﻤﻴﻗ ﺔﺒﻛﺮﻤﻟا حﻼﺻإ ﺔﻔﻠﻜﺗ زوﺎﺠﺘﺗ ﺎﻣﺪﻨﻋ\n.ﺔﻴﻜﻠﻤﻟا ﻰﻟﻮﺘﺗو ةرﺪّ ﻘﻤﻟا ﺔﻤﻴﻘﻟا قﺎﺜﻴﻣ\nقﺎﺜﻴﻣ ضﺮﻌﺘﻓ ،ﺎﻬﺘﻤﻴﻗ ﻦﻣ ﻰﻠﻋأ ﺎﻬﺣﻼﺻإ ﺔﻔﻠﻜﺗ نﻮﻜﺗو ةﺪﺸﺑ ةرﺎﻴﺳ رﺮﻀﺘﺗ :لﺎﺜﻣ\n.حﻼﺻﻹا ﻦﻣ ﻻً ﺪﺑ ﺔﻴﻠﻛ ةرﺎﺴﺧ ﺔﻳﻮﺴﺗ"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 49",
+    "chunk": 1,
+    "text": ":\nﻞﺻاﻮﺘﻟا مﺎﻗرأو عوﺮﻔﻟا ﻊﻗاﻮﻣ ﻖﺤﻠﻤﻟا\nﻞﻤﻌﻟا تﺎﻋﺎﺳ ناﻮﻨﻌﻟا عﺮﻔﻟا\n8:30 ﺲﻴﻤﺨﻟا–ﻦﻴﻨﺛﻻا\nﺔﻌﻤﺠﻟا ؛م 3:30–ص ،ﻚﻴﻧدأ ﺔﻘﻄﻨﻣ ،اﻮﻴﻟ جﺮﺑ\nﻲﺒﻇﻮﺑأ\nم 12:00–ص 8:00 M ﻖﺑﺎﻄﻟا\nﻦﺑ ﺪﻤﺤﻣ ﺔﻴﻌﻤﺟ ﻰﻨﺒﻣ\nهﻼﻋأ ﺲﻔﻧ ﺐﺘﻜﻣ ،ﺔﻳﺮﻴﺨﻟا ﺪﺷار ﻲﺑد\nﺮﻫﺰﻤﻟا ،312\n،ﺔﻔﻴﻠﺧ عرﺎﺷ ،ﺮﻴﺑﺪﺗ ﻰﻨﺒﻣ\nهﻼﻋأ ﺲﻔﻧ ﻦﻴﻌﻟا\nﻊﺑاﺮﻟا ﻖﺑﺎﻄﻟا"
+  },
+  {
+    "source": "Methaq SOP – Complete Guide.pdf",
+    "type": "PDF",
+    "locator": "page 50",
+    "chunk": 1,
+    "text": "ﻒﺗﺎﻬﻟا ﻢﻗر ﺔﻣﺪﺨﻟا\n600 565 695 تﺎﺒﻟﺎﻄﻤﻟا ﻢﻳﺪﻘﺗ / ءﻼﻤﻌﻟا ﺔﻣﺪﺧ\n(قﺎﺜﻴﻣ ءﻼﻤﻌﻟ) ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n600 565 695\nAAA\n(قﺎﺜﻴﻣ ءﻼﻤﻌﻟ) ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n04 402 0738\nAAA ARABIC LINE\n(قﺎﺜﻴﻣ ءﻼﻤﻌﻟ) ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n04 402 0737\nAAA ENGLISH LINE\nEmirates – ﻖﻳﺮﻄﻟا ﻰﻠﻋ ةﺪﻋﺎﺴﻤﻟا\n600 500 372\nAuction\n800-2311 سﺎﻧ – ﻲﺒﻄﻟا ﻦﻴﻣﺄﺘﻟا\nﺔﻴﻓﺎﻋ – ﻲﺒﻄﻟا ﻦﻴﻣﺄﺘﻟا\n+971 600 546 669\nﻲﻧوﺮﺘﻜﻟﻹا ﻢﻳﺪﻘﺘﻟا ﻊﻗاﻮﻣ:\nclaim.methaq.ae- تﺎﺒﻛﺮﻣ ﺔﺒﻟﺎﻄﻣ ﻢﻳﺪﻘﺗ\nmethaq.ae- ﻲﺴﻴﺋﺮﻟا ﻊﻗﻮﻤﻟا"
+  },
+  {
+    "source": "Motor Claims Process Flow Diagram (1).pdf",
+    "type": "PDF",
+    "locator": "page 1",
+    "chunk": 1,
+    "text": "METHAQ TAKAFUL INSURANCE\nMotor Claims — FNOL Process Flow\nDocument Owner: Customer & Digital Experience Department | Version 1.0 | CONFIDENTIAL\nStep Customer Claims Department System / Portal Surveyor Finance Dept Garage / 3rd Party\nYTILIBIGILE\n&\nNOISSIMBUS\n—\n1\nESAHP\nVisits Methaq website,email, and\nbranch\n5-step eligibility wizard\n1 website\n14 possible outcomes\n(claim.methaq.ae/claim)\n- available 24/7\nCompletes FNOL form Repeat claim check\n2 Uploads documents\n(auto — instant)\nReviews & submits\nAuto-generates\nClaim enters Claims Dept\n3 confirmation email\nqueue for review\n(no-reply, bilingual)\n4\nWEIVER\nTNEMUCOD\n—\n2\nESAHP\nReviews all documents\nDocuments\n5 ↻ Re-review (completeness & validity)\nComplete?\nSLA: 1 to 2 working days\nYES NO\nClaim ACCEPTED\nEmail to customer\n6 Garage auto-assigned\nwith direct upload link\n( for Survyer)\nCustomer clicks link\n7 Re-uploads missing docs\nvia portal\n&\nTNEMNGISSA\nEGARAG\n—\n3\nESAHP\nTNEMSSESSA\nROYEVRUS\nPortal auto-assigns garage\n(vehicle condition + emirate) 8\nEmail: garage contact + Garage\nInspection Location\nDrive to Garage or Arrange Recovery\n• Methaq Recovery (Website) / AAA (if not movable) only for\n\"Photographs vehicle\""
+  },
+  {
+    "source": "Motor Claims Process Flow Diagram (1).pdf",
+    "type": "PDF",
+    "locator": "page 1",
+    "chunk": 2,
+    "text": "emirate) 8\nEmail: garage contact + Garage\nInspection Location\nDrive to Garage or Arrange Recovery\n• Methaq Recovery (Website) / AAA (if not movable) only for\n\"Photographs vehicle\"\nMethaq policy holder / Other Recovery.\n\"Captures customer\n9 • Arrival: Dubai & Northen Emirates 9 AM–12 PM |\npreference\"\nAbu Dhabi 9 Am –12 PM\n\"Collects quotations\nAl Ain 11 Am–12 PM\n(1 to 3 days) Accident\nFuj 9 AM–12 PM condition\"\nClaim Process\n10\nFlow\nTNEMELTTES\nHSAC\n—\nA4\nESAHP\nCash\nSends settlement offer\n11 by email to customer\nTAT: 3 working days\nReviews offer Accept\n12 NO Accepts or rejects offer?\nYES\nSigns declaration form Reviews signature 2 working\nNegotiation\n13 Sig verified vs Emirates ID days\n(call,email or branch visit)\nUploads IBAN certificate Reviews IBAN + NOC to\nIssues credit note\nBank transfer to\n14 vehicle owner CLAIM CLOSED\nTAT: 15 working days\n)OPL(\nRIAPER\nEGARAG\n—\nB4\nESAHP\nRepair\nIssues LPO to garage\n15 Emails customer (confirmed) at\nthe Same time\nCreates job card\nRepairs vehicle (7–15 days)\n16\nNotifies Methaq: ready\nCLAIM CLOSED\n17 Garage contact the customer to (+rental car eligible max 15\ncollects vehicle\ndays)\nSSOL\nLATOT\n—\n5\nESAHP\nReview Quate and\nApproved to issue"
+  },
+  {
+    "source": "Motor Claims Process Flow Diagram (1).pdf",
+    "type": "PDF",
+    "locator": "page 1",
+    "chunk": 3,
+    "text": "6\nNotifies Methaq: ready\nCLAIM CLOSED\n17 Garage contact the customer to (+rental car eligible max 15\ncollects vehicle\ndays)\nSSOL\nLATOT\n—\n5\nESAHP\nReview Quate and\nApproved to issue\nLPO (1 to 2 days)\nTotal Loss\nClaim Evaluation\n18 Handler evaluates the claim\nSLA: 3 working days\nCustomer Negotiation\n19 Customer discusses / Negotiate Total Loss settlement\nresponds to offer\nRecord negotiation outcome\nApproval Process\n20 Obtain internal approval\nSLA: 5 working days\nSystem Offer Generation\n21 Auto-generates Total Loss Customer\naccepts offer?\noffer (on approval)\nYES\n22 Generates official\nTotal Loss offer\n23 Signs the offer Mortgage? NO · No Mortgage\nSelects: Mortgage / No Mortgage\nYES · Mortgage\nIssue ownership transfer letter\n24 Submits required Dubai reg → Copart UAQ Auctions\nmortgage documents\nOther Emirates → Methaq Takaful\nReviews documents Submits:\n25 Processes partial payment Heyaza Certificate + IBAN Certificate\nto financing bank NO\n26 Verifies all documents\nClaim settled\n27 Bank transfer to owner CLAIM\nCLOSED\nPayment within 15 working days\nInitiate Internal Re-review\n28 Total: 7 working days\n(incl. Legal Advisor review: 3 wd)\n29 Market Value Type of Legal\nAdvisor review?"
+  },
+  {
+    "source": "Motor Claims Process Flow Diagram (1).pdf",
+    "type": "PDF",
+    "locator": "page 1",
+    "chunk": 4,
+    "text": "r CLAIM\nCLOSED\nPayment within 15 working days\nInitiate Internal Re-review\n28 Total: 7 working days\n(incl. Legal Advisor review: 3 wd)\n29 Market Value Type of Legal\nAdvisor review?\nTechnical\nYES · settle Market Value Review Technical Inspection Review\n30 Assign Legal Advisor Assign Legal Advisor\nTimeline: 3–4 working days Timeline: 10 working days\nHandler contacts\n31 Legal Advisor report received the customer\n32 Customer accepts\nafter re-review?\nNO\nEscalate the case\n33\nInternal Complaint\nLEGEND\nCustomer action Claims Department System / Portal (auto) Decision point Finance Dept Escalation path\nLegal Advisor"
+  },
+  {
+    "source": "Call Center Excellence - LEVEL 1 – MOTOR CLAIM WORKFLOW.pptx",
+    "type": "PowerPoint",
+    "locator": "slide 2",
+    "chunk": 1,
+    "text": "Additional loss:\n1-Rental Car Fees \n2-Towing Fees \n3-Ambulance Fees \n4-Medical Fees \n5-Loss Adjuster Fees \n6-XOL"
+  },
+  {
+    "source": "Call Center Excellence - LEVEL 1 – MOTOR CLAIM WORKFLOW.pptx",
+    "type": "PowerPoint",
+    "locator": "slide 7",
+    "chunk": 1,
+    "text": "Call Center — Can vs Cannot\nIdentify by vehicle number OR claim reference · Read access to portal only\nAGENT CAN DO\n✓ Check claim stage in portal\n✓ Tell customer which documents are missing\n✓ Guide customer on signing declaration form\n✓ Guide customer on uploading IBAN certificate\n✓ Advise payment timeline from credit note date\n✓ Share assigned garage name and location\n✓ Add comment and route to department queue\n✗\nAGENT CANNOT DO\n✗ Open new claims (→ website or branch)\n✗ Negotiate settlement amounts\n✗ Approve or reject any claim\n✗ Quote insurance premiums\n✗ Make any claim decision\n✗ Handle repair quality disputes (→ branch)\n✗ Commit to timelines not in the SOP"
+  }
+]

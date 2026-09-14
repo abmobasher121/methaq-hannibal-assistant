@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hannibal - Project Methaq AI</title>
+    <meta name="description" content="Hannibal, the dedicated Project Methaq AI specialist for customer service and motor claims agents.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f33'/%3E%3Cpath d='M14 38c8-19 28-19 36 0' fill='none' stroke='%232ee59d' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M23 39h18' stroke='%23ffffff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css?v=1789417074">
+  </head>
+  <body>
+    <main class="app-shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <strong>Project Methaq AI</strong>
+          <span>AI Assistant</span>
+        </div>
+        <div class="nav-actions">
+          <button type="button" class="icon-button" aria-label="Dashboard">▦</button>
+          <button type="button" class="nav-link">Dashboard</button>
+          <button type="button" class="icon-button" aria-label="Exit">↗</button>
+        </div>
+      </nav>
+
+      <section class="workspace">
+        <section class="chat-panel" aria-label="Methaq chatbot">
+          <div class="messages" id="messages" aria-live="polite"></div>
+
+          <form class="composer" id="chatForm">
+            <input id="questionInput" type="text" autocomplete="off" enterkeyhint="send" placeholder="Ask anything… Press Enter to send" />
+            <button type="submit" aria-label="Send question">➤</button>
+          </form>
+        </section>
+
+        <aside class="side-panel" aria-label="Manager Hub">
+          <div class="manager-title">📁 Manager Hub</div>
+
+          <form class="key-box" id="managerKeyForm">
+            <label for="managerKey">Manager key</label>
+            <div class="key-row">
+              <input id="managerKey" type="password" placeholder="Enter key">
+              <button type="submit">Unlock</button>
+            </div>
+            <p id="keyStatus">Uploads and knowledge controls are locked.</p>
+          </form>
+
+          <div class="manager-content locked" id="managerContent">
+            <form class="upload-box" id="uploadForm">
+              <label for="documentUpload">Upload documents</label>
+              <input id="documentUpload" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.txt,.md,.json,.rtf">
+              <div class="drop-copy">Drag and drop files here to update AI memory<br>PDF, Word, Excel, PPT</div>
+              <button type="submit">Upload and learn</button>
+              <p id="uploadStatus">Accepted: PDF, Excel, PowerPoint, Word, CSV, text, Markdown, JSON.</p>
+            </form>
+
+            <div class="status-card">
+              <span class="status-dot"></span>
+              <div>
+                <strong id="kbCount">Loading knowledge base</strong>
+                <span>Knowledge base active files</span>
+              </div>
+            </div>
+
+            <div class="crm-card">
+              <h2>CRM Status</h2>
+              <p id="crmStatus">Secure CRM connector required for live portal lookups. Uploaded documents and built-in Methaq sources are active now.</p>
+              <label for="crmGatewayUrl">CRM Gateway URL</label>
+              <div class="key-row">
+                <input id="crmGatewayUrl" type="url" placeholder="http://127.0.0.1:8787/claim">
+                <button id="saveCrmGateway" type="button">Save</button>
+              </div>
+            </div>
+
+            <div class="file-card">
+              <h2>Active Files</h2>
+              <div id="fileList"></div>
+            </div>
+
+            <div class="routing-card">
+              <h2>Comment Routing</h2>
+              <div id="routingList"></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <footer>Made by <span>Abdelhafiz</span></footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="./kb-embed.js?v=1789417074"></script>
+    <script src="./app.js?v=1789417074"></script>
+    <script>
+      /* ENTER-SEND-FAILSAFE */
+      (function () {
+        var form = document.getElementById('chatForm');
+        var input = document.getElementById('questionInput');
+        if (!form || !input) return;
+        input.addEventListener('keydown', function (e) {
+          var enter = e.key === 'Enter' || e.code === 'Enter' || e.keyCode === 13 || e.which === 13;
+          if (!enter || e.shiftKey) return;
+          e.preventDefault();
+          e.stopPropagation();
+          if (typeof sendCurrentQuestion === 'function') sendCurrentQuestion();
+          else form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', {cancelable:true}));
+        }, true);
+      })();
+    </script>
+  </body>
+</html>
