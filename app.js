@@ -501,10 +501,21 @@ function refreshCrmStatus() {
   }
 }
 
+const CRM_CONFIG_DISCOVERY_URLS = [
+  "./crm-config.js",
+  "https://raw.githubusercontent.com/abmobasher121/methaq-hannibal-assistant/main/crm-config.js",
+];
+
+function normalizeGatewayUrl(url) {
+  const u = String(url || "").trim();
+  if (!u) return "";
+  if (/\/claim\/?$/i.test(u)) return u.replace(/\/$/, "");
+  return u.replace(/\/$/, "") + "/claim";
+}
+
 function getCrmGatewayUrl() {
   const fromStorage = (localStorage.getItem(CRM_GATEWAY_KEY) || "").trim();
-  if (fromStorage) return fromStorage;
-  // Same-origin proxy (local serve-all or live Cloudflare tunnel UI) always has /claim
+  if (fromStorage) return normalizeGatewayUrl(fromStorage);
   try {
     const host = (typeof location !== "undefined" ? location.hostname : "") || "";
     if (/^(localhost|127\.0\.0\.1)$/i.test(host) || /trycloudflare\.com$/i.test(host)) {
@@ -514,9 +525,59 @@ function getCrmGatewayUrl() {
   const fromConfig = (typeof window !== "undefined" && window.METHAQ_CRM_GATEWAY
     ? String(window.METHAQ_CRM_GATEWAY)
     : "").trim();
-  if (fromConfig) return fromConfig;
+  if (fromConfig) return normalizeGatewayUrl(fromConfig);
   return "";
 }
+
+function clearStoredGateway() {
+  try { localStorage.removeItem(CRM_GATEWAY_KEY); } catch (_) {}
+}
+
+async function discoverLatestGatewayUrl() {
+  for (const src of CRM_CONFIG_DISCOVERY_URLS) {
+    try {
+      const response = await fetch(src + (src.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
+      if (!response.ok) continue;
+      const body = await response.text();
+      const m = body.match(/METHAQ_CRM_GATEWAY\s*=\s*["']([^"']+)["']/);
+      if (m && m[1] && /^https?:\/\//i.test(m[1])) {
+        const url = normalizeGatewayUrl(m[1]);
+        if (typeof window !== "undefined") window.METHAQ_CRM_GATEWAY = url;
+        return url;
+      }
+    } catch (_) {}
+  }
+  return getCrmGatewayUrl();
+}
+
+async function crmFetch(url, options = {}, retries = 4) {
+  let lastError = null;
+  let endpoint = url;
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+      const timer = controller ? setTimeout(() => controller.abort(), 90000) : null;
+      const response = await fetch(endpoint, {
+        ...options,
+        signal: controller ? controller.signal : undefined,
+        cache: "no-store",
+      });
+      if (timer) clearTimeout(timer);
+      return { response, endpoint };
+    } catch (error) {
+      lastError = error;
+      clearStoredGateway();
+      const fresh = await discoverLatestGatewayUrl();
+      if (fresh) {
+        if (/\/policy\/?$/i.test(String(endpoint))) endpoint = fresh.replace(/\/claim\/?$/i, "/policy");
+        else endpoint = fresh;
+      }
+      if (attempt < retries) await new Promise((r) => setTimeout(r, 900 * attempt));
+    }
+  }
+  throw lastError || new Error("Failed to fetch CRM gateway");
+}
+
 
 function renderRoutingList() {
   routingList.innerHTML = routingRules.map(([department, comment]) => `
@@ -812,17 +873,18 @@ function renderRsaGuidanceCard(guidance) {
 }
 
 async function renderPolicyLookupAnswer(policyNumber, question = "") {
-  const gateway = getCrmGatewayUrl();
+  let gateway = getCrmGatewayUrl() || await discoverLatestGatewayUrl();
   if (!gateway) {
     return renderClaimGatewayError(policyNumber, "CRM gateway URL is not configured.");
   }
   try {
     const policyEndpoint = gateway.replace(/\/claim\/?$/, "/policy");
-    const response = await fetch(policyEndpoint, {
+    const fetched = await crmFetch(policyEndpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ policyNumber }),
-    });
+    }, 4);
+    const response = fetched.response;
     const data = await response.json().catch(() => ({}));
     if (!response.ok || !data.found) {
       const msg = data.error || data.latestNote || `Gateway returned HTTP ${response.status}`;
@@ -857,21 +919,24 @@ async function renderPolicyLookupAnswer(policyNumber, question = "") {
 }
 
 async function renderClaimLookupAnswer(claimNumber, question = "") {
-  const gateway = getCrmGatewayUrl();
+  let gateway = getCrmGatewayUrl() || await discoverLatestGatewayUrl();
   if (gateway) {
     try {
-      const response = await fetch(gateway, {
+      const fetched = await crmFetch(gateway, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ claimNumber }),
-      });
+      }, 4);
+      const response = fetched.response;
       if (!response.ok) throw new Error(`Gateway returned HTTP ${response.status}`);
       const data = await response.json();
       conversation.activeClaim = claimNumber;
       conversation.lastCrmData = data;
       return renderCrmExpertAnswer(claimNumber, data, question);
     } catch (error) {
-      return renderClaimGatewayError(claimNumber, error.message);
+      return renderClaimGatewayError(claimNumber, /Failed to fetch|NetworkError|abort/i.test(String(error && error.message))
+        ? "CRM connection dropped. I already retried and refreshed the tunnel URL — keep VPN on, ensure the PC keeper is running, then ask the claim again."
+        : (error.message || String(error)));
     }
   }
   return renderClaimGatewayError(claimNumber, "CRM gateway URL is not configured.");
@@ -1032,7 +1097,7 @@ function renderClaimGatewayError(claimNumber, message) {
         Status: ${escapeHtml(message)}
         <br><br>
         Check that the <strong>local CRM gateway on the PC is running</strong>, connect <strong>FortiClient VPN</strong> if required, then retry.
-        If the tunnel URL changed, update the CRM Gateway URL in <strong>Manager Hub</strong> or set <code>window.METHAQ_CRM_GATEWAY</code> in <code>crm-config.js</code> (must end in <code>/claim</code>).
+        I auto-retry and refresh the tunnel URL from your PC sync. Keep <strong>FortiClient VPN</strong> on and leave the PC CRM keeper running. Clear Manager Hub CRM URL if an old tunnel was saved.
         If it still fails, contact <strong>Nouran</strong> or <strong>Abdelhafiz</strong> to cross-check in CRM.
       </div>
       <div class="recommendation">
