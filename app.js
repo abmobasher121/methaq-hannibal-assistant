@@ -223,7 +223,7 @@ const directAnswers = [
       "SOP: plates remain at original inspection workshop (even if towed to auction).",
     ],
   },
-    {
+  {
     id: "towing",
     match: [
       "towing", "tow", "recovery", "roadside", "road side", "roadside assistance",
@@ -247,6 +247,30 @@ const directAnswers = [
       "RSA check-first: identify provider via policy/CRM/portal before sharing any number.",
       "AAA only: 600508181 (Arabic 04 402 0738 / English 04 402 0737 if needed). Emirates Auction only: 600500372.",
       "FAQ Q17 / SOP: undrivable vehicles only; Methaq 600 565 695 select RSA is general contact after provider check.",
+    ],
+  },
+  {
+    id: "non-moving-vehicles",
+    match: [
+      "non moving vehicle", "non-moving vehicle", "non moving vehicles", "non-moving vehicles",
+      "vehicle not moving", "car not moving", "not moving vehicle", "not movable vehicle",
+      "dubai non moving", "northern emirates non moving", "non moving dubai",
+      "non moving northern emirates", "non moving garage", "non moving workshop"
+    ],
+    department: "Repair",
+    comment: "Please check the non-moving vehicle workshop routing and proceed from CRM/system status.",
+    source: "NON MOVING VEHICLES DUBAI AND NORTHEREN EMIRATES JULY.pdf",
+    answer: [
+      "For non-moving vehicles in Dubai and Northern Emirates, use the assigned workshop list from the KB and confirm the claim/vehicle location in CRM before advising.",
+      "Dubai: AAA Point Auto Service LLC, Street no. 22, Al Quoz Industrial Area 4, Dubai. Contact: 052-1096746, aaapoint.social@gmail.com.",
+      "Sharjah / UAQ / Ajman: Al Raya Al Bayda - Sharjah Branch, S115 Industrial Area, Sharjah. Contact: 050-1895365 / 050-1896990, alraya.albayda1@gmail.com.",
+      "RAK: Al Rali Garage, P.O. Box 1337, Ras Al Khaimah. Contact: 050-6474866, alraligarage@gmail.com.",
+      "Fujairah: Al Masri Auto Center, GO, Al Hail Industrial Area, Fujairah. Contact: 055-4661718, almasriautocenter@gmail.com.",
+      "Do not tell customers appointment dates, appointment times, or internal schedules. Tell the customer only the allowed process status from CRM and that the responsible team/workshop will follow up through the approved channel."
+    ],
+    sources: [
+      "Non-moving vehicles PDF: Dubai, Sharjah/UAQ/Ajman, RAK, and Fujairah workshop contacts.",
+      "Business rule: do not disclose appointments or internal schedules to customers."
     ],
   },
   
@@ -358,6 +382,27 @@ const directAnswers = [
     ],
     sources: [
       "Data Privacy rules: no quotes/settlement figures/LPO/internal process; no approved/rejected without documentation; no promise to call back."
+    ],
+  },
+  {
+    id: "appointment-rules",
+    match: [
+      "appointment", "appointments", "appointment time", "appointment date",
+      "tell appointment", "give appointment", "customer appointment",
+      "survey appointment", "inspection appointment", "garage appointment",
+      "when is appointment", "what time appointment", "schedule appointment"
+    ],
+    department: "Customer Service",
+    comment: "Please check the appointment internally and update the customer only with the allowed process status.",
+    source: "Methaq Business Rule - Appointment Privacy",
+    answer: [
+      "Do not tell customers appointment dates, appointment times, or internal appointment schedules over the phone.",
+      "Tell the customer: \"I will check the request status in the system and make sure the responsible team follows up through the approved channel.\"",
+      "Agent action: check CRM/latest notes internally, add a follow-up/comment to the responsible team if needed, and do not disclose internal schedules or appointment details to the customer.",
+      "If the customer asks when someone will come or when inspection/garage action will happen, give only the allowed process status from CRM, not an appointment time."
+    ],
+    sources: [
+      "Business rule: appointment dates/times/internal schedules are not provided to customers by phone."
     ],
   },
     {
@@ -1216,6 +1261,13 @@ function enforceBusinessRules(text) {
   t = t.replace(/you may explain only the confirmed status and amount shown in the system/gi, "you may explain only the confirmed process status shown in the system; do not disclose the amount over the phone");
   t = t.replace(/confirm or promise any settlement amount unless it is already approved and visible in the system/gi, "confirm, promise, or disclose any settlement amount over the phone");
   t = t.replace(/settlement amount is based on Methaq's negotiated repair\/parts prices/gi, "the settlement amount is handled through the official Claims Team settlement process");
+  if (/\bappointment|schedule|inspection time|garage time|arrival time\b/i.test(t)) {
+    t = t.replace(/\b\d{1,2}(:\d{2})?\s*(am|pm|AM|PM)\b/g, "[internal timing]");
+    t = t.replace(/\bappointment (date|time|details?)\b/gi, "internal appointment status");
+    if (!/do not (tell|disclose|share).*appointment/i.test(t)) {
+      t += " Do not tell customers appointment dates, appointment times, or internal schedules over the phone.";
+    }
+  }
   if (/\bcash settlement\b/i.test(t) && /\bamount\b/i.test(t) && !/do not disclose|over the phone/i.test(t)) {
     t += " Do not disclose cash settlement amounts over the phone.";
   }
