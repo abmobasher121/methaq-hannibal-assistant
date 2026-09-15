@@ -296,17 +296,21 @@ const directAnswers = [
     match: [
       "cash settlement", "cash instead of repair", "want cash", "prefer cash",
       "settlement instead of repair", "receive cash", "cash rather than repair",
-      "choose cash", "request cash settlement", "digital settlement form"
+      "choose cash", "request cash settlement", "digital settlement form",
+      "amount for cash settlement", "cash settlement amount", "settlement amount",
+      "ask amount for cash", "asking amount for cash", "how much cash settlement",
+      "customer calls to ask amount"
     ],
     department: "Cash Settlement",
     comment: "Please review cash settlement request with Claims Team. Do not promise cash settlement.",
     source: "Methaq SOP - Cash Settlement / FAQ Q8",
     answer: [
+      "If a customer calls asking for the cash settlement amount, do not invent, negotiate, or promise any amount. The amount must come from the claim record / Claims Team after damage assessment.",
+      "Check the CRM claim first. If an approved settlement amount or digital settlement form is already visible, you may explain only the confirmed status and amount shown in the system. If no approved amount is shown, tell the customer the Claims Team must review/assess the case and will share the official settlement form if cash settlement is applicable.",
       "Methaq does not proactively offer cash settlement. If the customer requests cash instead of repair, the Claims Team assesses damage after inspection and may send a digital settlement form for signature.",
-      "Signing the settlement form means the customer waives the right to repair and is no longer eligible for alternative car compensation. Settlement amount is based on Methaq's negotiated repair/parts prices — not private garage quotes. Agents must never negotiate the amount.",
-      "Requirements: official IBAN certificate (bank letterhead or stamped; name must match policyholder; handwritten IBAN not accepted) and signed settlement form (signature must match ID). Payment: up to 15 working days after approval.",
-      "If an LPO was already issued: do not promise cash. Refer to Claims Team to review whether settlement is still possible (check if vehicle is at workshop / repair started). Raise a ticket for cash settlement requests that need approval.",
-      "For third-party property damage: only the legal owner of the damaged property, or someone with official power of attorney, can request cash settlement."
+      "Before payment, the customer needs the signed settlement form and an official IBAN certificate on bank letterhead or stamped, with the account holder name matching the policyholder. Handwritten IBAN is not accepted.",
+      "Signing the settlement form means the customer waives the right to repair and alternative car compensation. Payment timeline is up to 15 working days after approval and required documents are complete.",
+      "If an LPO was already issued or repair started, do not promise cash settlement. Refer the case to Claims Team to review whether settlement is still possible."
     ],
     sources: [
       "FAQ Q8 / Cash Settlement: not proactive; Claims assesses after inspection; signing waives repair + alt car; Methaq negotiated prices; agents never negotiate.",
@@ -428,7 +432,7 @@ function wantsToLeaveActiveClaim(question) {
   if (!conversation.activeClaim) return false;
   return /\b(ignore|forget|stop|clear|leave|cancel|remove)\b.*\b(claim|active claim|previous claim|above claim|last claim)\b/i.test(q)
     || /\b(no|not)\b.*\b(this|that|same|previous|active|above|last)\b.*\bclaim\b/i.test(q)
-    || /\b(general|knowledge base|kb|sop|procedure|policy|faq|training|explain|define)\b/i.test(q);
+    || /\b(general|knowledge base|kb|sop|procedure|faq|training|explain|define)\b/i.test(q);
 }
 
 function isKnowledgeBaseQuestion(question) {
@@ -760,9 +764,11 @@ function renderActiveClaimClearedAnswer() {
 
 async function buildAnswer(question) {
   rememberTurn("user", question);
-  if (wantsToLeaveActiveClaim(question) && !isKnowledgeBaseQuestion(question)) {
+  if (wantsToLeaveActiveClaim(question)) {
     conversation.activeClaim = "";
-    return renderActiveClaimClearedAnswer();
+    if (!isKnowledgeBaseQuestion(question) && !findDirectAnswer(question)) {
+      return renderActiveClaimClearedAnswer();
+    }
   }
   if (isGreetingOrSmalltalk(question)) return renderGreetingAnswer(question);
 
@@ -1170,12 +1176,12 @@ function findDirectAnswer(question) {
     }
     if (item.id === "file-claim" && (claimIntent || afterIntent)) score += 20;
     if (item.id === "agent-permissions" && /(can i|can agent|agents? (can|cannot|can't)|what can agents|on behalf|upload for customer|negotiate settlement)/i.test(q) && !/(say approved|tell approved|settlement amount|quote amount|promise to call|share (the )?lpo)/i.test(q)) score += 28;
-    if (item.id === "cash-settlement" && /(cash settlement|cash instead|prefer cash|want cash|choose cash|digital settlement)/i.test(q)) score += 22;
+    if (item.id === "cash-settlement" && /(cash settlement|cash instead|prefer cash|want cash|choose cash|digital settlement|cash.*amount|amount.*cash|how much.*cash)/i.test(q)) score += 42;
     if (item.id === "alternative-car" && /(alternative car|rental car|replacement (car|vehicle)|compensation days|daily allowance|hire car)/i.test(q)) score += 12;
     if (item.id === "third-party-at-fault" && /(at fault|i caused|caused the accident|i hit)/i.test(q) && /(third party|third-party|\btp\b)/i.test(q)) score += 18;
     if (item.id === "third-party-not-at-fault" && /(hit me|someone hit|other driver|not at fault|another driver)/i.test(q) && /(third party|third-party|\btp\b|repair my car)/i.test(q)) score += 18;
     if (item.id === "required-documents" && /(document|documents|docs|papers|mulkiya|police report|emirates id|what to upload)/i.test(q) && !/(raise|file|submit|lodge|register|open)\s+(a\s+)?claim/i.test(q)) score += 18;
-    if (item.id === "privacy-rules" && /(settlement amount|quote amount|say approved|tell approved|can i say|promise to call|share (the )?lpo|share the quote|internal number|cash settlement amount)/i.test(q)) score += 30;
+    if (item.id === "privacy-rules" && /(settlement amount|quote amount|say approved|tell approved|can i say|promise to call|share (the )?lpo|share the quote|internal number|cash settlement amount)/i.test(q)) score += /\bcash\b/i.test(q) ? 10 : 30;
     if (score > bestScore) {
       best = item;
       bestScore = score;
@@ -1234,6 +1240,8 @@ function synthesizeAnswer(question, hits) {
     .map((s) => s.trim())
     .filter((s) => s.length >= 50)
     .filter((s) => !/^(table of contents|quick navigation|confidential|created by|party action|step customer|document owner)/i.test(s))
+    .filter((s) => !/^q\d+\s*[–-]|^\?q\d+/i.test(s))
+    .filter((s) => !(s.endsWith("?") && !/\b(answer|agent|should|must|do not|never|required|payment|customer needs)\b/i.test(s)))
     .filter((s) => !/search on google|←|→|YTILIBIGILE|ESAHP|TNEMUDOC/i.test(s))
     .filter((s) => !/\b(Action|System|Customer|Surveyor|Finance|Party)\s*:/i.test(s))
     .filter((s) => !/\b(and|or|after|to|for|with|the|a|an|on|of|by)\.?$/i.test(s))
