@@ -51,13 +51,13 @@ const directAnswers = [
     source: "Methaq SOP - Claim Submission and FNOL Process",
     answer: [
       "If the customer wants to raise a motor claim, guide them to submit it themselves. Agents cannot open a claim or upload documents on the customer behalf.",
-      "How to raise the claim: the customer goes to claim.methaq.ae/claim (or methaq.ae → Motor Claims), or visits a branch. Online submission is available 24/7.",
+      "How to raise the claim: the customer goes to claim.methaq.ae/claim or methaq.ae → Motor Claims. Online submission is available 24/7.",
       "On the portal the customer completes the eligibility / qualification wizard, fills the FNOL form, uploads the required documents (Driving License, Mulkiya, Emirates ID of the owner, and the full Police Report PDF), reviews the details, then submits.",
       "After the claim is raised: the system runs an automatic duplicate-claim check, then the claim enters the Claims Department queue. Document review usually takes 1 to 2 working days. If documents are complete, the claim is accepted and a garage/workshop is assigned for the next stage. If documents are missing, the customer gets a link to re-upload.",
       "Agent next step: once you have the claim number, open it in CRM, read the latest Claims Team comment and status, then advise the customer only from confirmed system information."
     ],
     sources: [
-      "Claim Submission: claim.methaq.ae/claim, 24/7, branch also available. Agents cannot open/upload for customers.",
+      "Claim Submission: claim.methaq.ae/claim, 24/7. Agents cannot open/upload for customers.",
       "FNOL flow: wizard → FNOL → upload docs → submit → duplicate check → Claims queue → doc review 1-2 WD → garage assignment."
     ],
   },
@@ -307,10 +307,10 @@ const directAnswers = [
     comment: "Please review cash settlement request with Claims Team. Do not promise cash settlement.",
     source: "Methaq SOP - Cash Settlement / FAQ Q8",
     answer: [
-      "Tell the customer: \"Let me check the claim notes and the cash settlement status in the system. If the settlement is already approved, I can confirm the status shown in CRM. If it is still under review, the Claims Team will complete the assessment and share the official settlement form once it is applicable.\"",
-      "If the customer asks for the amount: \"I cannot confirm or promise any settlement amount unless it is already approved and visible in the system. The amount is decided by the Claims Team after assessment, based on Methaq's approved calculation.\"",
+      "Tell the customer: \"Let me check the claim notes and the cash settlement status in the system. If the settlement is approved, I can confirm the process status only. If it is still under review, the Claims Team will complete the assessment and share the official settlement form once it is applicable.\"",
+      "If the customer asks for the amount: \"For privacy and control reasons, we do not provide cash settlement amounts over the phone. The official amount will be shared only through the approved settlement process/form after Claims Team review.\"",
       "Agent action: open the claim in CRM, check the latest Claims Team note, settlement form status, approval status, IBAN/document status, and whether payment is already under Finance processing.",
-      "If approved and documents are complete: tell the customer payment can take up to 15 working days after approval / creditor notice and complete required documents.",
+      "If approved and documents are complete: tell the customer the payment process can take up to 15 working days after approval / creditor notice and complete required documents. Do not disclose the settlement amount over the phone.",
       "If not approved or no amount is shown: do not negotiate, estimate, or promise. Add a follow-up/comment for Claims Team to review the cash settlement request and update the customer.",
       "Before payment, the customer needs the signed settlement form and an official IBAN certificate on bank letterhead or stamped, with the account holder name matching the policyholder. Handwritten IBAN is not accepted.",
       "If an LPO was already issued or repair started, do not promise cash settlement. Refer the case to Claims Team to review whether settlement is still possible."
@@ -354,7 +354,7 @@ const directAnswers = [
       "Do not share quote amounts, cash settlement amounts, or other internal figures with the customer over the phone.",
       "Do not provide the LPO to the customer. Do not share internal workshop-selection process details.",
       "Do not tell the customer the claim is approved or rejected unless there is a documented system reason.",
-      "Do not promise to call the customer back. If they insist on numbers, advise them to visit a Methaq branch for further assistance."
+      "Do not promise to call the customer back. If they insist on numbers, explain that restricted amounts cannot be shared over the phone and route/follow up with the responsible team in CRM."
     ],
     sources: [
       "Data Privacy rules: no quotes/settlement figures/LPO/internal process; no approved/rejected without documentation; no promise to call back."
@@ -374,7 +374,7 @@ const directAnswers = [
     answer: [
       "Agents have read-only access. You can check claim stage, guide the customer, identify via plate/claim number, share workshop name/location when appropriate, and add a comment to route the case.",
       "Agents cannot: open new claims, upload documents on behalf of the customer, approve or reject claims, negotiate settlement amounts, determine premiums, or commit to timelines not stated in the SOP.",
-      "If the customer needs a new claim or document upload, guide them to the portal or branch.",
+      "If the customer needs a new claim or document upload, guide them to the online portal only.",
     ],
     sources: [
       "Agent Permissions Matrix: read-only; cannot open claims/upload docs/approve/reject/negotiate/commit unlisted timelines.",
@@ -1194,15 +1194,32 @@ function findDirectAnswer(question) {
 }
 
 function renderDirectAnswer(item) {
+  const safeAnswer = item.answer.map((p) => enforceBusinessRules(p));
   return `
     <div class="answer-block">
-      <div><strong>AI Response</strong><br><br>${item.answer.map((p) => escapeHtml(p)).join("<br><br>")}</div>
+      <div><strong>AI Response</strong><br><br>${safeAnswer.map((p) => escapeHtml(p)).join("<br><br>")}</div>
       <div class="recommendation">
         <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(item.department)}<br>
         <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(item.comment)}
       </div>
     </div>
   `;
+}
+
+function enforceBusinessRules(text) {
+  let t = String(text || "");
+  t = t.replace(/\bor visits? (a )?(methaq )?branch\b/gi, "using the online portal");
+  t = t.replace(/\bor branch\b/gi, "");
+  t = t.replace(/\bvisit (a )?(methaq )?branch\b/gi, "use the online portal or wait for the responsible team update");
+  t = t.replace(/\bgo to (a )?(methaq )?branch\b/gi, "use the online portal or wait for the responsible team update");
+  t = t.replace(/\badvise (them|the customer) to (visit|go to) (a )?(methaq )?branch\b/gi, "route the case to the responsible team in CRM");
+  t = t.replace(/you may explain only the confirmed status and amount shown in the system/gi, "you may explain only the confirmed process status shown in the system; do not disclose the amount over the phone");
+  t = t.replace(/confirm or promise any settlement amount unless it is already approved and visible in the system/gi, "confirm, promise, or disclose any settlement amount over the phone");
+  t = t.replace(/settlement amount is based on Methaq's negotiated repair\/parts prices/gi, "the settlement amount is handled through the official Claims Team settlement process");
+  if (/\bcash settlement\b/i.test(t) && /\bamount\b/i.test(t) && !/do not disclose|over the phone/i.test(t)) {
+    t += " Do not disclose cash settlement amounts over the phone.";
+  }
+  return t;
 }
 
 function polishText(text) {
@@ -1267,7 +1284,7 @@ function synthesizeAnswer(question, hits) {
     const key = normalize(cleaned).slice(0, 80);
     if (seen.has(key)) continue;
     seen.add(key);
-    picked.push(cleaned);
+    picked.push(enforceBusinessRules(cleaned));
     if (picked.length >= 3) break;
   }
 
@@ -1280,7 +1297,7 @@ function synthesizeAnswer(question, hits) {
     const steps = picked.map((s, i) => `${i + 1}. ${s}`).join("<br>");
     return `${escapeHtml("Here are the clear steps:")}<br><br>${steps}`;
   }
-  return escapeHtml(picked.join(" "));
+  return escapeHtml(enforceBusinessRules(picked.join(" ")));
 }
 
 function unavailableAnswer(question, route) {
