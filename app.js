@@ -299,17 +299,20 @@ const directAnswers = [
       "choose cash", "request cash settlement", "digital settlement form",
       "amount for cash settlement", "cash settlement amount", "settlement amount",
       "ask amount for cash", "asking amount for cash", "how much cash settlement",
-      "customer calls to ask amount"
+      "customer calls to ask amount", "follow on cash settlement", "follow up cash settlement",
+      "followup cash settlement", "cash settlement follow up", "cash settlement status",
+      "customer called to follow on cash settlement", "customer called to follow up cash settlement"
     ],
     department: "Cash Settlement",
     comment: "Please review cash settlement request with Claims Team. Do not promise cash settlement.",
     source: "Methaq SOP - Cash Settlement / FAQ Q8",
     answer: [
-      "If a customer calls asking for the cash settlement amount, do not invent, negotiate, or promise any amount. The amount must come from the claim record / Claims Team after damage assessment.",
-      "Check the CRM claim first. If an approved settlement amount or digital settlement form is already visible, you may explain only the confirmed status and amount shown in the system. If no approved amount is shown, tell the customer the Claims Team must review/assess the case and will share the official settlement form if cash settlement is applicable.",
-      "Methaq does not proactively offer cash settlement. If the customer requests cash instead of repair, the Claims Team assesses damage after inspection and may send a digital settlement form for signature.",
+      "Tell the customer: \"Let me check the claim notes and the cash settlement status in the system. If the settlement is already approved, I can confirm the status shown in CRM. If it is still under review, the Claims Team will complete the assessment and share the official settlement form once it is applicable.\"",
+      "If the customer asks for the amount: \"I cannot confirm or promise any settlement amount unless it is already approved and visible in the system. The amount is decided by the Claims Team after assessment, based on Methaq's approved calculation.\"",
+      "Agent action: open the claim in CRM, check the latest Claims Team note, settlement form status, approval status, IBAN/document status, and whether payment is already under Finance processing.",
+      "If approved and documents are complete: tell the customer payment can take up to 15 working days after approval / creditor notice and complete required documents.",
+      "If not approved or no amount is shown: do not negotiate, estimate, or promise. Add a follow-up/comment for Claims Team to review the cash settlement request and update the customer.",
       "Before payment, the customer needs the signed settlement form and an official IBAN certificate on bank letterhead or stamped, with the account holder name matching the policyholder. Handwritten IBAN is not accepted.",
-      "Signing the settlement form means the customer waives the right to repair and alternative car compensation. Payment timeline is up to 15 working days after approval and required documents are complete.",
       "If an LPO was already issued or repair started, do not promise cash settlement. Refer the case to Claims Team to review whether settlement is still possible."
     ],
     sources: [
@@ -1176,7 +1179,7 @@ function findDirectAnswer(question) {
     }
     if (item.id === "file-claim" && (claimIntent || afterIntent)) score += 20;
     if (item.id === "agent-permissions" && /(can i|can agent|agents? (can|cannot|can't)|what can agents|on behalf|upload for customer|negotiate settlement)/i.test(q) && !/(say approved|tell approved|settlement amount|quote amount|promise to call|share (the )?lpo)/i.test(q)) score += 28;
-    if (item.id === "cash-settlement" && /(cash settlement|cash instead|prefer cash|want cash|choose cash|digital settlement|cash.*amount|amount.*cash|how much.*cash)/i.test(q)) score += 42;
+    if (item.id === "cash-settlement" && /(cash settlement|cash instead|prefer cash|want cash|choose cash|digital settlement|cash.*amount|amount.*cash|how much.*cash|settlement.*status|follow.*cash|cash.*follow)/i.test(q)) score += 80;
     if (item.id === "alternative-car" && /(alternative car|rental car|replacement (car|vehicle)|compensation days|daily allowance|hire car)/i.test(q)) score += 12;
     if (item.id === "third-party-at-fault" && /(at fault|i caused|caused the accident|i hit)/i.test(q) && /(third party|third-party|\btp\b)/i.test(q)) score += 18;
     if (item.id === "third-party-not-at-fault" && /(hit me|someone hit|other driver|not at fault|another driver)/i.test(q) && /(third party|third-party|\btp\b|repair my car)/i.test(q)) score += 18;
