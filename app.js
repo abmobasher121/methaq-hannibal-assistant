@@ -423,17 +423,43 @@ function rememberTurn(role, text) {
   if (conversation.turns.length > 30) conversation.turns = conversation.turns.slice(-30);
 }
 
+function wantsToLeaveActiveClaim(question) {
+  const q = normalize(question);
+  if (!conversation.activeClaim) return false;
+  return /\b(ignore|forget|stop|clear|leave|cancel|remove)\b.*\b(claim|active claim|previous claim|above claim|last claim)\b/i.test(q)
+    || /\b(no|not)\b.*\b(this|that|same|previous|active|above|last)\b.*\bclaim\b/i.test(q)
+    || /\b(general|knowledge base|kb|sop|procedure|policy|faq|training|explain|define)\b/i.test(q);
+}
+
+function isKnowledgeBaseQuestion(question) {
+  const q = normalize(question);
+  if (!q) return false;
+  if (extractClaimNumber(question)) return false;
+  return /\b(how|what|when|where|why|can|should|do|does|is|are|explain|define|meaning|procedure|process|steps|require|required|requirements|documents|docs|sop|faq|knowledge base|kb|general|training|policy|coverage|cover|covered|eligible|eligibility|timeline|sla)\b/i.test(q)
+    && !/\b(this claim|that claim|same claim|active claim|previous claim|last claim|above claim|on it|for it|its status|claim status|status of the claim|latest note|crm note|loss status|assigned agent|opened|closed|reserve|quotation received)\b/i.test(q);
+}
+
 function isClaimFollowUp(question) {
   const q = normalize(question);
   if (!conversation.activeClaim) return false;
   if (extractClaimNumber(question)) return false;
-  const cues = [
-    "document", "documents", "uploaded", "missing", "status", "stuck", "delay", "garage",
-    "repair", "lpo", "quotation", "note", "comment", "reserve", "payment", "this claim",
-    "the claim", "same claim", "that claim", "update", "what about", "issue", "issues",
-    "check", "pending", "next step", "owner", "who", "where", "why", "progress"
+  if (wantsToLeaveActiveClaim(question) || isKnowledgeBaseQuestion(question)) return false;
+  const explicitClaimRefs = [
+    "this claim", "the claim", "same claim", "that claim", "active claim", "previous claim",
+    "last claim", "above claim", "on it", "for it", "its status", "what about it"
   ];
-  return cues.some((c) => q.includes(c)) || q.split(" ").length <= 12;
+  const crmClaimFields = [
+    "latest crm note", "crm note", "loss status", "claim status", "status", "stuck", "delay",
+    "garage", "workshop", "repair", "lpo", "quotation", "reserve", "payment", "opened",
+    "closed", "assigned agent", "owner", "police report", "premia", "policy number"
+  ];
+  const actionFollowUps = [
+    "what should i do", "what to do", "next step", "what next", "where is it stuck",
+    "why pending", "is it pending", "is it approved", "is lpo approved", "documents missing"
+  ];
+  return explicitClaimRefs.some((c) => q.includes(c))
+    || crmClaimFields.some((c) => q.includes(c)) && /\b(claim|it|this|that|same|active|previous|last|above)\b/i.test(q)
+    || actionFollowUps.some((c) => q.includes(c));
 }
 
 function extractClaimNumber(value) {
@@ -725,8 +751,19 @@ function renderGreetingAnswer(question) {
     </div>`;
 }
 
+function renderActiveClaimClearedAnswer() {
+  return `
+    <div class="answer-block">
+      <div><strong>AI Response</strong> Done. I cleared the active claim for this chat. Ask a general SOP or knowledge-base question and I will answer from the knowledge base unless you paste a claim number or clearly ask about the active claim again.</div>
+    </div>`;
+}
+
 async function buildAnswer(question) {
   rememberTurn("user", question);
+  if (wantsToLeaveActiveClaim(question) && !isKnowledgeBaseQuestion(question)) {
+    conversation.activeClaim = "";
+    return renderActiveClaimClearedAnswer();
+  }
   if (isGreetingOrSmalltalk(question)) return renderGreetingAnswer(question);
 
   let claimNumber = extractClaimNumber(question);
