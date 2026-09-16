@@ -812,5 +812,54 @@ window.METHAQ_KB = [
     "locator": "slide 7",
     "chunk": 1,
     "text": "Call Center — Can vs Cannot\nIdentify by vehicle number OR claim reference · Read access to portal only\nAGENT CAN DO\n✓ Check claim stage in portal\n✓ Tell customer which documents are missing\n✓ Guide customer on signing declaration form\n✓ Guide customer on uploading IBAN certificate\n✓ Advise payment timeline from credit note date\n✓ Share assigned garage name and location\n✓ Add comment and route to department queue\n✗\nAGENT CANNOT DO\n✗ Open new claims (→ website or branch)\n✗ Negotiate settlement amounts\n✗ Approve or reject any claim\n✗ Quote insurance premiums\n✗ Make any claim decision\n✗ Handle repair quality disputes (→ branch)\n✗ Commit to timelines not in the SOP"
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Paid claim status",
+    "chunk": 1,
+    "text": "CLAIM STATUS PAID: Do not assume payment has already been received just because claim status shows Paid. Check the payment release date and actual payment process status. Follow the payment process and explain the expected timeline to the customer based on the payment release date. The Delay topic for financial matters should only be used when the payment release date has already passed."
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Resolved comments",
+    "chunk": 2,
+    "text": "When a comment status shows Resolved, review the claim agent resolution details before proceeding. The agent must read the resolved comment details/full context before advising the customer or taking action."
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Hayaza instructions",
+    "chunk": 3,
+    "text": "Before raising Hayaza/Hyaza instructions comments, first check that 24 business hours have passed since the signature was verified/approved and that no guidance/instructions email has been sent to the customer. If both conditions are met, raise: Please share the Hayaza instructions with the customer. For after-total-loss instructions not received within 24 business hours after signature approval, raise: Please send the Hyaza instructions to the customer."
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Comment routing",
+    "chunk": 4,
+    "text": "Comment raising rules: Total Loss must be raised under Total Loss; Property Damage must be raised under Property Damage. Use Delay for financial matters only when the payment release date has already passed. Raise a new comment if the previous comment has passed 2 working days and the issue has not been resolved. For claims with multiple accidents, specify which accident the comment is about or mention the car plate number. Do not raise comments under claim-wide; raise under the specific claim/accident."
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Claim limitation letter",
+    "chunk": 5,
+    "text": "A Claim Limitation Letter is a formal demand letter issued by the affected party to Methaq requesting compensation for damages from the accident. It includes accident details and the damages being claimed. It is required for private property damage claims. Arabic: خطاب المطالبة هو خطاب رسمي يتم إصداره من قبل الجهة المتضررة إلى ميثاق للمطالبة بالتعويض عن الأضرار الناتجة عن الحادث، ويتضمن تفاصيل الحادث والأضرار المطالب بها، وهو مطلوب في مطالبات أضرار الممتلكات الخاصة."
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Inspection garage assignment",
+    "chunk": 6,
+    "text": "Moving vehicles: do not guide customers to an inspection garage manually. The system assigns the inspection garage automatically and the customer receives the assignment by email. Non-moving vehicles: continue guiding customers as usual. All other inspection garages remain unchanged."
+  },
+  {
+    "source": "Latest Methaq Operational Updates - September 2026",
+    "type": "Latest Update",
+    "locator": "Policy transfer refund recovery rules",
+    "chunk": 7,
+    "text": "Transfer policy: needs at least 6 months and must not have been transferred before, and request must be after one month from policy start date. Refund policy: needs at least 8 months and no claims on the policy; if the policy has total loss, the customer cannot refund the policy. Recovery/RSA starts after 28 days from policy start date; if policy issued this month, customer cannot use recovery this month and can use it next month after the waiting period."
   }
 ];
