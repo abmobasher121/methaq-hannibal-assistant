@@ -6,16 +6,16 @@ const CRM_GATEWAY_KEY = "methaq-crm-gateway-url";
    Do not fall back to the static-host /claim path (e.g. GitHub Pages). */
 
 const routingRules = [
-  ["Cash Settlement", "Please issue cash settlement.", ["cash", "settlement", "payment", "amount"]],
-  ["Compensation", "Please check and process compensation.", ["compensation", "delay compensation", "claim compensation"]],
-  ["Repair", "Please check and proceed with repair.", ["repair", "workshop", "garage", "fix", "lpo"]],
-  ["Total Loss", "Please check and proceed with total loss.", ["total loss", "write off", "salvage"]],
-  ["Documentation / Document Submitted", "Please check the submitted documents and proceed.", ["document", "documents", "submitted", "upload", "missing", "papers"]],
-  ["Inspection / Survey Follow-up", "Please check and proceed with inspection.", ["inspection", "survey", "surveyor", "inspect"]],
-  ["Property Damage", "Please check and proceed with property damage.", ["property damage", "third party property", "damage"]],
-  ["Garage Issue / Change Garage", "Please check and proceed with the garage request.", ["change garage", "garage issue", "workshop issue", "garage"]],
+  ["Cash Settlement", "Please check and proceed with the cash settlement.", ["cash", "settlement", "payment", "amount"]],
+  ["Compensation", "Please check and process the RAC/towing compensation.", ["compensation", "delay compensation", "claim compensation", "rac", "towing"]],
+  ["Repair", "Please check and proceed with the LPO.", ["repair", "workshop", "garage", "fix", "lpo"]],
+  ["Total Loss", "Please check and proceed with the total loss process.", ["total loss", "write off", "salvage"]],
+  ["Documentation / Document Submitted", "Please check the submitted documents and proceed accordingly.", ["document", "documents", "submitted", "upload", "missing", "papers"]],
+  ["Inspection / Survey Follow-up", "Survey completed at [Garage Name] on [Date]. Please check and proceed with the survey report.", ["inspection", "survey", "surveyor", "inspect"]],
+  ["Property Damage", "Please check and proceed with the property damage process.", ["property damage", "third party property", "damage"]],
+  ["Change Garage", "Please check and proceed with the request to change the garage to [Garage Name].", ["change garage", "garage issue", "workshop issue", "garage"]],
   ["Complaint - Policy Refund", "Please check and process the policy refund.", ["refund", "policy refund", "cancel policy"]],
-  ["Delay", "Please check the delay and proceed.", ["delay", "late", "waiting", "pending", "overdue"]],
+  ["Delay", "The expected date has passed. Please check the release date and proceed accordingly.", ["delay", "late", "waiting", "pending", "overdue"]],
   ["Claim Rejected", "Please review the rejected claim and advise.", ["rejected", "rejection", "declined", "not approved"]],
   ["Customer Service", "Please check and assist with the request.", ["customer service", "call back", "request", "assist"]],
   ["Medical - Settlement Agreement", "Please check and process the settlement agreement.", ["medical", "settlement agreement"]],
@@ -23,6 +23,28 @@ const routingRules = [
   ["Duplicate", "Please check and proceed accordingly.", ["duplicate", "duplicated", "same claim"]],
   ["OTHER", "Please check and assist accordingly.", []],
 ];
+
+const APPROVED_DEPARTMENT_COMMENTS = {
+  "Cash Settlement": "Please check and proceed with the cash settlement.",
+  "Compensation": "Please check and process the RAC/towing compensation.",
+  "Repair": "Please check and proceed with the LPO.",
+  "Total Loss": "Please check and proceed with the total loss process.",
+  "Documentation / Document Submitted": "Please check the submitted documents and proceed accordingly.",
+  "Inspection / Survey Follow-up": "Survey completed at [Garage Name] on [Date]. Please check and proceed with the survey report.",
+  "Property Damage": "Please check and proceed with the property damage process.",
+  "Change Garage": "Please check and proceed with the request to change the garage to [Garage Name].",
+  "Garage Issue / Change Garage": "Please check and proceed with the request to change the garage to [Garage Name].",
+  "Delay": "The expected date has passed. Please check the release date and proceed accordingly.",
+};
+
+function approvedComment(department, fallback = "") {
+  return APPROVED_DEPARTMENT_COMMENTS[department] || fallback || "Please check and assist accordingly.";
+}
+
+function approvedDepartment(department) {
+  if (department === "Garage Issue / Change Garage") return "Change Garage";
+  return department;
+}
 
 const starterPrompts = [
   "How can I file a claim?",
@@ -382,6 +404,42 @@ const directAnswers = [
     ],
     sources: [
       "Data Privacy rules: no quotes/settlement figures/LPO/internal process; no approved/rejected without documentation; no promise to call back."
+    ],
+  },
+  {
+    id: "property-damage-process",
+    match: [
+      "property damage", "property damage claim", "private property damage",
+      "third party property damage", "damaged property", "property damage process"
+    ],
+    department: "Property Damage",
+    comment: "Please check and proceed with the property damage process.",
+    source: "Methaq Routing - Property Damage",
+    answer: [
+      "Agent action: confirm the property damage claim details in CRM, check the required property damage documents, and route the comment under Property Damage.",
+      "Tell the customer: \"I will check the property damage claim details and documents in the system, then route it to the responsible team for review.\"",
+      "For private property damage, check whether the Claim Limitation Letter is required or already submitted."
+    ],
+    sources: [
+      "Routing rule: Property Damage comments use Property Damage and the approved property damage comment."
+    ],
+  },
+  {
+    id: "financial-delay-release-date",
+    match: [
+      "release date passed", "expected date passed", "payment release date passed",
+      "financial delay", "delay release date", "payment delay release date"
+    ],
+    department: "Delay",
+    comment: "The expected date has passed. Please check the release date and proceed accordingly.",
+    source: "Methaq Routing - Financial Delay",
+    answer: [
+      "Use Delay for financial matters only when the payment release date or expected date has already passed.",
+      "Agent action: check the release date in CRM first. If the date has passed, raise under Delay using the approved comment.",
+      "Tell the customer: \"I will check the release date in the system. If the expected date has already passed, I will raise it for follow-up under the correct delay process.\""
+    ],
+    sources: [
+      "Routing rule: Delay is used for financial matters only after the release date has passed."
     ],
   },
   {
@@ -1371,8 +1429,8 @@ function renderCrmExpertAnswer(claimNumber, data, question) {
       </div>
       ${renderRsaGuidanceCard(resolveRsaGuidance(data, question))}
       <div class="recommendation">
-        <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(a.routeDept)}<br>
-        <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(a.routeComment)}
+        <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(approvedDepartment(a.routeDept))}<br>
+        <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(approvedComment(a.routeDept, a.routeComment))}
       </div>
     </div>
   `;
@@ -1433,10 +1491,12 @@ function findDirectAnswer(question) {
     if (item.id === "third-party-not-at-fault" && /(hit me|someone hit|other driver|not at fault|another driver)/i.test(q) && /(third party|third-party|\btp\b|repair my car)/i.test(q)) score += 18;
     if (item.id === "required-documents" && /(document|documents|docs|papers|mulkiya|police report|emirates id|what to upload)/i.test(q) && !/(raise|file|submit|lodge|register|open)\s+(a\s+)?claim/i.test(q)) score += 18;
     if (item.id === "privacy-rules" && /(settlement amount|quote amount|say approved|tell approved|can i say|promise to call|share (the )?lpo|share the quote|internal number|cash settlement amount)/i.test(q)) score += /\bcash\b/i.test(q) ? 10 : 30;
-    if (item.id === "paid-claim-status" && /\b(paid|payment|release date|bank transfer|not received|didn'?t receive)\b/i.test(q)) score += 60;
+    if (item.id === "paid-claim-status" && /\b(paid|bank transfer|not received|didn'?t receive)\b/i.test(q)) score += 60;
     if (item.id === "resolved-comment-details" && /\b(resolved|resolution details|resolved comment|agent resolution)\b/i.test(q)) score += 55;
     if (item.id === "hayaza-instructions" && /\b(hayaza|hyaza|heyaza|signature verified|signature approval|guidance email|total loss instructions)\b/i.test(q)) score += 65;
-    if (item.id === "comment-routing-rules" && /\b(raise comment|new comment|previous comment|2 working days|two working days|multiple accidents|claim wide|plate number|delay topic|property damage|total loss topic)\b/i.test(q)) score += 55;
+    if (item.id === "comment-routing-rules" && /\b(raise comment|new comment|previous comment|2 working days|two working days|multiple accidents|claim wide|plate number|delay topic|property damage topic|total loss topic)\b/i.test(q)) score += 55;
+    if (item.id === "property-damage-process" && /\b(property damage|damaged property|third party property)\b/i.test(q)) score += 70;
+    if (item.id === "financial-delay-release-date" && /\b(release date passed|expected date passed|payment release date passed|financial delay|delay release date)\b/i.test(q)) score += 75;
     if (item.id === "claim-limitation-letter" && /\b(claim limitation letter|limitation letter|demand letter|private property damage|خطاب المطالبة)\b/i.test(q)) score += 65;
     if (item.id === "inspection-garage-assignment" && /\b(inspection garage|garage assignment|moving vehicle|non moving|non-moving|assigned garage)\b/i.test(q)) score += 45;
     if (item.id === "policy-transfer-refund-recovery" && /\b(transfer policy|policy transfer|refund policy|policy refund|recovery|roadside|28 days|policy start)\b/i.test(q)) score += 55;
@@ -1450,12 +1510,13 @@ function findDirectAnswer(question) {
 
 function renderDirectAnswer(item) {
   const safeAnswer = item.answer.map((p) => enforceBusinessRules(p));
+  const department = approvedDepartment(item.department);
   return `
     <div class="answer-block">
       <div><strong>AI Response</strong><br><br>${safeAnswer.map((p) => escapeHtml(p)).join("<br><br>")}</div>
       <div class="recommendation">
-        <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(item.department)}<br>
-        <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(item.comment)}
+        <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(department)}<br>
+        <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(approvedComment(item.department, item.comment))}
       </div>
     </div>
   `;
@@ -1573,8 +1634,8 @@ function unavailableAnswer(question, route) {
         If this is about a specific claim, paste the claim number (for example C-02-0826-35206) and I will look it up in CRM automatically.
       </div>
       <div class="recommendation">
-        <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(route.department)}<br>
-        <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(route.comment)}
+        <strong>DEPARTMENT TO ASSIGN:</strong> ${escapeHtml(approvedDepartment(route.department))}<br>
+        <strong>SUGGESTED COMMENT:</strong> ${escapeHtml(approvedComment(route.department, route.comment))}
       </div>
     </div>
   `;
