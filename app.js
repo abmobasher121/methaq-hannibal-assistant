@@ -405,6 +405,154 @@ const directAnswers = [
       "Business rule: appointment dates/times/internal schedules are not provided to customers by phone."
     ],
   },
+  {
+    id: "paid-claim-status",
+    match: [
+      "claim status paid", "status paid", "paid status", "claim paid",
+      "payment status paid", "customer says paid", "paid but not received",
+      "payment not received", "payment release date", "release date passed"
+    ],
+    department: "Customer Service",
+    comment: "Please check payment release date and confirm the actual payment status before advising.",
+    source: "Latest Methaq Update - Paid Claim Status",
+    answer: [
+      "Do not assume the customer received the money just because the claim status shows Paid.",
+      "Agent action: open CRM/portal, check the payment release date, payment process status, and whether the release date has passed.",
+      "Tell the customer: \"The claim is showing as paid in the system, but I need to check the payment release date and payment process status before confirming receipt. I will advise you based on the actual release date shown in the system.\"",
+      "If the release date has not passed, explain the expected timeline from the release date. If the release date has passed and payment is still not received, follow the payment delay process.",
+      "Use the Delay topic for financial/payment matters only when the payment release date has already passed."
+    ],
+    sources: [
+      "Latest update: PAID status does not mean money has been received; check payment release date and actual payment status."
+    ],
+  },
+  {
+    id: "resolved-comment-details",
+    match: [
+      "resolved comment", "comment resolved", "status resolved", "resolution details",
+      "claim agent resolution", "agent resolution details", "resolved details",
+      "comment status shows resolved"
+    ],
+    department: "Customer Service",
+    comment: "Please review the resolved comment details before advising the customer.",
+    source: "Latest Methaq Update - Resolved Comment Details",
+    answer: [
+      "When a comment status shows Resolved, do not proceed from the status label alone.",
+      "Agent action: open the claim agent's resolution details, read the resolution note/full context, then decide what to tell the customer.",
+      "Tell the customer only the confirmed outcome from the resolution details: \"I am checking the resolved note details first so I can give you the correct update from the system.\"",
+      "If the resolution details are unclear or do not answer the customer issue, add a new follow-up comment only when the previous comment has passed 2 working days and the issue is still unresolved."
+    ],
+    sources: [
+      "Latest update: review claim agent resolution details when comment status is Resolved before proceeding."
+    ],
+  },
+  {
+    id: "hayaza-instructions",
+    match: [
+      "hayaza", "hyaza", "heyaza", "after total loss instructions",
+      "after-total-loss instructions", "signature verified", "guidance email",
+      "hayaza instructions", "hyaza instructions", "send hayaza", "send hyaza"
+    ],
+    department: "Total Loss",
+    comment: "Please share the Hayaza instructions with the customer.",
+    source: "Latest Methaq Update - Hayaza Instructions",
+    answer: [
+      "Before raising a Hayaza/Hyaza instruction comment, check two things first: 24 business hours have passed since the signature was verified, and no guidance/instruction email has been sent to the customer.",
+      "If both conditions are met, raise this comment exactly: \"Please share the Hayaza instructions with the customer.\"",
+      "For after-total-loss instructions, if the customer has not received the instructions within 24 business hours after signature approval, raise this comment exactly: \"Please send the Hyaza instructions to the customer.\"",
+      "Tell the customer: \"I will check whether the signature verification is completed and whether the instruction email has already been sent. If the required time has passed and no email was sent, I will raise it to the responsible team.\""
+    ],
+    sources: [
+      "Latest update: wait 24 business hours after signature verification/approval and confirm no guidance email before raising Hayaza/Hyaza instruction comment."
+    ],
+  },
+  {
+    id: "comment-routing-rules",
+    match: [
+      "raise comment", "new comment", "comment topic", "wrong topic", "claim wide",
+      "multiple accidents", "multiple accident", "specific accident", "plate number",
+      "2 working days", "two working days", "previous comment", "issue not resolved",
+      "total loss topic", "property damage topic", "financial delay", "delay topic"
+    ],
+    department: "Customer Service",
+    comment: "Please raise the comment under the correct specific claim/accident and topic.",
+    source: "Latest Methaq Update - Comment Raising Rules",
+    answer: [
+      "Before raising a new comment, check whether the previous comment has passed 2 working days and whether the issue is still unresolved. If not, do not duplicate the comment.",
+      "Always raise comments under the specific claim/accident they relate to. Do not raise comments under claim-wide when there are multiple accidents.",
+      "If the claim has multiple accidents, mention the specific accident or the car plate number in the comment so the responsible team knows exactly which accident you mean.",
+      "Use the correct topic: Total Loss under Total Loss, Property Damage under Property Damage.",
+      "Use Delay for financial matters only when the payment release date has already passed.",
+      "Tell the customer: \"I will review the existing comments and the specific accident details first. If the previous comment has passed the required follow-up time and the issue is still unresolved, I will raise a new comment under the correct accident/topic.\""
+    ],
+    sources: [
+      "Latest update: new comments after 2 working days unresolved; no claim-wide comments for multiple accidents; route Total Loss/Property Damage correctly; financial Delay only after release date passed."
+    ],
+  },
+  {
+    id: "claim-limitation-letter",
+    match: [
+      "claim limitation letter", "limitation letter", "demand letter",
+      "property damage letter", "private property damage", "formal demand letter",
+      "خطاب المطالبة"
+    ],
+    department: "Property Damage",
+    comment: "Please check the Claim Limitation Letter for the private property damage claim.",
+    source: "Latest Methaq Update - Claim Limitation Letter",
+    answer: [
+      "A Claim Limitation Letter is a formal demand letter from the affected party to Methaq requesting compensation for damages from the accident.",
+      "It should include accident details and the damages being claimed.",
+      "It is required for private property damage claims as part of the claim documentation process.",
+      "Tell the customer: \"For private property damage claims, we need the formal Claim Limitation Letter from the affected party. It should mention the accident details and the damages being claimed so the property damage claim can be reviewed.\"",
+      "Arabic explanation: خطاب المطالبة هو خطاب رسمي من الجهة المتضررة إلى ميثاق للمطالبة بالتعويض عن أضرار الحادث، ويجب أن يتضمن تفاصيل الحادث والأضرار المطلوبة، وهو مطلوب في مطالبات أضرار الممتلكات الخاصة."
+    ],
+    sources: [
+      "Latest update: Claim Limitation Letter is required for private property damage claims."
+    ],
+  },
+  {
+    id: "inspection-garage-assignment",
+    match: [
+      "inspection garage", "garage assignment", "moving vehicle garage",
+      "moving vehicles inspection", "assigned inspection garage",
+      "where should customer inspect", "guide customer to inspection garage",
+      "non moving inspection", "non-moving inspection"
+    ],
+    department: "Inspection / Survey Follow-up",
+    comment: "Please follow the current inspection garage assignment process.",
+    source: "Latest Methaq Update - Inspection Garage Assignment",
+    answer: [
+      "For moving vehicles, do not guide the customer to an inspection garage manually. The system assigns the inspection garage automatically and sends it to the customer by email.",
+      "Tell the customer: \"The inspection garage assignment will be sent to you by email according to the current system process. Please check your email for the assignment details.\"",
+      "For non-moving vehicles, continue guiding customers using the non-moving vehicle process/workshop routing as usual.",
+      "Agent action: confirm whether the vehicle is moving or non-moving, check CRM status, and avoid giving appointment dates/times or internal schedules."
+    ],
+    sources: [
+      "Latest update: moving vehicle inspection garage assignment is automatic by email; continue non-moving vehicle guidance as usual."
+    ],
+  },
+  {
+    id: "policy-transfer-refund-recovery",
+    match: [
+      "transfer policy", "policy transfer", "transfer insurance", "transfer the policy",
+      "refund policy", "policy refund", "cancel policy refund", "refund insurance",
+      "recovery working", "recovery eligibility", "roadside eligibility", "28 days recovery",
+      "can use recovery", "policy start date recovery"
+    ],
+    department: "Customer Service",
+    comment: "Please check policy dates/claims history before confirming transfer, refund, or recovery eligibility.",
+    source: "Latest Methaq Update - Transfer Refund Recovery Rules",
+    answer: [
+      "Transfer policy rule: the policy needs at least 6 months remaining/validity, must not have been transferred before, and the transfer request must be after one month from the policy start date.",
+      "Refund policy rule: the policy needs at least 8 months remaining/validity and there must be no claims on the policy. If the customer has a total loss, they cannot refund the policy.",
+      "Recovery/RSA rule: recovery becomes available after 28 days from the policy start date. If the policy was issued this month, the customer cannot use recovery in the same month; they can use it next month after the waiting period.",
+      "Tell the customer: \"I need to check your policy start date, remaining period, transfer history, and claims history before confirming eligibility. The system rules decide whether transfer, refund, or recovery can be used.\"",
+      "Do not promise eligibility before checking the policy record in CRM/portal."
+    ],
+    sources: [
+      "Latest update: transfer needs 6 months + no previous transfer + after one month from start; refund needs 8 months + no claims + no total loss; recovery after 28 days from policy start."
+    ],
+  },
     {
     id: "agent-permissions",
     match: [
@@ -1070,7 +1218,9 @@ function analyzeCrmExpert(claimNumber, data, question) {
 
   // Focused answer for document questions
   let focus = "";
-  if (/document|uploaded|papers|missing/.test(q)) {
+  if (/\bpaid\b/i.test(status) || /\bpaid\b/i.test(lossStatus)) {
+    focus = "Payment check: claim status shows Paid, but do not assume the customer received the money. Check payment release date and actual payment process status before advising.";
+  } else if (/document|uploaded|papers|missing/.test(q)) {
     if (issues.some((x) => /document|police/i.test(x))) {
       focus = "Document check: there are document-related gaps or missing identifiers. Do not tell the customer everything is complete until CRM confirms required docs.";
     } else {
@@ -1084,6 +1234,7 @@ function analyzeCrmExpert(claimNumber, data, question) {
 
   const nextSteps = [];
   if (/garage/i.test(note)) nextSteps.push("Action the garage change / workshop reassignment requested in the latest note and update the customer.");
+  if (/\bpaid\b/i.test(status) || /\bpaid\b/i.test(lossStatus)) nextSteps.push("Check payment release date and actual payment status. Tell the customer the expected timeline based on the release date, not only the Paid label.");
   if (/repair in progress/i.test(lossStatus)) nextSteps.push("Check workshop ETA and whether parts/LPO are delaying repair.");
   if (/document/i.test(blob)) nextSteps.push("Verify required documents checklist in CRM before promising timelines.");
   if (!nextSteps.length) nextSteps.push("Read latest CRM note, confirm loss status with the owner, then give the customer only confirmed facts.");
@@ -1230,6 +1381,13 @@ function findDirectAnswer(question) {
     if (item.id === "third-party-not-at-fault" && /(hit me|someone hit|other driver|not at fault|another driver)/i.test(q) && /(third party|third-party|\btp\b|repair my car)/i.test(q)) score += 18;
     if (item.id === "required-documents" && /(document|documents|docs|papers|mulkiya|police report|emirates id|what to upload)/i.test(q) && !/(raise|file|submit|lodge|register|open)\s+(a\s+)?claim/i.test(q)) score += 18;
     if (item.id === "privacy-rules" && /(settlement amount|quote amount|say approved|tell approved|can i say|promise to call|share (the )?lpo|share the quote|internal number|cash settlement amount)/i.test(q)) score += /\bcash\b/i.test(q) ? 10 : 30;
+    if (item.id === "paid-claim-status" && /\b(paid|payment|release date|bank transfer|not received|didn'?t receive)\b/i.test(q)) score += 60;
+    if (item.id === "resolved-comment-details" && /\b(resolved|resolution details|resolved comment|agent resolution)\b/i.test(q)) score += 55;
+    if (item.id === "hayaza-instructions" && /\b(hayaza|hyaza|heyaza|signature verified|signature approval|guidance email|total loss instructions)\b/i.test(q)) score += 65;
+    if (item.id === "comment-routing-rules" && /\b(raise comment|new comment|previous comment|2 working days|two working days|multiple accidents|claim wide|plate number|delay topic|property damage|total loss topic)\b/i.test(q)) score += 55;
+    if (item.id === "claim-limitation-letter" && /\b(claim limitation letter|limitation letter|demand letter|private property damage|خطاب المطالبة)\b/i.test(q)) score += 65;
+    if (item.id === "inspection-garage-assignment" && /\b(inspection garage|garage assignment|moving vehicle|non moving|non-moving|assigned garage)\b/i.test(q)) score += 45;
+    if (item.id === "policy-transfer-refund-recovery" && /\b(transfer policy|policy transfer|refund policy|policy refund|recovery|roadside|28 days|policy start)\b/i.test(q)) score += 55;
     if (score > bestScore) {
       best = item;
       bestScore = score;
