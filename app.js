@@ -740,7 +740,18 @@ function normalizeGatewayUrl(url) {
 }
 
 function getCrmGatewayUrl() {
+  const fromConfig = (typeof window !== "undefined" && window.METHAQ_CRM_GATEWAY
+    ? String(window.METHAQ_CRM_GATEWAY)
+    : "").trim();
   const fromStorage = (localStorage.getItem(CRM_GATEWAY_KEY) || "").trim();
+  try {
+    const host = (typeof location !== "undefined" ? location.hostname : "") || "";
+    if (/github\.io$/i.test(host) && fromConfig) {
+      return normalizeGatewayUrl(fromConfig);
+    }
+  } catch (_) {}
+  if (fromStorage && !/trycloudflare\.com/i.test(fromStorage)) return normalizeGatewayUrl(fromStorage);
+  if (fromConfig) return normalizeGatewayUrl(fromConfig);
   if (fromStorage) return normalizeGatewayUrl(fromStorage);
   try {
     const host = (typeof location !== "undefined" ? location.hostname : "") || "";
@@ -748,10 +759,6 @@ function getCrmGatewayUrl() {
       return location.origin + "/claim";
     }
   } catch (_) {}
-  const fromConfig = (typeof window !== "undefined" && window.METHAQ_CRM_GATEWAY
-    ? String(window.METHAQ_CRM_GATEWAY)
-    : "").trim();
-  if (fromConfig) return normalizeGatewayUrl(fromConfig);
   return "";
 }
 
@@ -776,6 +783,26 @@ async function discoverLatestGatewayUrl() {
   return getCrmGatewayUrl();
 }
 
+function endpointFor(baseClaimUrl, path) {
+  return normalizeGatewayUrl(baseClaimUrl).replace(/\/claim\/?$/i, path);
+}
+
+async function checkGatewayHealth(gateway) {
+  const healthUrl = endpointFor(gateway, "/health");
+  const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+  const timer = controller ? setTimeout(() => controller.abort(), 8000) : null;
+  try {
+    const response = await fetch(healthUrl + (healthUrl.includes("?") ? "&" : "?") + "t=" + Date.now(), {
+      cache: "no-store",
+      signal: controller ? controller.signal : undefined,
+    });
+    if (!response.ok) throw new Error(`Gateway health HTTP ${response.status}`);
+    return await response.json().catch(() => ({ ok: true }));
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
 async function crmFetch(url, options = {}, retries = 4) {
   let lastError = null;
   let endpoint = url;
@@ -789,6 +816,17 @@ async function crmFetch(url, options = {}, retries = 4) {
         cache: "no-store",
       });
       if (timer) clearTimeout(timer);
+      if ([502, 503, 504].includes(response.status) && attempt < retries) {
+        lastError = new Error(`Gateway returned HTTP ${response.status}`);
+        clearStoredGateway();
+        const fresh = await discoverLatestGatewayUrl();
+        if (fresh) {
+          if (/\/policy\/?$/i.test(String(endpoint))) endpoint = fresh.replace(/\/claim\/?$/i, "/policy");
+          else endpoint = fresh;
+        }
+        await new Promise((r) => setTimeout(r, 1200 * attempt));
+        continue;
+      }
       return { response, endpoint };
     } catch (error) {
       lastError = error;
@@ -1117,6 +1155,13 @@ async function renderPolicyLookupAnswer(policyNumber, question = "") {
     return renderClaimGatewayError(policyNumber, "CRM gateway URL is not configured.");
   }
   try {
+    try {
+      await checkGatewayHealth(gateway);
+    } catch (_) {
+      clearStoredGateway();
+      gateway = await discoverLatestGatewayUrl();
+      await checkGatewayHealth(gateway);
+    }
     const policyEndpoint = gateway.replace(/\/claim\/?$/, "/policy");
     const fetched = await crmFetch(policyEndpoint, {
       method: "POST",
@@ -1161,6 +1206,13 @@ async function renderClaimLookupAnswer(claimNumber, question = "") {
   let gateway = getCrmGatewayUrl() || await discoverLatestGatewayUrl();
   if (gateway) {
     try {
+      try {
+        await checkGatewayHealth(gateway);
+      } catch (_) {
+        clearStoredGateway();
+        gateway = await discoverLatestGatewayUrl();
+        await checkGatewayHealth(gateway);
+      }
       const fetched = await crmFetch(gateway, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
