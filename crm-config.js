@@ -1,2 +1,2 @@
 /* Auto-updated by sync-pages-gateway.ps1 â€” keep GitHub Pages talking to this PC */
-window.METHAQ_CRM_GATEWAY = "https://moderator-evidence-protocols-logs.trycloudflare.com/claim";
+window.METHAQ_CRM_GATEWAY = "https://counter-cricket-captain-cream.trycloudflare.com/claim";
