@@ -1,2 +1,2 @@
 /* Auto-updated by sync-pages-gateway.ps1 â€” keep GitHub Pages talking to this PC */
-window.METHAQ_CRM_GATEWAY = "https://script-recognised-story-chart.trycloudflare.com/claim";
+window.METHAQ_CRM_GATEWAY = "https://employers-setting-accepting-room.trycloudflare.com/claim";
