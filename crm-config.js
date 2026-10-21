@@ -1,2 +1,2 @@
 /* Auto-updated by sync-pages-gateway.ps1 â€” keep GitHub Pages talking to this PC */
-window.METHAQ_CRM_GATEWAY = "https://gender-beatles-possibility-between.trycloudflare.com/claim";
+window.METHAQ_CRM_GATEWAY = "https://pursuit-consolidated-roger-threaded.trycloudflare.com/claim";
