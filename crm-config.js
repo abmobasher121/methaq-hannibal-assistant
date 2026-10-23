@@ -1,2 +1,2 @@
 /* Auto-updated by sync-pages-gateway.ps1 â€” keep GitHub Pages talking to this PC */
-window.METHAQ_CRM_GATEWAY = "https://event-freeze-sega-add.trycloudflare.com/claim";
+window.METHAQ_CRM_GATEWAY = "https://operating-documentary-explicit-value.trycloudflare.com/claim";
