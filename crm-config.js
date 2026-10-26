@@ -1,2 +1,2 @@
 /* Auto-updated by sync-pages-gateway.ps1 â€” keep GitHub Pages talking to this PC */
-window.METHAQ_CRM_GATEWAY = "https://automobiles-analyzed-garmin-amplifier.trycloudflare.com/claim";
+window.METHAQ_CRM_GATEWAY = "https://intelligence-friendship-prozac-figured.trycloudflare.com/claim";
